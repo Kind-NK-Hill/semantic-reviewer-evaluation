@@ -6,6 +6,8 @@ Shuo Deng · Evaluation draft v0.1 · 9 November 2026
 
 [中文评估初稿](reports/evaluation-draft.zh-CN.md) · [English summary](reports/summary.en.md) · [中文项目说明](README.zh-CN.md) · [Results](results/main_table.csv)
 
+[External review packet for Opus and Astra](review/README.md): self-contained prompts, career context, and additional protocol/source evidence. Reviews have not yet been performed.
+
 A theorem can compile while expressing the wrong problem. A model reviewer can
 also give the same wrong answer three times. This study calibrates a semantic
 review component against externally published labels, asking what prompt rules,

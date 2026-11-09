@@ -1,0 +1,22 @@
+{
+  "time": "2026-11-09T06:07:36.758015+00:00",
+  "parent_analysis_sha256": "67cd9f7925303b9f566ece253d07b80396ed5a7f12b780e846273852107d1ff2",
+  "parent_collection_sha256": "7e54eb591401d0c547fad55cd3c719e0ced388ed884060a03ac7ca9c6e0456bf",
+  "rule": "reason-invalid-json-escape-v1",
+  "author_authorized": true,
+  "decision_after_collection_started": true,
+  "manifest_overrides": {
+    "src\\analyze.py": "40f0856f78ad1066841914e5d0b37ecbba7887f6c1a9bde4a2a3d342b0d342cc",
+    "src\\report.py": "c130c70294093bba29a016c127809d6f64b1551f37a512c3add9c3895ca71071"
+  },
+  "manifest": {
+    "src\\analyze.py": "40f0856f78ad1066841914e5d0b37ecbba7887f6c1a9bde4a2a3d342b0d342cc",
+    "src\\report.py": "c130c70294093bba29a016c127809d6f64b1551f37a512c3add9c3895ca71071",
+    "src/reason_escape_reader.py": "1bd1b741546f67740d005acbc43e130b2d95a3ecfa337d5b481990621b55c624",
+    "src/test_reason_escape_reader.py": "d9d2c60b5da622c3afb54463794f01e55fd7e92091c53ce82371920b8d772cd5",
+    "ANALYSIS_INPUT_AMENDMENT_01.md": "2f2e654f85a8844a6857e14c3ed709db4c3d858f3b1ebf4d0d2d5d7ab031b2d8",
+    "freezes/format_repair_01_verification.json": "9b8280e1f3b983e2e2762b18d769b9149175ec3f8da628b7ccbf18a5c9e22b57"
+  },
+  "statistical_methods_unchanged": true,
+  "raw_records_unchanged": true
+}

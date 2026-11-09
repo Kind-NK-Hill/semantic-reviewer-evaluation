@@ -1,0 +1,39 @@
+{
+  "time": "2026-11-09T04:05:07.988174+00:00",
+  "parent_collection_sha256": "7e54eb591401d0c547fad55cd3c719e0ced388ed884060a03ac7ca9c6e0456bf",
+  "parent_runtime_amendment_sha256": "01044d7c42f97183ea950078ced9d4ff26eccbbe57258f4d70a6f48cda7ad0fd",
+  "manifest_overrides": {
+    "src\\hardware_guard.py": "063a8fd2488b8fd0766fcaa56b3b4844527970b3f9cf094075c19f4e120af273",
+    "src\\split_freeze.py": "80720da9f63a1dd843493cb698cf9e3b0056bdf874d9e53bd3822b9460c28f81"
+  },
+  "manifest": {
+    "src\\hardware_guard.py": "063a8fd2488b8fd0766fcaa56b3b4844527970b3f9cf094075c19f4e120af273",
+    "src\\split_freeze.py": "80720da9f63a1dd843493cb698cf9e3b0056bdf874d9e53bd3822b9460c28f81",
+    "COLLECTION_RUNTIME_AMENDMENT_02.md": "762891fd12f0e535cd5fb3fd12fdefd09e5b6cc7a63f9fdf9ad22b86ce577758",
+    "src/test_hardware_guard.py": "94768bf2e91cb255be350a3507fedc164d582cffd3ff4f1c292d0a511bbdcfd0",
+    "freezes/runtime_amendment_02_verification.json": "79dfd979a218b4925380193135d902e78d3be38bc2cd84766f2fab6742741931",
+    "logs/concurrency_amendment_01/telemetry_failure.json": "e3156b74f61a3314a18d8c849ad361162a15e35b56ac9a8ca7c9f4d693dc6c47"
+  },
+  "plan_overrides": {},
+  "hardware_policy": {
+    "flash_initial": 12,
+    "flash_step": 4,
+    "flash_ceiling": 32,
+    "stable_seconds": 300,
+    "minimum_new_completions": 50,
+    "sample_seconds": 2,
+    "cpu_red_percent": 90,
+    "memory_red_percent": 90,
+    "available_memory_red_gib": 2,
+    "disk_free_red_gib": 5,
+    "cpu_green_percent": 75,
+    "memory_green_percent": 80,
+    "available_memory_green_gib": 4,
+    "disk_free_green_gib": 10,
+    "temperature_red_c": 90,
+    "hardware_pause_latched": true
+  },
+  "repair_reason": "Windows reader contention on noncritical telemetry publication",
+  "no_new_formal_requests_before_repair": true,
+  "prior_completed_results_retained": 945
+}
