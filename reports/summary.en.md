@@ -1,9 +1,9 @@
 # Evaluation summary — draft v0.1
 
-This study calibrates a semantic reviewer against858 unique externally labeled
-natural-language/Lean-statement pairs. The published reference contains570
-faithful and288 unfaithful items. Two model routes complete three repetitions;
-wording controls and a Terra-only ablation bring the total to19,170 calls.
+This study calibrates a semantic reviewer against 858 unique externally labeled
+natural-language/Lean-statement pairs. The published reference contains 570
+faithful and 288 unfaithful items. Two model routes complete three repetitions;
+wording controls and a Terra-only ablation bring the total to 19,170 calls.
 
 The task excludes the proof. R0 is a minimal instruction, R1 contains six
 adapted semantic review criteria, and R1g is an adapted general review prompt.
@@ -21,8 +21,8 @@ identity was not independently observable.
 | DeepSeek | R1g |18.52%|5.61%|
 
 Estimates average repeated judgments within each item. Comparisons are paired
-by item; intervals use10,000 cluster percentile bootstrap draws. Reported
-intervals are95%; the frozen noninferiority test uses the upper endpoint of a
+by item; intervals use 10,000 cluster percentile bootstrap draws. Reported
+intervals are 95%; the frozen noninferiority test uses the upper endpoint of a
 97.5% two-sided interval, with a five-percentage-point margin on both error
 measures. Explicit error detection must also improve before R1 is called
 superior to R0.
@@ -33,15 +33,15 @@ Terra's R1g has lower false acceptance than R1, but this does not override the
 tree's earlier R0 branch. DeepSeek's R1 advantage over R0 is not established in
 the ProofNet-only sensitivity analysis, limiting source-level generalization.
 
-Repeated agreement is not independent confirmation. Under R1,59 Terra and54
+Repeated agreement is not independent confirmation. Under R1, 59 Terra and 54
 DeepSeek unfaithful items are accepted on all three calls. Majority voting
 changes false acceptance little; unanimous acceptance reduces false acceptance
 while increasing false rejection. Exploratory first-repetition combinations
-show55 shared misses under R1, with11 and16 additional explicit detections
+show 55 shared misses under R1, with 11 and 16 additional explicit detections
 provided by the other reviewer. These are offline policy replays, not deployed
 multi-agent workflow results.
 
-Collection initially recorded114 invalid JSON escapes for DeepSeek. An
+Collection initially recorded 114 invalid JSON escapes for DeepSeek. An
 author-approved deterministic reader repairs only illegal backslashes in the
 reason string; original outputs are preserved. One tool-use record remains
 excluded. All final batches satisfy the existing quality criteria after this
@@ -49,16 +49,16 @@ normalization. Prompt, label and statistical decision rules were not changed
 in response to interim results. Concurrency and collection continuation were
 amended during collection and are disclosed.
 
-The simulation program originally failed one acceptance cell at44/1,000.
+The simulation program originally failed one acceptance cell at 44/1,000.
 Diagnosis found no effect offset from the intended five-point boundary, but a
 1.04368 ratio of empirical variation to conditional bootstrap standard error.
 The author chose the conservative noninferiority interval before formal
 outcomes, retained percentile intervals, and rejected post-hoc selection of
 the studentized candidate. An independent seed passed the original simulation
 acceptance criteria. Exact binomial intervals and all candidate results are
-bundled; the simulation does not prove a population error rate below4%.
+bundled; the simulation does not prove a population error rate below 4%.
 
-Pilot, control and repetition items overlap the formal set by98/100,58/60 and
+Pilot, control and repetition items overlap the formal set by 98/100, 58/60 and
 19/20. They are not independent validation data. Ten ablation prechecks were
 all unfaithful items and established only that the route could answer.
 

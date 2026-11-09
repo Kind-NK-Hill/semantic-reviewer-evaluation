@@ -2,11 +2,11 @@
 
 The package reproduces analysis from completed judgments. It does not make new
 model calls, recover hidden provider state, rerun Lean, or independently judge
-semantic labels. Python3.12 and pinned dependencies are recorded in
+semantic labels. Python 3.12 and pinned dependencies are recorded in
 `requirements.txt`.
 
 1. `python verify_release.py` verifies the allowlisted publication files.
-2. `python reproduce.py` checks all19,170 unique records, validates114 repairs,
+2. `python reproduce.py` checks all 19,170 unique records, validates 114 repairs,
    recomputes the frozen model-level statistics and checks every returned field.
 3. `python supplement.py` computes the explicitly exploratory repeat-policy,
    matched-transition and cross-model diagnostics.
@@ -33,7 +33,7 @@ signed/tag-bound local certificate.
 
 The analysis bootstrap seed follows SHA256(`20261108:bootstrap`), first eight
 hex digits as an integer. The independent simulation confirmation seed is
-20261109. Exploratory supplemental intervals use a separate20261109 stream;
+20261109. Exploratory supplemental intervals use a separate 20261109 stream;
 they are unadjusted for multiplicity and do not change the frozen decision.
 
 Before publication, the complete local data passed `[1,2,3]` eligibility for

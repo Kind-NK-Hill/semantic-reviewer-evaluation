@@ -11,27 +11,27 @@ also give the same wrong answer three times. This study calibrates a semantic
 review component against externally published labels, asking what prompt rules,
 repeated checks, and a second model actually change.
 
-The complete collection contains **858 unique inputs and19,170 judgments** from
-two model routes. There are570 faithful and288 unfaithful items; repeated calls
+The complete collection contains **858 unique inputs and 19,170 judgments** from
+two model routes. There are570 faithful and 288 unfaithful items; repeated calls
 are not independent mathematical tasks. All three planned batches are complete.
 
 ## Findings to inspect
 
 - **The six-rule prompt has model-dependent value.** Terra's mean false-accept
-  rates are23.03% with the minimal prompt and23.15% with six rules. DeepSeek's
-  corresponding rates are30.79% and24.54%. The frozen selection rule chooses
+  rates are 23.03% with the minimal prompt and 23.15% with six rules. DeepSeek's
+  corresponding rates are 30.79% and 24.54%. The frozen selection rule chooses
   the minimal prompt for Terra and the general review prompt for DeepSeek.
-- **Stable judgments can be stably wrong.** Under the six-rule prompt,59/288
-  Terra items and54/288 DeepSeek items are falsely accepted on all three calls.
+- **Stable judgments can be stably wrong.** Under the six-rule prompt, 59/288
+  Terra items and 54/288 DeepSeek items are falsely accepted on all three calls.
   Majority voting offers limited improvement. Requiring unanimous acceptance
   reduces false acceptance while increasing rejection of faithful items.
 - **A second opinion adds information but shares blind spots.** On the fixed
-  first repetition, the two six-rule reviewers jointly miss55 unfaithful items.
-  DeepSeek explicitly detects11 misses of Terra; Terra explicitly detects16
+  first repetition, the two six-rule reviewers jointly miss 55 unfaithful items.
+  DeepSeek explicitly detects 11 misses of Terra; Terra explicitly detects 16
   misses of DeepSeek. This is an exploratory offline combination, not a tested
   multi-agent repair workflow.
 - **Measurement failures matter.** A deterministic, author-approved reader
-  recovers114 invalid JSON escapes; one unverified tool-use record stays
+  recovers 114 invalid JSON escapes; one unverified tool-use record stays
   excluded. Original states remain available, and the repair can be replayed.
 
 ## Read and reproduce
@@ -42,11 +42,11 @@ are not independent mathematical tasks. All three planned batches are complete.
 | Inspect frozen estimates, intervals and decisions | [Results JSON](results/main_results.json) |
 | Inspect exploratory reliability and second opinions | [Supplement JSON](results/supplement.json) |
 | Read the actual prompts | [Prompt templates](prompts/) |
-| Inspect15 selected cases, still unadjudicated | [Case record](reports/key_cases.md) |
+| Inspect 15 selected cases, still unadjudicated | [Case record](reports/key_cases.md) |
 | Check simulation failures and confirmation | [Simulation rates](protocol/simulation-rates.md) |
 | Understand sources, exclusions and release scope | [Reproducibility](REPRODUCIBILITY.md), [provenance](protocol/provenance.json), [third-party notice](THIRD_PARTY_NOTICES.md) |
 
-Python3.12; no API keys or model access required:
+Python 3.12; no API keys or model access required:
 
 ```sh
 python -m pip install -r requirements.txt
@@ -57,7 +57,7 @@ python supplement.py
 
 `reproduce.py` reruns the unchanged frozen statistical function bodies with
 portable file inputs and checks every reproduced field against the saved
-results. It also verifies all114 escape repairs. The supplement uses an explicitly
+results. It also verifies all 114 escape repairs. The supplement uses an explicitly
 separate exploratory seed and never changes the registered decision tree.
 
 ## Scope and relationship to earlier work
