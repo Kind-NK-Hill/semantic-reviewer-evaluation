@@ -612,5 +612,468 @@
       "extra_explicit_detections_after_flash_accept": 17,
       "both_accept_unfaithful": 38
     }
+  },
+  "review_additions": {
+    "scope": "Post-review diagnostics; no new model calls, no relabeling and no frozen decision changes",
+    "rates_per_million_at_collection": {
+      "terra": {
+        "uncached_input": 25,
+        "cached_input": 1.25,
+        "output": 125,
+        "unit": "credits"
+      },
+      "flash": {
+        "uncached_input": 1,
+        "cached_input": 0.02,
+        "output": 4,
+        "unit": "CNY"
+      }
+    },
+    "cost_scope": "Exactly the stored attempts belonging to each replayed policy; not the cost of prospectively deploying it. Cached context and retry history are retained. Missing usage is unknown charge. Provider currencies are not added together.",
+    "strategies": {
+      "terra_R1_first": {
+        "components": [
+          {
+            "model": "terra",
+            "config": "R1",
+            "repetitions": [
+              1
+            ]
+          }
+        ],
+        "complete_items": 858,
+        "unfaithful_items": 288,
+        "faithful_items": 570,
+        "false_accept_items": 66,
+        "false_reject_items": 53,
+        "false_accept_rate": 0.22916666666666666,
+        "false_reject_rate": 0.09298245614035087,
+        "nominal_calls_per_item": 1,
+        "selected_calls": 858,
+        "cost_by_provider": {
+          "terra": {
+            "selected_attempts": 864,
+            "distinct_calls": 858,
+            "known_usage": {
+              "input_tokens": 6947935,
+              "cached_input_tokens": 5676416,
+              "output_tokens": 89575
+            },
+            "estimated_observed_cost": 50.08037,
+            "unit": "credits",
+            "attempts_with_unknown_charge": 6
+          }
+        }
+      },
+      "terra_R1_all3": {
+        "components": [
+          {
+            "model": "terra",
+            "config": "R1",
+            "repetitions": [
+              1,
+              2,
+              3
+            ]
+          }
+        ],
+        "complete_items": 858,
+        "unfaithful_items": 288,
+        "faithful_items": 570,
+        "false_accept_items": 59,
+        "false_reject_items": 66,
+        "false_accept_rate": 0.2048611111111111,
+        "false_reject_rate": 0.11578947368421053,
+        "nominal_calls_per_item": 3,
+        "selected_calls": 2574,
+        "cost_by_provider": {
+          "terra": {
+            "selected_attempts": 2580,
+            "distinct_calls": 2574,
+            "known_usage": {
+              "input_tokens": 20851883,
+              "cached_input_tokens": 17235456,
+              "output_tokens": 266996
+            },
+            "estimated_observed_cost": 145.329495,
+            "unit": "credits",
+            "attempts_with_unknown_charge": 6
+          }
+        }
+      },
+      "terra_R1g_first": {
+        "components": [
+          {
+            "model": "terra",
+            "config": "R1g",
+            "repetitions": [
+              1
+            ]
+          }
+        ],
+        "complete_items": 858,
+        "unfaithful_items": 288,
+        "faithful_items": 570,
+        "false_accept_items": 47,
+        "false_reject_items": 66,
+        "false_accept_rate": 0.16319444444444445,
+        "false_reject_rate": 0.11578947368421053,
+        "nominal_calls_per_item": 1,
+        "selected_calls": 858,
+        "cost_by_provider": {
+          "terra": {
+            "selected_attempts": 858,
+            "distinct_calls": 858,
+            "known_usage": {
+              "input_tokens": 7218205,
+              "cached_input_tokens": 5733504,
+              "output_tokens": 77610
+            },
+            "estimated_observed_cost": 53.985655,
+            "unit": "credits",
+            "attempts_with_unknown_charge": 0
+          }
+        }
+      },
+      "flash_R1g_first": {
+        "components": [
+          {
+            "model": "flash",
+            "config": "R1g",
+            "repetitions": [
+              1
+            ]
+          }
+        ],
+        "complete_items": 858,
+        "unfaithful_items": 288,
+        "faithful_items": 570,
+        "false_accept_items": 55,
+        "false_reject_items": 29,
+        "false_accept_rate": 0.1909722222222222,
+        "false_reject_rate": 0.05087719298245614,
+        "nominal_calls_per_item": 1,
+        "selected_calls": 858,
+        "cost_by_provider": {
+          "flash": {
+            "selected_attempts": 858,
+            "distinct_calls": 858,
+            "known_usage": {
+              "input_tokens": 5746451,
+              "cached_input_tokens": 5559296,
+              "output_tokens": 1016096
+            },
+            "estimated_observed_cost": 4.36272492,
+            "unit": "CNY",
+            "attempts_with_unknown_charge": 0
+          }
+        }
+      },
+      "flash_R1g_all3": {
+        "components": [
+          {
+            "model": "flash",
+            "config": "R1g",
+            "repetitions": [
+              1,
+              2,
+              3
+            ]
+          }
+        ],
+        "complete_items": 858,
+        "unfaithful_items": 288,
+        "faithful_items": 570,
+        "false_accept_items": 36,
+        "false_reject_items": 43,
+        "false_accept_rate": 0.125,
+        "false_reject_rate": 0.07543859649122807,
+        "nominal_calls_per_item": 3,
+        "selected_calls": 2574,
+        "cost_by_provider": {
+          "flash": {
+            "selected_attempts": 2574,
+            "distinct_calls": 2574,
+            "known_usage": {
+              "input_tokens": 17260701,
+              "cached_input_tokens": 16748002,
+              "output_tokens": 3070250
+            },
+            "estimated_observed_cost": 13.128659039999999,
+            "unit": "CNY",
+            "attempts_with_unknown_charge": 0
+          }
+        }
+      },
+      "both_R1_first": {
+        "components": [
+          {
+            "model": "terra",
+            "config": "R1",
+            "repetitions": [
+              1
+            ]
+          },
+          {
+            "model": "flash",
+            "config": "R1",
+            "repetitions": [
+              1
+            ]
+          }
+        ],
+        "complete_items": 858,
+        "unfaithful_items": 288,
+        "faithful_items": 570,
+        "false_accept_items": 55,
+        "false_reject_items": 58,
+        "false_accept_rate": 0.1909722222222222,
+        "false_reject_rate": 0.10175438596491228,
+        "nominal_calls_per_item": 2,
+        "selected_calls": 1716,
+        "cost_by_provider": {
+          "flash": {
+            "selected_attempts": 858,
+            "distinct_calls": 858,
+            "known_usage": {
+              "input_tokens": 5452592,
+              "cached_input_tokens": 5124096,
+              "output_tokens": 1084851
+            },
+            "estimated_observed_cost": 4.77038192,
+            "unit": "CNY",
+            "attempts_with_unknown_charge": 0
+          },
+          "terra": {
+            "selected_attempts": 864,
+            "distinct_calls": 858,
+            "known_usage": {
+              "input_tokens": 6947935,
+              "cached_input_tokens": 5676416,
+              "output_tokens": 89575
+            },
+            "estimated_observed_cost": 50.08037,
+            "unit": "credits",
+            "attempts_with_unknown_charge": 6
+          }
+        }
+      },
+      "both_R1g_first": {
+        "components": [
+          {
+            "model": "terra",
+            "config": "R1g",
+            "repetitions": [
+              1
+            ]
+          },
+          {
+            "model": "flash",
+            "config": "R1g",
+            "repetitions": [
+              1
+            ]
+          }
+        ],
+        "complete_items": 858,
+        "unfaithful_items": 288,
+        "faithful_items": 570,
+        "false_accept_items": 38,
+        "false_reject_items": 69,
+        "false_accept_rate": 0.13194444444444445,
+        "false_reject_rate": 0.12105263157894737,
+        "nominal_calls_per_item": 2,
+        "selected_calls": 1716,
+        "cost_by_provider": {
+          "flash": {
+            "selected_attempts": 858,
+            "distinct_calls": 858,
+            "known_usage": {
+              "input_tokens": 5746451,
+              "cached_input_tokens": 5559296,
+              "output_tokens": 1016096
+            },
+            "estimated_observed_cost": 4.36272492,
+            "unit": "CNY",
+            "attempts_with_unknown_charge": 0
+          },
+          "terra": {
+            "selected_attempts": 858,
+            "distinct_calls": 858,
+            "known_usage": {
+              "input_tokens": 7218205,
+              "cached_input_tokens": 5733504,
+              "output_tokens": 77610
+            },
+            "estimated_observed_cost": 53.985655,
+            "unit": "credits",
+            "attempts_with_unknown_charge": 0
+          }
+        }
+      }
+    },
+    "terra_R1g_minus_R0": {
+      "leak_diff": {
+        "estimate": -0.059027777777777776,
+        "low": -0.08680555555555555,
+        "high": -0.033564814814814804,
+        "n": 288
+      },
+      "reject_diff": {
+        "estimate": 0.023391812865497078,
+        "low": 0.012280701754385965,
+        "high": 0.03508771929824561,
+        "n": 570
+      },
+      "direction": "R1g minus R0",
+      "scope": "Exploratory direct Terra comparison of three-repetition item means; no new selection decision",
+      "seed": 20261110,
+      "draws": 10000,
+      "sample_weighted_error_tradeoff": {
+        "unfaithful_items": 288,
+        "faithful_items": 570,
+        "mean_false_accept_change_per_858_items": -17.0,
+        "mean_false_reject_change_per_858_items": 13.333333333333334,
+        "break_even_false_accept_cost_over_false_reject_cost": 0.7843137254901961,
+        "assumptions": "Same item composition; linear per-error costs; ignore model-call/latency/manual-review costs. Hypothetical point-estimate tradeoff, not measured business utility."
+      }
+    },
+    "raw_invalid_as_blocked": {
+      "model": "flash",
+      "rule": "Every raw invalid final vote counts as not accepted; denominator includes all planned votes",
+      "configs": {
+        "R0": {
+          "invalid_votes": 59,
+          "false_reject_rate": 0.06023391812865497,
+          "false_accept_rate": 0.30439814814814814
+        },
+        "R1": {
+          "invalid_votes": 27,
+          "false_reject_rate": 0.06549707602339182,
+          "false_accept_rate": 0.24421296296296297
+        },
+        "R1g": {
+          "invalid_votes": 14,
+          "false_reject_rate": 0.06257309941520468,
+          "false_accept_rate": 0.18518518518518517
+        }
+      }
+    },
+    "strict_raw_missing_sensitivity": {
+      "model": "flash",
+      "comparisons": {
+        "R0": {
+          "leak_diff": {
+            "estimate": 0.0625,
+            "low": 0.03356481481481482,
+            "high": 0.09143518518518517,
+            "n": 288,
+            "noninferiority_high": 0.09606481481481481,
+            "noninferiority_coverage": 0.975,
+            "excluded": 0
+          },
+          "reject_diff": {
+            "estimate": -0.01695906432748538,
+            "low": -0.02923976608187134,
+            "high": -0.005263157894736841,
+            "n": 570,
+            "noninferiority_high": -0.003508771929824561,
+            "noninferiority_coverage": 0.975,
+            "excluded": 0
+          },
+          "confirmed_diff": {
+            "estimate": 0.06365740740740741,
+            "low": 0.03414351851851852,
+            "high": 0.0931712962962963,
+            "n": 288,
+            "noninferiority_high": 0.09722222222222222,
+            "noninferiority_coverage": 0.975,
+            "excluded": 0
+          },
+          "decision": "r1_superior"
+        },
+        "R1g": {
+          "leak_diff": {
+            "estimate": -0.059606481481481476,
+            "low": -0.08854166666666667,
+            "high": -0.03240740740740741,
+            "n": 288,
+            "noninferiority_high": -0.028935185185185182,
+            "noninferiority_coverage": 0.975,
+            "excluded": 0
+          },
+          "reject_diff": {
+            "estimate": 0.0029239766081871335,
+            "low": -0.007017543859649123,
+            "high": 0.012865497076023392,
+            "n": 570,
+            "noninferiority_high": 0.014619883040935673,
+            "noninferiority_coverage": 0.975,
+            "excluded": 0
+          },
+          "confirmed_diff": {
+            "estimate": -0.056134259259259266,
+            "low": -0.08449074074074076,
+            "high": -0.02835648148148148,
+            "n": 288,
+            "noninferiority_high": -0.024305555555555556,
+            "noninferiority_coverage": 0.975,
+            "excluded": 0
+          },
+          "decision": "x_noninferior"
+        }
+      },
+      "decision": {
+        "action": "replace_with_r1g",
+        "rationale": "r1_superior_to_r0_and_r1g_noninferior",
+        "claims_superiority": true
+      },
+      "raw_quality_violations": [
+        {
+          "batch": 1,
+          "config": "R0",
+          "label": "true",
+          "total": 570,
+          "bad": 12
+        },
+        {
+          "batch": 1,
+          "config": "R0a",
+          "label": "false",
+          "total": 288,
+          "bad": 9
+        },
+        {
+          "batch": 1,
+          "config": "R0b",
+          "label": "false",
+          "total": 288,
+          "bad": 6
+        },
+        {
+          "batch": 2,
+          "config": "R0",
+          "label": "true",
+          "total": 570,
+          "bad": 13
+        },
+        {
+          "batch": 3,
+          "config": "R0",
+          "label": "false",
+          "total": 288,
+          "bad": 9
+        },
+        {
+          "batch": 3,
+          "config": "R0",
+          "label": "true",
+          "total": 570,
+          "bad": 17
+        }
+      ],
+      "passes_original_quality_gate": false,
+      "scope": "Numerical sensitivity using remaining raw-valid votes only; does not make raw-only collection eligible under the original2% gate."
+    }
   }
 }

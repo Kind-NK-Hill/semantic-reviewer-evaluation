@@ -1,8 +1,10 @@
 # Changes
 
-## Review instructions simplified — 2026-11-09
+## Review corrections — 2026-11-09
 
-Removed the40-file external review addition from the current tree at the author's request. Kept one concise shared review prompt with the project history and a link to the report. Original evaluation data, analysis and report remain unchanged. Earlier commits remain in Git history.
+Corrected the decision-tree description, clarified the benchmark-origin prompt, and added exploratory strategy/cost and raw-format sensitivity comparisons. Added three concrete, unadjudicated label questions. Frozen primary results and source judgments remain unchanged.
+
+Recruitment prompts and job attachments were removed from the current project tree; CV drafting is separate and local.
 
 ## v0.1 — 2026-11-09
 
