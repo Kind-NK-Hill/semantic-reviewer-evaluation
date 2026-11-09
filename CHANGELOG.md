@@ -1,11 +1,8 @@
 # Changes
 
-## External review preparation — 2026-11-09
+## Review instructions simplified — 2026-11-09
 
-- Added identical independent review instructions and self-contained context/evidence packets for Opus and Astra; no review has yet been conducted.
-- Documented career goals, prior projects, discussion history, evidence limits and concrete review questions without publishing private chat transcripts.
-- Exported selected original protocol, source and runtime-amendment evidence. Local git receipts are not represented as contemporaneous public preregistration.
-- Kept judgments, statistical methods and numerical results unchanged.
+Removed the40-file external review addition from the current tree at the author's request. Kept one concise shared review prompt with the project history and a link to the report. Original evaluation data, analysis and report remain unchanged. Earlier commits remain in Git history.
 
 ## v0.1 — 2026-11-09
 
