@@ -1,0 +1,8 @@
+{
+  "time": "2026-11-09T01:19:40.945831+00:00",
+  "bootstrap_method": "percentile",
+  "reported_coverage": 0.95,
+  "noninferiority_coverage": 0.975,
+  "noninferiority_quantile": 0.9875,
+  "confirmation_master_seed": 20261109
+}

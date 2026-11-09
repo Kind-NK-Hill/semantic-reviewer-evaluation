@@ -1,0 +1,96 @@
+{
+  "generated": "2026-11-09T11:48:21.187047+00:00",
+  "cases": [
+    {
+      "id": "cc_0250",
+      "layer": "方案分歧 R0 r1_correct",
+      "model_for_selection": null,
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0844",
+      "layer": "方案分歧 R0 r1_correct",
+      "model_for_selection": null,
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0648",
+      "layer": "方案分歧 R0 r1_wrong",
+      "model_for_selection": null,
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0041",
+      "layer": "方案分歧 R0 r1_wrong",
+      "model_for_selection": null,
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0707",
+      "layer": "方案分歧 R1g r1_correct",
+      "model_for_selection": null,
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0660",
+      "layer": "方案分歧 R1g r1_wrong",
+      "model_for_selection": null,
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0749",
+      "layer": "明显误拒（各配置一致）",
+      "model_for_selection": null,
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0407",
+      "layer": "明显误拒（各配置一致）",
+      "model_for_selection": null,
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0662",
+      "layer": "明显误拒（各配置一致）",
+      "model_for_selection": null,
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0366",
+      "layer": "明显误拒（各配置一致）",
+      "model_for_selection": null,
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0774",
+      "layer": "全体漏放",
+      "model_for_selection": null,
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0049",
+      "layer": "全体漏放",
+      "model_for_selection": null,
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0611",
+      "layer": "全体漏放",
+      "model_for_selection": null,
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0336",
+      "layer": "机器核查异常",
+      "model_for_selection": null,
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0343",
+      "layer": "机器核查异常",
+      "model_for_selection": null,
+      "status": "未决（缺合格复核者）"
+    }
+  ],
+  "adjudicated": 0
+}

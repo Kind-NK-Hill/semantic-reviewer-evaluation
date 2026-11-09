@@ -1,0 +1,20 @@
+{
+  "time": "2026-11-09T00:57:40.450875+00:00",
+  "n": 1000,
+  "mean_difference_pp": 5.000810185185185,
+  "deviation_from_5pp": 0.0008101851851842479,
+  "mc_se_of_mean_pp": 0.057360223987760625,
+  "empirical_sd_pp": 1.8138895489874982,
+  "mean_saved_se_pp": 1.7410011091694253,
+  "ratio_empirical_to_saved_se": 1.041865820437556,
+  "saved_se_kind": "analytic sample standard error of item differences; inspect diagnostic code before calling this bootstrap SE",
+  "analytic_r1_rate": 0.29999999999999993,
+  "analytic_x_rate": 0.35,
+  "mean_exact_conditional_bootstrap_se_pp": 1.7379759094744216,
+  "ratio_empirical_to_exact_bootstrap_se": 1.0436793393390784,
+  "bootstrap_se_basis": "Exact conditional nonparametric-bootstrap standard error for the mean: saved sample SE * sqrt((n-1)/n), n=288; computed from the existing 1000 records, not a fresh simulation or the empirical SD of 2000 draws.",
+  "mean_deviation_mc_z": 0.01412451222919079,
+  "decision": "No detected offset of the true effect from five points. Author confirmed the ratio direction; retain percentile and use the 97.5% two-sided upper endpoint only for noninferiority.",
+  "author_direction_confirmation": true,
+  "revision_recorded_at": "2026-11-09T01:06:51.142372+00:00"
+}

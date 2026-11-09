@@ -1,0 +1,616 @@
+{
+  "scope": "Exploratory post-collection diagnostics, not additional confirmatory claims",
+  "seed": 20261109,
+  "draws": 10000,
+  "intervals": "Item bootstrap95%; unadjusted for multiple comparisons",
+  "repeated": {
+    "terra": {
+      "R0": {
+        "complete_items": 858,
+        "unfaithful_items": 288,
+        "faithful_items": 570,
+        "all_three_accept_unfaithful": 58,
+        "all_three_reject_faithful": 43,
+        "false_accept_count_histogram": [
+          215,
+          5,
+          10,
+          58
+        ],
+        "policies": {
+          "first": {
+            "leak": {
+              "estimate": 0.22916666666666666,
+              "low": 0.18055555555555555,
+              "high": 0.2777777777777778,
+              "n": 288
+            },
+            "reject": {
+              "estimate": 0.0824561403508772,
+              "low": 0.06140350877192982,
+              "high": 0.10526315789473684,
+              "n": 570
+            }
+          },
+          "majority": {
+            "leak": {
+              "estimate": 0.2361111111111111,
+              "low": 0.1875,
+              "high": 0.2847222222222222,
+              "n": 288
+            },
+            "reject": {
+              "estimate": 0.08070175438596491,
+              "low": 0.05964912280701754,
+              "high": 0.10350877192982456,
+              "n": 570
+            }
+          },
+          "all_three": {
+            "leak": {
+              "estimate": 0.2013888888888889,
+              "low": 0.15625,
+              "high": 0.25,
+              "n": 288
+            },
+            "reject": {
+              "estimate": 0.09473684210526316,
+              "low": 0.07192982456140351,
+              "high": 0.11929824561403508,
+              "n": 570
+            }
+          }
+        },
+        "nominal_calls_per_item": {
+          "first": 1,
+          "majority": 3,
+          "all_three": 3
+        }
+      },
+      "R1": {
+        "complete_items": 858,
+        "unfaithful_items": 288,
+        "faithful_items": 570,
+        "all_three_accept_unfaithful": 59,
+        "all_three_reject_faithful": 50,
+        "false_accept_count_histogram": [
+          213,
+          9,
+          7,
+          59
+        ],
+        "policies": {
+          "first": {
+            "leak": {
+              "estimate": 0.22916666666666666,
+              "low": 0.1840277777777778,
+              "high": 0.2777777777777778,
+              "n": 288
+            },
+            "reject": {
+              "estimate": 0.09298245614035087,
+              "low": 0.07017543859649122,
+              "high": 0.11754385964912281,
+              "n": 570
+            }
+          },
+          "majority": {
+            "leak": {
+              "estimate": 0.22916666666666666,
+              "low": 0.18055555555555555,
+              "high": 0.28125,
+              "n": 288
+            },
+            "reject": {
+              "estimate": 0.0912280701754386,
+              "low": 0.06842105263157895,
+              "high": 0.11578947368421053,
+              "n": 570
+            }
+          },
+          "all_three": {
+            "leak": {
+              "estimate": 0.2048611111111111,
+              "low": 0.1597222222222222,
+              "high": 0.2534722222222222,
+              "n": 288
+            },
+            "reject": {
+              "estimate": 0.11578947368421053,
+              "low": 0.08947368421052632,
+              "high": 0.14385964912280702,
+              "n": 570
+            }
+          }
+        },
+        "nominal_calls_per_item": {
+          "first": 1,
+          "majority": 3,
+          "all_three": 3
+        }
+      },
+      "R1g": {
+        "complete_items": 858,
+        "unfaithful_items": 288,
+        "faithful_items": 570,
+        "all_three_accept_unfaithful": 43,
+        "all_three_reject_faithful": 52,
+        "false_accept_count_histogram": [
+          233,
+          5,
+          7,
+          43
+        ],
+        "policies": {
+          "first": {
+            "leak": {
+              "estimate": 0.16319444444444445,
+              "low": 0.12152777777777778,
+              "high": 0.20833333333333334,
+              "n": 288
+            },
+            "reject": {
+              "estimate": 0.11578947368421053,
+              "low": 0.08947368421052632,
+              "high": 0.14210526315789473,
+              "n": 570
+            }
+          },
+          "majority": {
+            "leak": {
+              "estimate": 0.1736111111111111,
+              "low": 0.13194444444444445,
+              "high": 0.21875,
+              "n": 288
+            },
+            "reject": {
+              "estimate": 0.10701754385964912,
+              "low": 0.0824561403508772,
+              "high": 0.13333333333333333,
+              "n": 570
+            }
+          },
+          "all_three": {
+            "leak": {
+              "estimate": 0.14930555555555555,
+              "low": 0.1076388888888889,
+              "high": 0.1909722222222222,
+              "n": 288
+            },
+            "reject": {
+              "estimate": 0.12280701754385964,
+              "low": 0.09649122807017543,
+              "high": 0.14912280701754385,
+              "n": 570
+            }
+          }
+        },
+        "nominal_calls_per_item": {
+          "first": 1,
+          "majority": 3,
+          "all_three": 3
+        }
+      }
+    },
+    "flash": {
+      "R0": {
+        "complete_items": 857,
+        "unfaithful_items": 288,
+        "faithful_items": 569,
+        "all_three_accept_unfaithful": 66,
+        "all_three_reject_faithful": 15,
+        "false_accept_count_histogram": [
+          175,
+          26,
+          21,
+          66
+        ],
+        "policies": {
+          "first": {
+            "leak": {
+              "estimate": 0.3055555555555556,
+              "low": 0.2534722222222222,
+              "high": 0.3576388888888889,
+              "n": 288
+            },
+            "reject": {
+              "estimate": 0.03690685413005272,
+              "low": 0.022847100175746926,
+              "high": 0.05272407732864675,
+              "n": 569
+            }
+          },
+          "majority": {
+            "leak": {
+              "estimate": 0.3020833333333333,
+              "low": 0.25,
+              "high": 0.3541666666666667,
+              "n": 288
+            },
+            "reject": {
+              "estimate": 0.0351493848857645,
+              "low": 0.0210896309314587,
+              "high": 0.050966608084358524,
+              "n": 569
+            }
+          },
+          "all_three": {
+            "leak": {
+              "estimate": 0.22916666666666666,
+              "low": 0.18055555555555555,
+              "high": 0.2777777777777778,
+              "n": 288
+            },
+            "reject": {
+              "estimate": 0.0492091388400703,
+              "low": 0.03163444639718805,
+              "high": 0.06678383128295255,
+              "n": 569
+            }
+          }
+        },
+        "nominal_calls_per_item": {
+          "first": 1,
+          "majority": 3,
+          "all_three": 3
+        }
+      },
+      "R1": {
+        "complete_items": 858,
+        "unfaithful_items": 288,
+        "faithful_items": 570,
+        "all_three_accept_unfaithful": 54,
+        "all_three_reject_faithful": 21,
+        "false_accept_count_histogram": [
+          200,
+          18,
+          16,
+          54
+        ],
+        "policies": {
+          "first": {
+            "leak": {
+              "estimate": 0.25,
+              "low": 0.2013888888888889,
+              "high": 0.3020833333333333,
+              "n": 288
+            },
+            "reject": {
+              "estimate": 0.05087719298245614,
+              "low": 0.03333333333333333,
+              "high": 0.07017543859649122,
+              "n": 570
+            }
+          },
+          "majority": {
+            "leak": {
+              "estimate": 0.24305555555555555,
+              "low": 0.19444444444444445,
+              "high": 0.2951388888888889,
+              "n": 288
+            },
+            "reject": {
+              "estimate": 0.05087719298245614,
+              "low": 0.03333333333333333,
+              "high": 0.07017543859649122,
+              "n": 570
+            }
+          },
+          "all_three": {
+            "leak": {
+              "estimate": 0.1875,
+              "low": 0.1423611111111111,
+              "high": 0.2326388888888889,
+              "n": 288
+            },
+            "reject": {
+              "estimate": 0.07368421052631578,
+              "low": 0.05263157894736842,
+              "high": 0.09473684210526316,
+              "n": 570
+            }
+          }
+        },
+        "nominal_calls_per_item": {
+          "first": 1,
+          "majority": 3,
+          "all_three": 3
+        }
+      },
+      "R1g": {
+        "complete_items": 858,
+        "unfaithful_items": 288,
+        "faithful_items": 570,
+        "all_three_accept_unfaithful": 36,
+        "all_three_reject_faithful": 22,
+        "false_accept_count_histogram": [
+          214,
+          24,
+          14,
+          36
+        ],
+        "policies": {
+          "first": {
+            "leak": {
+              "estimate": 0.1909722222222222,
+              "low": 0.14583333333333334,
+              "high": 0.2361111111111111,
+              "n": 288
+            },
+            "reject": {
+              "estimate": 0.05087719298245614,
+              "low": 0.03333333333333333,
+              "high": 0.07017543859649122,
+              "n": 570
+            }
+          },
+          "majority": {
+            "leak": {
+              "estimate": 0.1736111111111111,
+              "low": 0.13194444444444445,
+              "high": 0.21875,
+              "n": 288
+            },
+            "reject": {
+              "estimate": 0.054385964912280704,
+              "low": 0.03684210526315789,
+              "high": 0.07368421052631578,
+              "n": 570
+            }
+          },
+          "all_three": {
+            "leak": {
+              "estimate": 0.125,
+              "low": 0.08680555555555555,
+              "high": 0.16319444444444445,
+              "n": 288
+            },
+            "reject": {
+              "estimate": 0.07543859649122807,
+              "low": 0.054385964912280704,
+              "high": 0.09824561403508772,
+              "n": 570
+            }
+          }
+        },
+        "nominal_calls_per_item": {
+          "first": 1,
+          "majority": 3,
+          "all_three": 3
+        }
+      }
+    }
+  },
+  "transitions": {
+    "terra": {
+      "R0->R1": {
+        "rule": "Majority of3; uncertain counts as nonacceptance",
+        "by_source": {
+          "all": {
+            "leaks_removed": 7,
+            "leaks_introduced": 5,
+            "rejections_removed": 2,
+            "rejections_introduced": 8
+          },
+          "minif2f": {
+            "leaks_removed": 2,
+            "leaks_introduced": 1,
+            "rejections_removed": 0,
+            "rejections_introduced": 5
+          },
+          "proofnet": {
+            "leaks_removed": 5,
+            "leaks_introduced": 4,
+            "rejections_removed": 2,
+            "rejections_introduced": 3
+          }
+        }
+      },
+      "R1->R1g": {
+        "rule": "Majority of3; uncertain counts as nonacceptance",
+        "by_source": {
+          "all": {
+            "leaks_removed": 18,
+            "leaks_introduced": 2,
+            "rejections_removed": 2,
+            "rejections_introduced": 11
+          },
+          "minif2f": {
+            "leaks_removed": 5,
+            "leaks_introduced": 1,
+            "rejections_removed": 1,
+            "rejections_introduced": 5
+          },
+          "proofnet": {
+            "leaks_removed": 13,
+            "leaks_introduced": 1,
+            "rejections_removed": 1,
+            "rejections_introduced": 6
+          }
+        }
+      }
+    },
+    "flash": {
+      "R0->R1": {
+        "rule": "Majority of3; uncertain counts as nonacceptance",
+        "by_source": {
+          "all": {
+            "leaks_removed": 25,
+            "leaks_introduced": 8,
+            "rejections_removed": 4,
+            "rejections_introduced": 13
+          },
+          "minif2f": {
+            "leaks_removed": 14,
+            "leaks_introduced": 1,
+            "rejections_removed": 0,
+            "rejections_introduced": 6
+          },
+          "proofnet": {
+            "leaks_removed": 11,
+            "leaks_introduced": 7,
+            "rejections_removed": 4,
+            "rejections_introduced": 7
+          }
+        }
+      },
+      "R1->R1g": {
+        "rule": "Majority of3; uncertain counts as nonacceptance",
+        "by_source": {
+          "all": {
+            "leaks_removed": 24,
+            "leaks_introduced": 4,
+            "rejections_removed": 5,
+            "rejections_introduced": 7
+          },
+          "minif2f": {
+            "leaks_removed": 8,
+            "leaks_introduced": 3,
+            "rejections_removed": 1,
+            "rejections_introduced": 0
+          },
+          "proofnet": {
+            "leaks_removed": 16,
+            "leaks_introduced": 1,
+            "rejections_removed": 4,
+            "rejections_introduced": 7
+          }
+        }
+      }
+    }
+  },
+  "cross_model": {
+    "R1": {
+      "rule": "Fixed first repetition, same858items; second opinion is an offline replay, not a deployed multi-agent workflow",
+      "unfaithful_cells_terra_flash": {
+        "0,0": 205,
+        "0,1": 16,
+        "0,2": 0,
+        "1,0": 11,
+        "1,1": 55,
+        "1,2": 0,
+        "2,0": 0,
+        "2,1": 1,
+        "2,2": 0
+      },
+      "codes": {
+        "0": "explicitly unfaithful",
+        "1": "faithful",
+        "2": "uncertain"
+      },
+      "policies": {
+        "terra_only": {
+          "leak": {
+            "estimate": 0.22916666666666666,
+            "low": 0.18055555555555555,
+            "high": 0.2777777777777778,
+            "n": 288
+          },
+          "reject": {
+            "estimate": 0.09298245614035087,
+            "low": 0.07017543859649122,
+            "high": 0.11754385964912281,
+            "n": 570
+          }
+        },
+        "flash_only": {
+          "leak": {
+            "estimate": 0.25,
+            "low": 0.2013888888888889,
+            "high": 0.2986111111111111,
+            "n": 288
+          },
+          "reject": {
+            "estimate": 0.05087719298245614,
+            "low": 0.03333333333333333,
+            "high": 0.06842105263157895,
+            "n": 570
+          }
+        },
+        "both_accept": {
+          "leak": {
+            "estimate": 0.1909722222222222,
+            "low": 0.14583333333333334,
+            "high": 0.2361111111111111,
+            "n": 288
+          },
+          "reject": {
+            "estimate": 0.10175438596491228,
+            "low": 0.07719298245614035,
+            "high": 0.1280701754385965,
+            "n": 570
+          }
+        }
+      },
+      "extra_explicit_detections_after_terra_accept": 11,
+      "extra_explicit_detections_after_flash_accept": 16,
+      "both_accept_unfaithful": 55
+    },
+    "R1g": {
+      "rule": "Fixed first repetition, same858items; second opinion is an offline replay, not a deployed multi-agent workflow",
+      "unfaithful_cells_terra_flash": {
+        "0,0": 221,
+        "0,1": 17,
+        "0,2": 1,
+        "1,0": 9,
+        "1,1": 38,
+        "1,2": 0,
+        "2,0": 2,
+        "2,1": 0,
+        "2,2": 0
+      },
+      "codes": {
+        "0": "explicitly unfaithful",
+        "1": "faithful",
+        "2": "uncertain"
+      },
+      "policies": {
+        "terra_only": {
+          "leak": {
+            "estimate": 0.16319444444444445,
+            "low": 0.12152777777777778,
+            "high": 0.20833333333333334,
+            "n": 288
+          },
+          "reject": {
+            "estimate": 0.11578947368421053,
+            "low": 0.08947368421052632,
+            "high": 0.14210526315789473,
+            "n": 570
+          }
+        },
+        "flash_only": {
+          "leak": {
+            "estimate": 0.1909722222222222,
+            "low": 0.14583333333333334,
+            "high": 0.2361111111111111,
+            "n": 288
+          },
+          "reject": {
+            "estimate": 0.05087719298245614,
+            "low": 0.03333333333333333,
+            "high": 0.07017543859649122,
+            "n": 570
+          }
+        },
+        "both_accept": {
+          "leak": {
+            "estimate": 0.13194444444444445,
+            "low": 0.09375,
+            "high": 0.1701388888888889,
+            "n": 288
+          },
+          "reject": {
+            "estimate": 0.12105263157894737,
+            "low": 0.09473684210526316,
+            "high": 0.14912280701754385,
+            "n": 570
+          }
+        }
+      },
+      "extra_explicit_detections_after_terra_accept": 9,
+      "extra_explicit_detections_after_flash_accept": 17,
+      "both_accept_unfaithful": 38
+    }
+  }
+}

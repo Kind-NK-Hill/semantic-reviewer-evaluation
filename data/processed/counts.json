@@ -1,0 +1,44 @@
+{
+  "raw_rows": 859,
+  "unique_inputs": 858,
+  "faithful": 570,
+  "unfaithful": 288,
+  "unique_normalized_groups": 858,
+  "source_counts": {
+    "minif2f/true": 378,
+    "minif2f/false": 110,
+    "proofnet/true": 192,
+    "proofnet/false": 178
+  },
+  "known_issues": 4,
+  "sensitivity_items": 854,
+  "type_eligible": 287,
+  "pilot": {
+    "items": 100,
+    "faithful": 50
+  },
+  "controls": 60,
+  "repeat20": 20,
+  "fields": {
+    "ConsistencyCheck": [
+      "name",
+      "split",
+      "goal",
+      "header",
+      "informal_statement",
+      "formal_statement",
+      "human_check",
+      "human_reason",
+      "data_source"
+    ],
+    "ProofNetVerif": [
+      "id",
+      "nl_statement",
+      "lean4_src_header",
+      "lean4_formalization",
+      "lean4_prediction",
+      "correct",
+      "split"
+    ]
+  }
+}

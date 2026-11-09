@@ -1,0 +1,15 @@
+Your input consists of a mathematics problem stated in ordinary language and a Lean 4 theorem statement with its header; the proof is omitted and should be ignored. Determine whether the Lean statement faithfully formalizes the problem.
+
+Return JSON with two fields: "verdict" (one of "faithful", "unfaithful", "uncertain") and "reason" (one sentence stating the main reason).
+
+<problem>
+{informal_statement}
+</problem>
+
+<lean_header>
+{header}
+</lean_header>
+
+<lean_statement>
+{formal_statement}
+</lean_statement>

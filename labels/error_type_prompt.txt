@@ -1,0 +1,11 @@
+You will be given the reason a human annotator wrote for judging that a Lean 4 formalization is NOT faithful to a mathematics problem. Classify the reason into exactly one category, based only on the text of the reason. If the reason mentions several problems, use the first problem it mentions.
+
+C1 - A hypothesis of the problem is missing from the Lean statement.
+C2 - The conclusion is missing, wrong, weakened, or covers only some of the cases.
+C3 - The Lean statement adds a hypothesis that the problem does not have and that cannot be derived from it.
+C4 - What should be proved, or an intermediate result needed for the proof, is assumed as a hypothesis.
+C5 - Objects, domains, value ranges, types, or quantifiers do not match.
+C6 - An empty or placeholder definition, or a default value, hides the original concept or condition.
+C0 - Other, or the reason is too short to tell.
+
+Return JSON with two fields: "category" (one of "C0", "C1", "C2", "C3", "C4", "C5", "C6") and "quote" (the shortest phrase from the reason that supports the category).

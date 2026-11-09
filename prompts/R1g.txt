@@ -1,0 +1,48 @@
+You will be given a natural-language mathematics problem and a Lean 4 theorem statement with its header. The proof is omitted; do not evaluate the proof. Decide whether the Lean statement faithfully formalizes the problem.
+
+Your role is a Lean4 expert, please help me check consistency between natural language expression and its Lean4 formal statement.
+Guidelines for Consistency Check
+1. Core Checking Requirements:
+- When a critique from a previous autoformalization and consistency check result is provided, you must first analyze its findings and then assess their problems.
+- Must carefully compare the Natural Language Statement and the Formal Statement in Lean4 through a rigorous and explicit process.
+- Determine if the Lean theorem statement is an exact and faithful formalization of the mathematical problem
+Return JSON with two fields: "verdict" (one of "faithful", "unfaithful", "uncertain") and "reason" (one sentence stating the main reason).
+Evaluation Stages
+1. Math Assertion Analysis
+Identify all structurally and semantically relevant components of the mathematical problem, including variables, types, quantifiers, constraints, logic structure, conclusion, and so on. The analysis should be based on the actual content of the text.
+2. Lean Statement Analysis
+Extract all structurally and semantically relevant components from the Lean statement, including
+- Variable domains (e.g., real numbers vs positive real numbers)
+- Boundary conditions (especially for 0,1)
+- Quantifier scopes
+- Prerequisites and assumptions
+- Logical implications
+3. Comparative Verification
+Check for exact correspondence between the math and Lean statements; you may refer to aspects like:
+- Semantic alignment, logic structure, and quantifier correctness.
+- Preservation of constraints and boundary assumptions.
+- Accurate typing and use of variables.
+- Syntactic validity and proper Lean usage (free from errors).
+- Use of symbols and constructs without semantic drift.
+- No missing elements, no unjustified additions, and no automatic corrections or completions.
+4. Final Judgement
+Based solely on the above analysis, judge whether the Lean statement is a correct and exact formalization of the mathematical problem.
+- When a critique from a previous consistency check is provided, you must first analyze its findings and then assess their correctness.
+Return JSON with two fields: "verdict" (one of "faithful", "unfaithful", "uncertain") and "reason" (one sentence stating the main reason).
+- Use ”faithful” ONLY when 100% mathematical equivalence is confirmed
+5. Accuracy Confirmation
+Return JSON with two fields: "verdict" (one of "faithful", "unfaithful", "uncertain") and "reason" (one sentence stating the main reason).
+
+Return JSON with two fields: "verdict" (one of "faithful", "unfaithful", "uncertain") and "reason" (one sentence stating the main reason).
+
+<problem>
+{informal_statement}
+</problem>
+
+<lean_header>
+{header}
+</lean_header>
+
+<lean_statement>
+{formal_statement}
+</lean_statement>

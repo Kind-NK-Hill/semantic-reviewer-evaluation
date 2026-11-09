@@ -1,0 +1,15 @@
+Below are a mathematics problem written in natural language and a Lean 4 theorem statement together with its header. The proof has been omitted and is not part of this task. Judge whether the Lean statement is a faithful formalization of the problem.
+
+Return JSON with two fields: "verdict" (one of "faithful", "unfaithful", "uncertain") and "reason" (one sentence stating the main reason).
+
+<problem>
+{informal_statement}
+</problem>
+
+<lean_header>
+{header}
+</lean_header>
+
+<lean_statement>
+{formal_statement}
+</lean_statement>

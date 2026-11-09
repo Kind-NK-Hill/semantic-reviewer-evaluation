@@ -1,0 +1,19 @@
+{
+  "time": "2026-11-09T11:48:23.346785+00:00",
+  "records": 19170,
+  "source_records_unchanged": true,
+  "prefixes": {
+    "terra": [
+      1,
+      2,
+      3
+    ],
+    "flash": [
+      1,
+      2,
+      3
+    ]
+  },
+  "no_new_model_calls": true,
+  "frozen_analysis_verified": true
+}

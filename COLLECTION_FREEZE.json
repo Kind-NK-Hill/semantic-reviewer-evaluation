@@ -1,0 +1,44 @@
+{
+  "configs": {
+    "terra": [
+      "R0",
+      "R1",
+      "R1g",
+      "R1-k",
+      "R0a",
+      "R0b"
+    ],
+    "flash": [
+      "R0",
+      "R1",
+      "R1g",
+      "R0a",
+      "R0b"
+    ]
+  },
+  "batches": {
+    "terra": [
+      1,
+      2,
+      3
+    ],
+    "flash": [
+      1,
+      2,
+      3
+    ]
+  },
+  "expected_calls": {
+    "terra": 10872,
+    "flash": 8298
+  },
+  "seeds": {
+    "pilot_sample": 1643230376,
+    "controls": 3355821876,
+    "item_order": 2297614954,
+    "bootstrap": 103799047,
+    "simulation": 464149681,
+    "spotcheck": 3545330157,
+    "key_cases": 4019607225
+  }
+}

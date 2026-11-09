@@ -1,0 +1,511 @@
+{
+  "defined": true,
+  "items": [
+    {
+      "id": "cc_0022",
+      "label": "false",
+      "complete": true,
+      "observed_valid_votes": 25,
+      "missing_from_design": [],
+      "missing_accidental": [],
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0029",
+      "label": "false",
+      "complete": true,
+      "observed_valid_votes": 25,
+      "missing_from_design": [],
+      "missing_accidental": [],
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0033",
+      "label": "false",
+      "complete": true,
+      "observed_valid_votes": 25,
+      "missing_from_design": [],
+      "missing_accidental": [],
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0044",
+      "label": "true",
+      "complete": false,
+      "observed_valid_votes": 21,
+      "missing_from_design": [
+        {
+          "model": "terra",
+          "config": "R0a",
+          "reason": "faithful wording calls require batch 4"
+        },
+        {
+          "model": "terra",
+          "config": "R0b",
+          "reason": "faithful wording calls require batch 4"
+        },
+        {
+          "model": "flash",
+          "config": "R0a",
+          "reason": "faithful wording calls require batch 4"
+        },
+        {
+          "model": "flash",
+          "config": "R0b",
+          "reason": "faithful wording calls require batch 4"
+        }
+      ],
+      "missing_accidental": [],
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0046",
+      "label": "false",
+      "complete": true,
+      "observed_valid_votes": 25,
+      "missing_from_design": [],
+      "missing_accidental": [],
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0049",
+      "label": "false",
+      "complete": true,
+      "observed_valid_votes": 25,
+      "missing_from_design": [],
+      "missing_accidental": [],
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0097",
+      "label": "false",
+      "complete": true,
+      "observed_valid_votes": 25,
+      "missing_from_design": [],
+      "missing_accidental": [],
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0117",
+      "label": "false",
+      "complete": true,
+      "observed_valid_votes": 25,
+      "missing_from_design": [],
+      "missing_accidental": [],
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0135",
+      "label": "false",
+      "complete": true,
+      "observed_valid_votes": 25,
+      "missing_from_design": [],
+      "missing_accidental": [],
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0173",
+      "label": "true",
+      "complete": false,
+      "observed_valid_votes": 21,
+      "missing_from_design": [
+        {
+          "model": "terra",
+          "config": "R0a",
+          "reason": "faithful wording calls require batch 4"
+        },
+        {
+          "model": "terra",
+          "config": "R0b",
+          "reason": "faithful wording calls require batch 4"
+        },
+        {
+          "model": "flash",
+          "config": "R0a",
+          "reason": "faithful wording calls require batch 4"
+        },
+        {
+          "model": "flash",
+          "config": "R0b",
+          "reason": "faithful wording calls require batch 4"
+        }
+      ],
+      "missing_accidental": [],
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0178",
+      "label": "false",
+      "complete": true,
+      "observed_valid_votes": 25,
+      "missing_from_design": [],
+      "missing_accidental": [],
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0189",
+      "label": "true",
+      "complete": false,
+      "observed_valid_votes": 21,
+      "missing_from_design": [
+        {
+          "model": "terra",
+          "config": "R0a",
+          "reason": "faithful wording calls require batch 4"
+        },
+        {
+          "model": "terra",
+          "config": "R0b",
+          "reason": "faithful wording calls require batch 4"
+        },
+        {
+          "model": "flash",
+          "config": "R0a",
+          "reason": "faithful wording calls require batch 4"
+        },
+        {
+          "model": "flash",
+          "config": "R0b",
+          "reason": "faithful wording calls require batch 4"
+        }
+      ],
+      "missing_accidental": [],
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0197",
+      "label": "true",
+      "complete": false,
+      "observed_valid_votes": 21,
+      "missing_from_design": [
+        {
+          "model": "terra",
+          "config": "R0a",
+          "reason": "faithful wording calls require batch 4"
+        },
+        {
+          "model": "terra",
+          "config": "R0b",
+          "reason": "faithful wording calls require batch 4"
+        },
+        {
+          "model": "flash",
+          "config": "R0a",
+          "reason": "faithful wording calls require batch 4"
+        },
+        {
+          "model": "flash",
+          "config": "R0b",
+          "reason": "faithful wording calls require batch 4"
+        }
+      ],
+      "missing_accidental": [],
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0223",
+      "label": "false",
+      "complete": true,
+      "observed_valid_votes": 25,
+      "missing_from_design": [],
+      "missing_accidental": [],
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0228",
+      "label": "false",
+      "complete": true,
+      "observed_valid_votes": 25,
+      "missing_from_design": [],
+      "missing_accidental": [],
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0261",
+      "label": "false",
+      "complete": true,
+      "observed_valid_votes": 25,
+      "missing_from_design": [],
+      "missing_accidental": [],
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0285",
+      "label": "false",
+      "complete": true,
+      "observed_valid_votes": 25,
+      "missing_from_design": [],
+      "missing_accidental": [],
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0328",
+      "label": "false",
+      "complete": true,
+      "observed_valid_votes": 25,
+      "missing_from_design": [],
+      "missing_accidental": [],
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0333",
+      "label": "false",
+      "complete": true,
+      "observed_valid_votes": 25,
+      "missing_from_design": [],
+      "missing_accidental": [],
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0335",
+      "label": "false",
+      "complete": true,
+      "observed_valid_votes": 25,
+      "missing_from_design": [],
+      "missing_accidental": [],
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0336",
+      "label": "false",
+      "complete": true,
+      "observed_valid_votes": 25,
+      "missing_from_design": [],
+      "missing_accidental": [],
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0379",
+      "label": "false",
+      "complete": true,
+      "observed_valid_votes": 25,
+      "missing_from_design": [],
+      "missing_accidental": [],
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0435",
+      "label": "false",
+      "complete": true,
+      "observed_valid_votes": 25,
+      "missing_from_design": [],
+      "missing_accidental": [],
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0476",
+      "label": "true",
+      "complete": false,
+      "observed_valid_votes": 21,
+      "missing_from_design": [
+        {
+          "model": "terra",
+          "config": "R0a",
+          "reason": "faithful wording calls require batch 4"
+        },
+        {
+          "model": "terra",
+          "config": "R0b",
+          "reason": "faithful wording calls require batch 4"
+        },
+        {
+          "model": "flash",
+          "config": "R0a",
+          "reason": "faithful wording calls require batch 4"
+        },
+        {
+          "model": "flash",
+          "config": "R0b",
+          "reason": "faithful wording calls require batch 4"
+        }
+      ],
+      "missing_accidental": [],
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0499",
+      "label": "false",
+      "complete": true,
+      "observed_valid_votes": 25,
+      "missing_from_design": [],
+      "missing_accidental": [],
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0529",
+      "label": "false",
+      "complete": true,
+      "observed_valid_votes": 25,
+      "missing_from_design": [],
+      "missing_accidental": [],
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0552",
+      "label": "false",
+      "complete": true,
+      "observed_valid_votes": 25,
+      "missing_from_design": [],
+      "missing_accidental": [],
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0589",
+      "label": "true",
+      "complete": false,
+      "observed_valid_votes": 21,
+      "missing_from_design": [
+        {
+          "model": "terra",
+          "config": "R0a",
+          "reason": "faithful wording calls require batch 4"
+        },
+        {
+          "model": "terra",
+          "config": "R0b",
+          "reason": "faithful wording calls require batch 4"
+        },
+        {
+          "model": "flash",
+          "config": "R0a",
+          "reason": "faithful wording calls require batch 4"
+        },
+        {
+          "model": "flash",
+          "config": "R0b",
+          "reason": "faithful wording calls require batch 4"
+        }
+      ],
+      "missing_accidental": [],
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0611",
+      "label": "false",
+      "complete": true,
+      "observed_valid_votes": 25,
+      "missing_from_design": [],
+      "missing_accidental": [],
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0663",
+      "label": "true",
+      "complete": false,
+      "observed_valid_votes": 21,
+      "missing_from_design": [
+        {
+          "model": "terra",
+          "config": "R0a",
+          "reason": "faithful wording calls require batch 4"
+        },
+        {
+          "model": "terra",
+          "config": "R0b",
+          "reason": "faithful wording calls require batch 4"
+        },
+        {
+          "model": "flash",
+          "config": "R0a",
+          "reason": "faithful wording calls require batch 4"
+        },
+        {
+          "model": "flash",
+          "config": "R0b",
+          "reason": "faithful wording calls require batch 4"
+        }
+      ],
+      "missing_accidental": [],
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0666",
+      "label": "true",
+      "complete": false,
+      "observed_valid_votes": 21,
+      "missing_from_design": [
+        {
+          "model": "terra",
+          "config": "R0a",
+          "reason": "faithful wording calls require batch 4"
+        },
+        {
+          "model": "terra",
+          "config": "R0b",
+          "reason": "faithful wording calls require batch 4"
+        },
+        {
+          "model": "flash",
+          "config": "R0a",
+          "reason": "faithful wording calls require batch 4"
+        },
+        {
+          "model": "flash",
+          "config": "R0b",
+          "reason": "faithful wording calls require batch 4"
+        }
+      ],
+      "missing_accidental": [],
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0713",
+      "label": "false",
+      "complete": true,
+      "observed_valid_votes": 25,
+      "missing_from_design": [],
+      "missing_accidental": [],
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0753",
+      "label": "false",
+      "complete": true,
+      "observed_valid_votes": 25,
+      "missing_from_design": [],
+      "missing_accidental": [],
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0774",
+      "label": "false",
+      "complete": true,
+      "observed_valid_votes": 25,
+      "missing_from_design": [],
+      "missing_accidental": [],
+      "status": "未决（缺合格复核者）"
+    },
+    {
+      "id": "cc_0790",
+      "label": "true",
+      "complete": false,
+      "observed_valid_votes": 21,
+      "missing_from_design": [
+        {
+          "model": "terra",
+          "config": "R0a",
+          "reason": "faithful wording calls require batch 4"
+        },
+        {
+          "model": "terra",
+          "config": "R0b",
+          "reason": "faithful wording calls require batch 4"
+        },
+        {
+          "model": "flash",
+          "config": "R0a",
+          "reason": "faithful wording calls require batch 4"
+        },
+        {
+          "model": "flash",
+          "config": "R0b",
+          "reason": "faithful wording calls require batch 4"
+        }
+      ],
+      "missing_accidental": [],
+      "status": "未决（缺合格复核者）"
+    }
+  ],
+  "uncertain_counts_as_explicit_opposition": false,
+  "scope": "Each model uses its complete analysis prefix; unrun faithful wording calls are listed as design omissions."
+}

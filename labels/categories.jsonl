@@ -1,0 +1,287 @@
+{"id": "cc_0005", "category": "C1", "quote": "argument of logartihm function should be positive", "quote_is_substring": true, "state": "valid", "human_reason": "argument of logartihm function should be positive"}
+{"id": "cc_0013", "category": "C1", "quote": "missing hypothesis that n is positive", "quote_is_substring": true, "state": "valid", "human_reason": "missing hypothesis that n is positive"}
+{"id": "cc_0016", "category": "C2", "quote": "Goal is false", "quote_is_substring": true, "state": "valid", "human_reason": "Goal is false, and not provide a pair (a, b) satsify the condition."}
+{"id": "cc_0022", "category": "C1", "quote": "missing hypothesis that x is positive", "quote_is_substring": true, "state": "valid", "human_reason": "missing hypothesis that x is positive"}
+{"id": "cc_0031", "category": "C0", "quote": "use finsum", "quote_is_substring": true, "state": "valid", "human_reason": "use finsum"}
+{"id": "cc_0026", "category": "C0", "quote": "use Set to state solution of inequality", "quote_is_substring": true, "state": "valid", "human_reason": "use Set to state solution of inequality"}
+{"id": "cc_0029", "category": "C0", "quote": "Summation indicator error", "quote_is_substring": true, "state": "valid", "human_reason": "Summation indicator error"}
+{"id": "cc_0033", "category": "C0", "quote": "x should be greater than 1", "quote_is_substring": true, "state": "valid", "human_reason": "x should be greater than 1"}
+{"id": "cc_0037", "category": "C1", "quote": "missing hypothesis that n is positive", "quote_is_substring": true, "state": "valid", "human_reason": "missing hypothesis that n is positive"}
+{"id": "cc_0049", "category": "C0", "quote": "summation indicator error", "quote_is_substring": true, "state": "valid", "human_reason": "summation indicator error"}
+{"id": "cc_0046", "category": "C2", "quote": "tens digit not last two digits", "quote_is_substring": true, "state": "valid", "human_reason": "we are asking tens digit not last two digits"}
+{"id": "cc_0048", "category": "C0", "quote": "use Set to state solution of inequality", "quote_is_substring": true, "state": "valid", "human_reason": "use Set to state solution of inequality"}
+{"id": "cc_0061", "category": "C0", "quote": "should use IsGreatest", "quote_is_substring": true, "state": "valid", "human_reason": "should use IsGreatest"}
+{"id": "cc_0074", "category": "C0", "quote": "use Set to state solution of inequality", "quote_is_substring": true, "state": "valid", "human_reason": "use Set to state solution of inequality"}
+{"id": "cc_0072", "category": "C0", "quote": "correct definition of divisors of $\\sqrt{196}$", "quote_is_substring": true, "state": "valid", "human_reason": "correct definition of divisors of $\\sqrt{196}$"}
+{"id": "cc_0073", "category": "C0", "quote": "should use IsLeast", "quote_is_substring": true, "state": "valid", "human_reason": "should use IsLeast"}
+{"id": "cc_0077", "category": "C0", "quote": "should use IsLeast", "quote_is_substring": true, "state": "valid", "human_reason": "should use IsLeast"}
+{"id": "cc_0095", "category": "C0", "quote": "the problem fails to specify whether x equals zero", "quote_is_substring": true, "state": "valid", "human_reason": "This is an improper informal statement, as the problem fails to specify whether x equals zero, which is a critical condition."}
+{"id": "cc_0081", "category": "C0", "quote": "should use IsLeast", "quote_is_substring": true, "state": "valid", "human_reason": "should use IsLeast"}
+{"id": "cc_0097", "category": "C5", "quote": "use `Finset.Ioo 0 60` instead of `Finset.range 60` because n is positive", "quote_is_substring": true, "state": "valid", "human_reason": "use `Finset.Ioo 0 60` instead of `Finset.range 60` because n is positive"}
+{"id": "cc_0104", "category": "C0", "quote": "use Polynomial.roots", "quote_is_substring": true, "state": "valid", "human_reason": "use Polynomial.roots"}
+{"id": "cc_0120", "category": "C0", "quote": "should use IsLeast", "quote_is_substring": true, "state": "valid", "human_reason": "should use IsLeast"}
+{"id": "cc_0117", "category": "C5", "quote": "`Finset.Icc 1 8` instead of `Finset.Icc 1 7`", "quote_is_substring": true, "state": "valid", "human_reason": "use `Finset.Icc 1 8` instead of `Finset.Icc 1 7` because $1\\le m\\le 8$"}
+{"id": "cc_0129", "category": "C0", "quote": "we are asking the number of possible values of $B$", "quote_is_substring": true, "state": "valid", "human_reason": "we are asking the number of possible values of $B$"}
+{"id": "cc_0132", "category": "C0", "quote": "the original text only contains answer choices without the actual problem", "quote_is_substring": true, "state": "valid", "human_reason": "This is an improper informal statement; the original text only contains answer choices without the actual problem."}
+{"id": "cc_0135", "category": "C2", "quote": "tens digit not last two digits", "quote_is_substring": true, "state": "valid", "human_reason": "we are asking tens digit not last two digits"}
+{"id": "cc_0139", "category": "C0", "quote": "should use IsLeast", "quote_is_substring": true, "state": "valid", "human_reason": "should use IsLeast"}
+{"id": "cc_0136", "category": "C0", "quote": "use finsum", "quote_is_substring": true, "state": "valid", "human_reason": "use finsum"}
+{"id": "cc_0159", "category": "C0", "quote": "should use IsGreatest", "quote_is_substring": true, "state": "valid", "human_reason": "should use IsGreatest"}
+{"id": "cc_0161", "category": "C2", "quote": "Goal is wrong", "quote_is_substring": true, "state": "valid", "human_reason": "Goal is wrong, we need to show there is exact 9 triangles satisfy requirement."}
+{"id": "cc_0163", "category": "C0", "quote": "should use IsLeast", "quote_is_substring": true, "state": "valid", "human_reason": "should use IsLeast"}
+{"id": "cc_0162", "category": "C2", "quote": "it is cubic root of $-8$ not cubic root of $8$", "quote_is_substring": true, "state": "valid", "human_reason": "Goal is wrong, it is cubic root of $-8$ not cubic root of $8$."}
+{"id": "cc_0165", "category": "C0", "quote": "use Polynomial.roots", "quote_is_substring": true, "state": "valid", "human_reason": "use Polynomial.roots"}
+{"id": "cc_0166", "category": "C0", "quote": "use Set to state solution of inequality", "quote_is_substring": true, "state": "valid", "human_reason": "use Set to state solution of inequality"}
+{"id": "cc_0168", "category": "C0", "quote": "should use IsLeast", "quote_is_substring": true, "state": "valid", "human_reason": "should use IsLeast"}
+{"id": "cc_0167", "category": "C1", "quote": "x should be greater than 1", "quote_is_substring": true, "state": "valid", "human_reason": "x should be greater than 1"}
+{"id": "cc_0170", "category": "C0", "quote": "Parentheses need to be added before and after `c (m + i) - c k`", "quote_is_substring": true, "state": "valid", "human_reason": "Parentheses need to be added before and after `c (m + i) - c k`."}
+{"id": "cc_0175", "category": "C0", "quote": "Parentheses need to be added before and after `2 * k + 1`.", "quote_is_substring": true, "state": "valid", "human_reason": "Parentheses need to be added before and after `2 * k + 1`."}
+{"id": "cc_0178", "category": "C5", "quote": "a is non-negative not positive", "quote_is_substring": true, "state": "valid", "human_reason": "a is non-negative not positive"}
+{"id": "cc_0181", "category": "C5", "quote": "a,b should be integers", "quote_is_substring": true, "state": "valid", "human_reason": "a,b should be integers"}
+{"id": "cc_0182", "category": "C0", "quote": "we are asking the number of possible value of $a$", "quote_is_substring": true, "state": "valid", "human_reason": "we are asking the number of possible value of $a$"}
+{"id": "cc_0190", "category": "C0", "quote": "should use IsLeast", "quote_is_substring": true, "state": "valid", "human_reason": "should use IsLeast"}
+{"id": "cc_0188", "category": "C0", "quote": "should use IsLeast", "quote_is_substring": true, "state": "valid", "human_reason": "should use IsLeast"}
+{"id": "cc_0193", "category": "C1", "quote": "n should be greater than or equal to 2", "quote_is_substring": true, "state": "valid", "human_reason": "n should be greater than or equal to 2."}
+{"id": "cc_0195", "category": "C5", "quote": "x,y,z can be any real number", "quote_is_substring": true, "state": "valid", "human_reason": "h₀ is wrong, x,y,z can be any real number."}
+{"id": "cc_0200", "category": "C0", "quote": "Any permutaion of x1,x2,x3,x4 can be a solution.", "quote_is_substring": true, "state": "valid", "human_reason": "Any permutaion of x1,x2,x3,x4 can be a solution."}
+{"id": "cc_0196", "category": "C0", "quote": "need `u 0 = √x`", "quote_is_substring": true, "state": "valid", "human_reason": "need `u 0 = √x`."}
+{"id": "cc_0199", "category": "C0", "quote": "y is less than x", "quote_is_substring": true, "state": "valid", "human_reason": "notice that y is less than x"}
+{"id": "cc_0202", "category": "C5", "quote": "t can be 0", "quote_is_substring": true, "state": "valid", "human_reason": "notice that t can be 0"}
+{"id": "cc_0220", "category": "C5", "quote": "division of real number instead of natural number", "quote_is_substring": true, "state": "valid", "human_reason": "use division of real number instead of natural number"}
+{"id": "cc_0208", "category": "C5", "quote": "PNat instead of Nat", "quote_is_substring": true, "state": "valid", "human_reason": "use PNat instead of Nat"}
+{"id": "cc_0217", "category": "C2", "quote": "Goal is wrong, we need to show there is exact 1 possible value of k.", "quote_is_substring": true, "state": "valid", "human_reason": "Goal is wrong, we need to show there is exact 1 possible value of k."}
+{"id": "cc_0221", "category": "C0", "quote": "use Set to state solutions", "quote_is_substring": true, "state": "valid", "human_reason": "use Set to state solutions"}
+{"id": "cc_0225", "category": "C0", "quote": "use Polynomial.roots", "quote_is_substring": true, "state": "valid", "human_reason": "use Polynomial.roots"}
+{"id": "cc_0223", "category": "C0", "quote": "base of logarithm function does not equal one", "quote_is_substring": true, "state": "valid", "human_reason": "base of logarithm function does not equal one"}
+{"id": "cc_0228", "category": "C0", "quote": "use Polynomial.roots", "quote_is_substring": true, "state": "valid", "human_reason": "use Polynomial.roots"}
+{"id": "cc_0236", "category": "C0", "quote": "The definition of n is covered", "quote_is_substring": true, "state": "valid", "human_reason": "The definition of n is covered"}
+{"id": "cc_0247", "category": "C5", "quote": "w is positive not non-negtive", "quote_is_substring": true, "state": "valid", "human_reason": "w is positive not non-negtive"}
+{"id": "cc_0254", "category": "C1", "quote": "missing equality condition", "quote_is_substring": true, "state": "valid", "human_reason": "missing equality condition"}
+{"id": "cc_0250", "category": "C0", "quote": "summation indicator error", "quote_is_substring": true, "state": "valid", "human_reason": "summation indicator error"}
+{"id": "cc_0261", "category": "C5", "quote": "use PNat instead of Nat", "quote_is_substring": true, "state": "valid", "human_reason": "use PNat instead of Nat"}
+{"id": "cc_0263", "category": "C1", "quote": "n should be greater than 1", "quote_is_substring": true, "state": "valid", "human_reason": "n should be greater than 1"}
+{"id": "cc_0264", "category": "C0", "quote": "use Set to state solution of inequality", "quote_is_substring": true, "state": "valid", "human_reason": "use Set to state solution of inequality"}
+{"id": "cc_0267", "category": "C5", "quote": "$a_n$ can be any real number", "quote_is_substring": true, "state": "valid", "human_reason": "$a_n$ can be any real number."}
+{"id": "cc_0273", "category": "C1", "quote": "x is positive", "quote_is_substring": true, "state": "valid", "human_reason": "x is positive, remove `c=2`. b should be square-free."}
+{"id": "cc_0276", "category": "C0", "quote": "should use IsLeast", "quote_is_substring": true, "state": "valid", "human_reason": "should use IsLeast"}
+{"id": "cc_0277", "category": "C0", "quote": "should use IsLeast", "quote_is_substring": true, "state": "valid", "human_reason": "should use IsLeast"}
+{"id": "cc_0285", "category": "C2", "quote": "state that there are four intersection points", "quote_is_substring": true, "state": "valid", "human_reason": "Need to state that there are four intersection points."}
+{"id": "cc_0295", "category": "C5", "quote": "m,c can be real numbers", "quote_is_substring": true, "state": "valid", "human_reason": "m,c can be real numbers."}
+{"id": "cc_0297", "category": "C0", "quote": "should use IsGreatest", "quote_is_substring": true, "state": "valid", "human_reason": "should use IsGreatest"}
+{"id": "cc_0303", "category": "C5", "quote": "subtraction of integer instead of natural number", "quote_is_substring": true, "state": "valid", "human_reason": "use subtraction of integer instead of natural number"}
+{"id": "cc_0296", "category": "C1", "quote": "missing hypothesis that `σ.2 2 = 4`", "quote_is_substring": true, "state": "valid", "human_reason": "missing hypothesis that `σ.2 2 = 4`"}
+{"id": "cc_0311", "category": "C5", "quote": "h0 should be a universal proposition", "quote_is_substring": true, "state": "valid", "human_reason": "h0 should be a universal proposition"}
+{"id": "cc_0323", "category": "C0", "quote": "should use IsLeast", "quote_is_substring": true, "state": "valid", "human_reason": "should use IsLeast"}
+{"id": "cc_0317", "category": "C0", "quote": "should use IsLeast", "quote_is_substring": true, "state": "valid", "human_reason": "should use IsLeast"}
+{"id": "cc_0328", "category": "C0", "quote": "k is outside the scope of production", "quote_is_substring": true, "state": "valid", "human_reason": "k is outside the scope of production"}
+{"id": "cc_0333", "category": "C1", "quote": "$n$ and $n-2$ should be positive", "quote_is_substring": true, "state": "valid", "human_reason": "$n$ and $n-2$ should be positive."}
+{"id": "cc_0336", "category": "C0", "quote": "Parentheses need to be added before and after `2 * k + 1`.", "quote_is_substring": true, "state": "valid", "human_reason": "Parentheses need to be added before and after `2 * k + 1`."}
+{"id": "cc_0335", "category": "C0", "quote": "k is outside the scope of production", "quote_is_substring": true, "state": "valid", "human_reason": "k is outside the scope of production"}
+{"id": "cc_0334", "category": "C0", "quote": "should use IsLeast", "quote_is_substring": true, "state": "valid", "human_reason": "should use IsLeast"}
+{"id": "cc_0340", "category": "C0", "quote": "should use IsLeast", "quote_is_substring": true, "state": "valid", "human_reason": "should use IsLeast"}
+{"id": "cc_0341", "category": "C0", "quote": "should use IsGreatest", "quote_is_substring": true, "state": "valid", "human_reason": "should use IsGreatest"}
+{"id": "cc_0343", "category": "C5", "quote": "division of real number instead of natural number", "quote_is_substring": true, "state": "valid", "human_reason": "use division of real number instead of natural number"}
+{"id": "cc_0345", "category": "C0", "quote": "Parentheses should not be added before and after `k ^ 2`.", "quote_is_substring": true, "state": "valid", "human_reason": "Parentheses should not be added before and after `k ^ 2`."}
+{"id": "cc_0346", "category": "C2", "quote": "Goal is wrong", "quote_is_substring": true, "state": "valid", "human_reason": "Goal is wrong, we need to determine $f(4,1981)$."}
+{"id": "cc_0359", "category": "C0", "quote": "should use IsLeast", "quote_is_substring": true, "state": "valid", "human_reason": "should use IsLeast"}
+{"id": "cc_0351", "category": "C0", "quote": "use Set to state solution of inequality", "quote_is_substring": true, "state": "valid", "human_reason": "use Set to state solution of inequality"}
+{"id": "cc_0352", "category": "C5", "quote": "division of real number instead of natural number", "quote_is_substring": true, "state": "valid", "human_reason": "use division of real number instead of natural number"}
+{"id": "cc_0362", "category": "C0", "quote": "should use IsLeast", "quote_is_substring": true, "state": "valid", "human_reason": "should use IsLeast"}
+{"id": "cc_0379", "category": "C0", "quote": "k is outside the scope of production", "quote_is_substring": true, "state": "valid", "human_reason": "k is outside the scope of production"}
+{"id": "cc_0385", "category": "C2", "quote": "Goal is wrong", "quote_is_substring": true, "state": "valid", "human_reason": "Goal is wrong, it should be `¬n > 84`."}
+{"id": "cc_0365", "category": "C2", "quote": "Goal is wrong", "quote_is_substring": true, "state": "valid", "human_reason": "Goal is wrong, it should be $f(f(f(f(f(4))))) = 1$."}
+{"id": "cc_0386", "category": "C1", "quote": "n should be positive", "quote_is_substring": true, "state": "valid", "human_reason": "n should be positive."}
+{"id": "cc_0394", "category": "C1", "quote": "missing hypothesis that n is positive", "quote_is_substring": true, "state": "valid", "human_reason": "missing hypothesis that n is positive"}
+{"id": "cc_0398", "category": "C0", "quote": "should use IsGreatest", "quote_is_substring": true, "state": "valid", "human_reason": "should use IsGreatest"}
+{"id": "cc_0397", "category": "C0", "quote": "should use IsLeast", "quote_is_substring": true, "state": "valid", "human_reason": "should use IsLeast"}
+{"id": "cc_0401", "category": "C0", "quote": "should use IsGreatest", "quote_is_substring": true, "state": "valid", "human_reason": "should use IsGreatest"}
+{"id": "cc_0409", "category": "C1", "quote": "x,y should be positive", "quote_is_substring": true, "state": "valid", "human_reason": "x,y should be positive."}
+{"id": "cc_0412", "category": "C5", "quote": "n should be greater than or equal to 1", "quote_is_substring": true, "state": "valid", "human_reason": "n should be greater than or equal to 1."}
+{"id": "cc_0413", "category": "C0", "quote": "should use IsGreatest", "quote_is_substring": true, "state": "valid", "human_reason": "should use IsGreatest"}
+{"id": "cc_0419", "category": "C2", "quote": "Goal is wrong, it should be an existence statement", "quote_is_substring": true, "state": "valid", "human_reason": "Goal is wrong, it should be an existence statement. Use Finset.Ioo for between."}
+{"id": "cc_0435", "category": "C0", "quote": "k is outside the scope of production", "quote_is_substring": true, "state": "valid", "human_reason": "k is outside the scope of production"}
+{"id": "cc_0466", "category": "C5", "quote": "integers instead of real numbers", "quote_is_substring": true, "state": "valid", "human_reason": "m,n are integers instead of real numbers"}
+{"id": "cc_0422", "category": "C5", "quote": "the universal quantifier after iff is too large", "quote_is_substring": true, "state": "valid", "human_reason": "The scope of the universal quantifier after iff is too large"}
+{"id": "cc_0467", "category": "C0", "quote": "k is outside the scope of production", "quote_is_substring": true, "state": "valid", "human_reason": "k is outside the scope of production"}
+{"id": "cc_0471", "category": "C5", "quote": "division of real number instead of natural number", "quote_is_substring": true, "state": "valid", "human_reason": "use division of real number instead of natural number"}
+{"id": "cc_0474", "category": "C0", "quote": "should use IsLeast", "quote_is_substring": true, "state": "valid", "human_reason": "should use IsLeast"}
+{"id": "cc_0475", "category": "C1", "quote": "a - b should not be zero", "quote_is_substring": true, "state": "valid", "human_reason": "a - b should not be zero."}
+{"id": "cc_0478", "category": "C0", "quote": "should use IsLeast", "quote_is_substring": true, "state": "valid", "human_reason": "should use IsLeast"}
+{"id": "cc_0480", "category": "C0", "quote": "should use IsLeast", "quote_is_substring": true, "state": "valid", "human_reason": "should use IsLeast"}
+{"id": "cc_0490", "category": "C1", "quote": "Ω should be connected", "quote_is_substring": true, "state": "valid", "human_reason": "Ω should be connected"}
+{"id": "cc_0493", "category": "C1", "quote": "`i * z` in h should be `z ^ i`", "quote_is_substring": true, "state": "valid", "human_reason": "`i * z` in h should be `z ^ i`."}
+{"id": "cc_0494", "category": "C5", "quote": "`i * z` in h should be `z ^ i`", "quote_is_substring": true, "state": "valid", "human_reason": "`i * z` in h should be `z ^ i`."}
+{"id": "cc_0499", "category": "C0", "quote": "Definition of improper integral is wrong.", "quote_is_substring": true, "state": "valid", "human_reason": "Definition of improper integral is wrong."}
+{"id": "cc_0498", "category": "C5", "quote": "`f z₀` in hf should be `f z`", "quote_is_substring": true, "state": "valid", "human_reason": "`f z₀` in hf should be `f z`."}
+{"id": "cc_0495", "category": "C1", "quote": "missing hypothesis that f is continuous", "quote_is_substring": true, "state": "valid", "human_reason": "missing hypothesis that f is continuous"}
+{"id": "cc_0504", "category": "C5", "quote": "f is only bounded in the unit disc", "quote_is_substring": true, "state": "valid", "human_reason": "hb is wrong, f is only bounded in the unit disc. h0 is wrong f is not identically zero in the unit disc. Goal is wrong, `zeros i` should be `‖zeros i‖`."}
+{"id": "cc_0505", "category": "C1", "quote": "missing hypothesis that r is not 0", "quote_is_substring": true, "state": "valid", "human_reason": "missing hypothesis that r is not 0"}
+{"id": "cc_0511", "category": "C1", "quote": "r should be non-negtive", "quote_is_substring": true, "state": "valid", "human_reason": "r should be non-negtive"}
+{"id": "cc_0510", "category": "C0", "quote": "too strong", "quote_is_substring": true, "state": "valid", "human_reason": "original formalizaiton is too strong"}
+{"id": "cc_0509", "category": "C0", "quote": "use sInf for infimum, use sSup for supremum", "quote_is_substring": true, "state": "valid", "human_reason": "use sInf for infimum, use sSup for supremum"}
+{"id": "cc_0523", "category": "C5", "quote": "Last P in hP should be U", "quote_is_substring": true, "state": "valid", "human_reason": "Last P in hP should be U. Use derivedSet for limit point."}
+{"id": "cc_0521", "category": "C0", "quote": "use derivedSet for limit point", "quote_is_substring": true, "state": "valid", "human_reason": "use derivedSet for limit point"}
+{"id": "cc_0524", "category": "C0", "quote": "correct the definition of condensation points", "quote_is_substring": true, "state": "valid", "human_reason": "correct the definition of condensation points"}
+{"id": "cc_0519", "category": "C2", "quote": "Goal is wrong", "quote_is_substring": true, "state": "valid", "human_reason": "Goal is wrong, we need to prove that $3c = 4b - a$ and $3r = 2 |b - a|$."}
+{"id": "cc_0529", "category": "C5", "quote": "existential quantifier scope is too large", "quote_is_substring": true, "state": "valid", "human_reason": "existential quantifier scope is too large"}
+{"id": "cc_0530", "category": "C0", "quote": "ensure that if a tends to +∞ then b does not tend to -∞", "quote_is_substring": true, "state": "valid", "human_reason": "ensure that if a tends to +∞ then b does not tend to -∞"}
+{"id": "cc_0525", "category": "C0", "quote": "use derivedSet for limit point", "quote_is_substring": true, "state": "valid", "human_reason": "use derivedSet for limit point"}
+{"id": "cc_0532", "category": "C1", "quote": "missing hypothesis that an are non-negtive", "quote_is_substring": true, "state": "valid", "human_reason": "missing hypothesis that an are non-negtive"}
+{"id": "cc_0535", "category": "C0", "quote": "p_{n l} is a subsequence", "quote_is_substring": true, "state": "valid", "human_reason": "Notice that p_{n l} is a subsequence"}
+{"id": "cc_0536", "category": "C1", "quote": "should be closed, non-empty and bounded", "quote_is_substring": true, "state": "valid", "human_reason": "E_n should be closed, non-empty and bounded"}
+{"id": "cc_0534", "category": "C0", "quote": "correct the definition of Cauchy product and absolute convergence", "quote_is_substring": true, "state": "valid", "human_reason": "correct the definition of Cauchy product and absolute convergence"}
+{"id": "cc_0550", "category": "C0", "quote": "monotonic means StrictMono or StrictAnti", "quote_is_substring": true, "state": "valid", "human_reason": "monotonic means StrictMono or StrictAnti"}
+{"id": "cc_0537", "category": "C1", "quote": "X should be non-empty", "quote_is_substring": true, "state": "valid", "human_reason": "X should be non-empty"}
+{"id": "cc_0547", "category": "C1", "quote": "missing hypothesis that E is bounded", "quote_is_substring": true, "state": "valid", "human_reason": "missing hypothesis that E is bounded"}
+{"id": "cc_0552", "category": "C0", "quote": "use > instead of ≥", "quote_is_substring": true, "state": "valid", "human_reason": "use > instead of ≥"}
+{"id": "cc_0555", "category": "C0", "quote": "f is defined in $(a,b)$", "quote_is_substring": true, "state": "valid", "human_reason": "notice that f is defined in $(a,b)$"}
+{"id": "cc_0553", "category": "C5", "quote": "f is defined in $(a,b)$ not the whole real line", "quote_is_substring": true, "state": "valid", "human_reason": "Notice that f is defined in $(a,b)$ not the whole real line"}
+{"id": "cc_0556", "category": "C1", "quote": "Missing hypothesis that g is differentiable", "quote_is_substring": true, "state": "valid", "human_reason": "Missing hypothesis that g is differentiable. N in goal should be positive."}
+{"id": "cc_0557", "category": "C5", "quote": "Set.Icc should be Set.Ioo", "quote_is_substring": true, "state": "valid", "human_reason": "Set.Icc should be Set.Ioo"}
+{"id": "cc_0558", "category": "C5", "quote": "f is defined in $(0,+\\infty)$", "quote_is_substring": true, "state": "valid", "human_reason": "notice that f is defined in $(0,+\\infty)$"}
+{"id": "cc_0559", "category": "C5", "quote": "f is defined in $[0,+\\infty)$", "quote_is_substring": true, "state": "valid", "human_reason": "notice that f is defined in $[0,+\\infty)$"}
+{"id": "cc_0561", "category": "C1", "quote": "need BddAbove", "quote_is_substring": true, "state": "valid", "human_reason": "need BddAbove to ensure that supremum exists"}
+{"id": "cc_0560", "category": "C1", "quote": "Missing hypothesis that f,g are differentiable at x", "quote_is_substring": true, "state": "valid", "human_reason": "Missing hypothesis that f,g are differentiable at x. First 0 in hg'_ne_0, f0 and g0 should be x."}
+{"id": "cc_0562", "category": "C5", "quote": "Set.Icc 1 1 in hf'' and hf''' should be Set.Icc (-1) 1", "quote_is_substring": true, "state": "valid", "human_reason": "Set.Icc 1 1 in hf'' and hf''' should be Set.Icc (-1) 1"}
+{"id": "cc_0564", "category": "C0", "quote": "use Std.Commutative instead of CommGroup", "quote_is_substring": true, "state": "valid", "human_reason": "use Std.Commutative instead of CommGroup"}
+{"id": "cc_0565", "category": "C1", "quote": "missing hypothesis that n is positive", "quote_is_substring": true, "state": "valid", "human_reason": "missing hypothesis that n is positive"}
+{"id": "cc_0566", "category": "C1", "quote": "missing hypothesis that m is positive", "quote_is_substring": true, "state": "valid", "human_reason": "imissing hypothesis that m is positive"}
+{"id": "cc_0567", "category": "C0", "quote": "use Std.Commutative instead of CommGroup", "quote_is_substring": true, "state": "valid", "human_reason": "use Std.Commutative instead of CommGroup"}
+{"id": "cc_0568", "category": "C5", "quote": "use Std.Commutative instead of CommGroup", "quote_is_substring": true, "state": "valid", "human_reason": "use Std.Commutative instead of CommGroup"}
+{"id": "cc_0571", "category": "C1", "quote": "need Nontrivial for G", "quote_is_substring": true, "state": "valid", "human_reason": "need Nontrivial for G"}
+{"id": "cc_0576", "category": "C5", "quote": "Std.Commutative instead of CommGroup", "quote_is_substring": true, "state": "valid", "human_reason": "use Std.Commutative instead of CommGroup"}
+{"id": "cc_0570", "category": "C5", "quote": "`Mul G` which makes multiplication inconsistent", "quote_is_substring": true, "state": "valid", "human_reason": "delete `Mul G` which makes multiplication inconsistent"}
+{"id": "cc_0577", "category": "C0", "quote": "use Std.Commutative instead of CommGroup", "quote_is_substring": true, "state": "valid", "human_reason": "use Std.Commutative instead of CommGroup"}
+{"id": "cc_0579", "category": "C0", "quote": "`I` should be the set of automorphism such that `phi x = x⁻¹`", "quote_is_substring": true, "state": "valid", "human_reason": "`I` should be the set of automorphism such that `phi x = x⁻¹`"}
+{"id": "cc_0581", "category": "C1", "quote": "missing hypothesis that phi is surjective", "quote_is_substring": true, "state": "valid", "human_reason": "missing hypothesis that phi is surjective"}
+{"id": "cc_0582", "category": "C0", "quote": "use Std.Commutative instead of CommGroup", "quote_is_substring": true, "state": "valid", "human_reason": "use Std.Commutative instead of CommGroup"}
+{"id": "cc_0583", "category": "C0", "quote": "Two groups are nonabelian.", "quote_is_substring": true, "state": "valid", "human_reason": "Two groups are nonabelian."}
+{"id": "cc_0585", "category": "C1", "quote": "missing hypothesis that b is not in A", "quote_is_substring": true, "state": "valid", "human_reason": "missing hypothesis that b is not in A"}
+{"id": "cc_0593", "category": "C2", "quote": "(x + x * a) in goal should be (a * x + x * a)", "quote_is_substring": true, "state": "valid", "human_reason": "(x + x * a) in goal should be (a * x + x * a)."}
+{"id": "cc_0594", "category": "C2", "quote": "Goal is wrong, it should be a universal statement", "quote_is_substring": true, "state": "valid", "human_reason": "Goal is wrong, it should be a universal statement."}
+{"id": "cc_0592", "category": "C5", "quote": "use Std.Commutative instead of CommRing", "quote_is_substring": true, "state": "valid", "human_reason": "use Std.Commutative instead of CommRing"}
+{"id": "cc_0597", "category": "C5", "quote": "Finset in goal should not contain 0", "quote_is_substring": true, "state": "valid", "human_reason": "Finset in goal should not contain 0."}
+{"id": "cc_0598", "category": "C5", "quote": "(Polynomial $ ZMod p) should be (Polynomial (ZMod p) ⧸ Ideal.span {q})", "quote_is_substring": true, "state": "valid", "human_reason": "Goal is wrong, (Polynomial $ ZMod p) should be (Polynomial (ZMod p) ⧸ Ideal.span {q})."}
+{"id": "cc_0600", "category": "C2", "quote": "`X ^ p` in goal should be `X ^ i`", "quote_is_substring": true, "state": "valid", "human_reason": "`X ^ p` in goal should be `X ^ i`."}
+{"id": "cc_0604", "category": "C1", "quote": "missing hypothesis that ι is finite", "quote_is_substring": true, "state": "valid", "human_reason": "missing hypothesis that ι is finite"}
+{"id": "cc_0603", "category": "C1", "quote": "missing hypothesis that p is not 0", "quote_is_substring": true, "state": "valid", "human_reason": "missing hypothesis that p is not 0"}
+{"id": "cc_0607", "category": "C2", "quote": "Goal is wrong, degree of (minpoly ℚ a) should be less than or equal to 80", "quote_is_substring": true, "state": "valid", "human_reason": "Goal is wrong, degree of (minpoly ℚ a) should be less than or equal to 80."}
+{"id": "cc_0609", "category": "C2", "quote": "Goal is wrong", "quote_is_substring": true, "state": "valid", "human_reason": "Goal is wrong, we only know roots of $x^m - x$ are distinct."}
+{"id": "cc_0614", "category": "C0", "quote": "difficult to fix", "quote_is_substring": true, "state": "valid", "human_reason": "difficult to fix"}
+{"id": "cc_0611", "category": "C0", "quote": "use derivedSet for limit point", "quote_is_substring": true, "state": "valid", "human_reason": "use derivedSet for limit point"}
+{"id": "cc_0616", "category": "C0", "quote": "formalization is too strong", "quote_is_substring": true, "state": "valid", "human_reason": "formalization is too strong"}
+{"id": "cc_0618", "category": "C0", "quote": "correct the definition of $E$", "quote_is_substring": true, "state": "valid", "human_reason": "correct the definition of $E$ condense"}
+{"id": "cc_0621", "category": "C2", "quote": "limit of the summation, not limit of the sequence", "quote_is_substring": true, "state": "valid", "human_reason": "we need limit of the summation, not limit of the sequence"}
+{"id": "cc_0622", "category": "C2", "quote": "limit of the summation, not limit of the sequence", "quote_is_substring": true, "state": "valid", "human_reason": "we need limit of the summation, not limit of the sequence"}
+{"id": "cc_0623", "category": "C2", "quote": "Goal is wrong", "quote_is_substring": true, "state": "valid", "human_reason": "Goal is wrong, $\\mu$ should be a continuous, strictly increasing function."}
+{"id": "cc_0627", "category": "C2", "quote": "equality not isomorphism", "quote_is_substring": true, "state": "valid", "human_reason": "we need equality not isomorphism"}
+{"id": "cc_0630", "category": "C1", "quote": "S should be infinite", "quote_is_substring": true, "state": "valid", "human_reason": "S should be infinite"}
+{"id": "cc_0633", "category": "C2", "quote": "Goal is wrong, `false` should be `False`", "quote_is_substring": true, "state": "valid", "human_reason": "Goal is wrong, `false` should be `False`."}
+{"id": "cc_0635", "category": "C2", "quote": "Goal is wrong, `false` should be `False`", "quote_is_substring": true, "state": "valid", "human_reason": "Goal is wrong, `false` should be `False`."}
+{"id": "cc_0631", "category": "C1", "quote": "missing hypothesis that K is infinite", "quote_is_substring": true, "state": "valid", "human_reason": "missing hypothesis that K is infinite"}
+{"id": "cc_0634", "category": "C2", "quote": "Goal is wrong", "quote_is_substring": true, "state": "valid", "human_reason": "Goal is wrong, `false` should be `False`."}
+{"id": "cc_0640", "category": "C3", "quote": "unmentioned hypothesis that R has no zero divisors", "quote_is_substring": true, "state": "valid", "human_reason": "unmentioned hypothesis that R has no zero divisors"}
+{"id": "cc_0518", "category": "C0", "quote": "the problem fails to specify whether x equals zero", "quote_is_substring": true, "state": "valid", "human_reason": "This is an improper informal statement, as the problem fails to specify whether x equals zero, which is a critical condition."}
+{"id": "cc_0641", "category": "C3", "quote": "unmentioned hypothesis that R has no zero divisors", "quote_is_substring": true, "state": "valid", "human_reason": "unmentioned hypothesis that R has no zero divisors"}
+{"id": "cc_0644", "category": "C5", "quote": "should be a polynomial with rational coefficients", "quote_is_substring": true, "state": "valid", "human_reason": "$x^3+6x+12$ should be a polynomial with rational coefficients"}
+{"id": "cc_0645", "category": "C5", "quote": "should be a polynomial with coefficients in $\\mathbb{F}_2$", "quote_is_substring": true, "state": "valid", "human_reason": "$x^2+x+1$ should be a polynomial with coefficients in $\\mathbb{F}_2$"}
+{"id": "cc_0646", "category": "C5", "quote": "a polynomial with coefficients in $\\mathbb{F}_7$", "quote_is_substring": true, "state": "valid", "human_reason": "$x^2+1$ should be a polynomial with coefficients in $\\mathbb{F}_7$"}
+{"id": "cc_0648", "category": "C1", "quote": "n should be positive", "quote_is_substring": true, "state": "valid", "human_reason": "n should be positive"}
+{"id": "cc_0654", "category": "C2", "quote": "if-then not iff", "quote_is_substring": true, "state": "valid", "human_reason": "we are asking if-then not iff"}
+{"id": "cc_0650", "category": "C1", "quote": "r should be postivie", "quote_is_substring": true, "state": "valid", "human_reason": "r should be postivie"}
+{"id": "cc_0652", "category": "C5", "quote": "cube root of 1 not -1", "quote_is_substring": true, "state": "valid", "human_reason": "x is a cube root of 1 not -1"}
+{"id": "cc_0664", "category": "C1", "quote": "V should be finite dimensional", "quote_is_substring": true, "state": "valid", "human_reason": "V should be finite dimensional"}
+{"id": "cc_0660", "category": "C1", "quote": "missing hypothesis that V is finite dimensional", "quote_is_substring": true, "state": "valid", "human_reason": "missing hypothesis that V is finite dimensional"}
+{"id": "cc_0658", "category": "C5", "quote": "scope of the existential quantifier is too large", "quote_is_substring": true, "state": "valid", "human_reason": "The scope of the existential quantifier is too large"}
+{"id": "cc_0661", "category": "C5", "quote": "parameter of Disjoint should be roots of $p$ and roots of derivative of $p$", "quote_is_substring": true, "state": "valid", "human_reason": "Goals is wrong, parameter of Disjoint should be roots of $p$ and roots of derivative of $p$."}
+{"id": "cc_0667", "category": "C5", "quote": "scope of the existential quantifier is too large", "quote_is_substring": true, "state": "valid", "human_reason": "The scope of the existential quantifier is too large"}
+{"id": "cc_0669", "category": "C5", "quote": "V should be defined for any field", "quote_is_substring": true, "state": "valid", "human_reason": "V should be defined for any field"}
+{"id": "cc_0670", "category": "C0", "quote": "use (i.val + 1) instead of i", "quote_is_substring": true, "state": "valid", "human_reason": "use (i.val + 1) instead of i"}
+{"id": "cc_0679", "category": "C5", "quote": "scope of the existential quantifier is too large", "quote_is_substring": true, "state": "valid", "human_reason": "The scope of the existential quantifier is too large"}
+{"id": "cc_0682", "category": "C0", "quote": "use (ZMod n) instead of [ZMOD n]", "quote_is_substring": true, "state": "valid", "human_reason": "use (ZMod n) instead of [ZMOD n]"}
+{"id": "cc_0683", "category": "C2", "quote": "`ZMod n` is not a group instead of instance of `Group`", "quote_is_substring": true, "state": "valid", "human_reason": "use Prop to show `ZMod n` is not a group instead of instance of `Group`"}
+{"id": "cc_0686", "category": "C1", "quote": "missing hypothesis that n is positive", "quote_is_substring": true, "state": "valid", "human_reason": "missing hypothesis that n is positive"}
+{"id": "cc_0687", "category": "C0", "quote": "use List.TFAE to chain iff", "quote_is_substring": true, "state": "valid", "human_reason": "use List.TFAE to chain iff"}
+{"id": "cc_0692", "category": "C5", "quote": "scope of the universal quantifier is too large", "quote_is_substring": true, "state": "valid", "human_reason": "The scope of the universal quantifier is too large"}
+{"id": "cc_0685", "category": "C2", "quote": "we need iff", "quote_is_substring": true, "state": "valid", "human_reason": "we need iff"}
+{"id": "cc_0693", "category": "C1", "quote": "missing hypothesis that m,n are not equal", "quote_is_substring": true, "state": "valid", "human_reason": "missing hypothesis that m,n are not equal"}
+{"id": "cc_0697", "category": "C5", "quote": "scope of the universal quantifier is too large", "quote_is_substring": true, "state": "valid", "human_reason": "The scope of the universal quantifier is too large"}
+{"id": "cc_0695", "category": "C0", "quote": "correct the definition of multiplicative group of real numbers and complex numbers", "quote_is_substring": true, "state": "valid", "human_reason": "correct the definition of multiplicative group of real numbers and complex numbers"}
+{"id": "cc_0698", "category": "C1", "quote": "missing hypothesis that G is finite", "quote_is_substring": true, "state": "valid", "human_reason": "missing hypothesis that G is finite"}
+{"id": "cc_0704", "category": "C1", "quote": "n should be greater than or equal to 1", "quote_is_substring": true, "state": "valid", "human_reason": "n should be greater than or equal to 1."}
+{"id": "cc_0701", "category": "C6", "quote": "we need H instead of `⊤`", "quote_is_substring": true, "state": "valid", "human_reason": "we need H instead of `⊤` which means G here"}
+{"id": "cc_0700", "category": "C5", "quote": "h should be a universal proposition", "quote_is_substring": true, "state": "valid", "human_reason": "h should be a universal proposition"}
+{"id": "cc_0702", "category": "C2", "quote": "Logical structure of goal is wrong", "quote_is_substring": true, "state": "valid", "human_reason": "Logical structure of goal is wrong."}
+{"id": "cc_0712", "category": "C2", "quote": "second `∨` should be `∧`", "quote_is_substring": true, "state": "valid", "human_reason": "Logical structure of goal is wrong, second `∨` should be `∧`."}
+{"id": "cc_0710", "category": "C3", "quote": "unmentioned hypothesis that a,p are coprime", "quote_is_substring": true, "state": "valid", "human_reason": "unmentioned hypothesis that a,p are coprime"}
+{"id": "cc_0713", "category": "C2", "quote": "Goal is wrong", "quote_is_substring": true, "state": "valid", "human_reason": "Goal is wrong, we need an isomorphism of $G$ and $Z_{p}$."}
+{"id": "cc_0719", "category": "C6", "quote": "missing definition of G", "quote_is_substring": true, "state": "valid", "human_reason": "missing definition of G"}
+{"id": "cc_0722", "category": "C1", "quote": "missing hypothesis that G is abelian", "quote_is_substring": true, "state": "valid", "human_reason": "missing hypothesis that G is abelian"}
+{"id": "cc_0724", "category": "C2", "quote": "Goal is wrong", "quote_is_substring": true, "state": "valid", "human_reason": "Goal is wrong, we need to find a subgroup that is normal but not characteristic."}
+{"id": "cc_0727", "category": "C2", "quote": "Goal is wrong, we need Sylow instead of IsPGroup", "quote_is_substring": true, "state": "valid", "human_reason": "Goal is wrong, we need Sylow instead of IsPGroup."}
+{"id": "cc_0717", "category": "C1", "quote": "missing hypothesis that A is nontrivial", "quote_is_substring": true, "state": "valid", "human_reason": "missing hypothesis that A is nontrivial"}
+{"id": "cc_0721", "category": "C1", "quote": "need $2\\leq |G|$", "quote_is_substring": true, "state": "valid", "human_reason": "need $2\\leq |G|$ to show $|G|$ is a composite number"}
+{"id": "cc_0726", "category": "C1", "quote": "missing hypothesis that H is characteristic in K", "quote_is_substring": true, "state": "valid", "human_reason": "missing hypothesis that H is characteristic in K"}
+{"id": "cc_0730", "category": "C1", "quote": "missing hypothesis that p is prime", "quote_is_substring": true, "state": "valid", "human_reason": "missing hypothesis that p is prime"}
+{"id": "cc_0729", "category": "C1", "quote": "missing hypothesis that p is prime", "quote_is_substring": true, "state": "valid", "human_reason": "missing hypothesis that p is prime"}
+{"id": "cc_0731", "category": "C2", "quote": "`Nonempty (Sylow p G)` does not means there exists a normal Sylow p-subgroup", "quote_is_substring": true, "state": "valid", "human_reason": "Goal is wrong, `Nonempty (Sylow p G)` does not means there exists a normal Sylow p-subgroup."}
+{"id": "cc_0732", "category": "C2", "quote": "`Nonempty (Sylow p G)` does not means there exists a normal Sylow p-subgroup", "quote_is_substring": true, "state": "valid", "human_reason": "Goal is wrong, `Nonempty (Sylow p G)` does not means there exists a normal Sylow p-subgroup."}
+{"id": "cc_0739", "category": "C5", "quote": "Std.Commutative instead of CommGroup", "quote_is_substring": true, "state": "valid", "human_reason": "use Std.Commutative instead of CommGroup"}
+{"id": "cc_0743", "category": "C5", "quote": "R should be CommRing", "quote_is_substring": true, "state": "valid", "human_reason": "R should be CommRing"}
+{"id": "cc_0745", "category": "C0", "quote": "use Std.Commutative instead of CommRing", "quote_is_substring": true, "state": "valid", "human_reason": "use Std.Commutative instead of CommRing"}
+{"id": "cc_0740", "category": "C2", "quote": "`Nonempty (Sylow p G)` does not means there is only one Sylow p-subgroup", "quote_is_substring": true, "state": "valid", "human_reason": "Goal is wrong, `Nonempty (Sylow p G)` does not means there is only one Sylow p-subgroup."}
+{"id": "cc_0746", "category": "C0", "quote": "correct the definition of zero divisors", "quote_is_substring": true, "state": "valid", "human_reason": "correct the definition of zero divisors"}
+{"id": "cc_0752", "category": "C0", "quote": "use IsDomain instead of NoZeroDivisors", "quote_is_substring": true, "state": "valid", "human_reason": "use IsDomain instead of NoZeroDivisors"}
+{"id": "cc_0728", "category": "C1", "quote": "missing hypothesis that p is prime", "quote_is_substring": true, "state": "valid", "human_reason": "missing hypothesis that p is prime"}
+{"id": "cc_0748", "category": "C0", "quote": "use ⊆ instead of ⊂", "quote_is_substring": true, "state": "valid", "human_reason": "use ⊆ instead of ⊂"}
+{"id": "cc_0753", "category": "C0", "quote": "remove unused variable R", "quote_is_substring": true, "state": "valid", "human_reason": "remove unused variable R"}
+{"id": "cc_0756", "category": "C5", "quote": "hR is wrong, we must use (GaussianInt ⧸ Ideal.span {(q : GaussianInt)}) directly", "quote_is_substring": true, "state": "valid", "human_reason": "hR is wrong, we must use (GaussianInt ⧸ Ideal.span {(q : GaussianInt)}) directly."}
+{"id": "cc_0755", "category": "C5", "quote": "hR is wrong, we must use (GaussianInt ⧸ Ideal.span {(⟨1, 1⟩ : GaussianInt)}) directly", "quote_is_substring": true, "state": "valid", "human_reason": "hR is wrong, we must use (GaussianInt ⧸ Ideal.span {(⟨1, 1⟩ : GaussianInt)}) directly."}
+{"id": "cc_0759", "category": "C5", "quote": "missing parameter n for Polynomial.coeff", "quote_is_substring": true, "state": "valid", "human_reason": "missing parameter n for Polynomial.coeff"}
+{"id": "cc_0766", "category": "C1", "quote": "missing hypothesis that ι is nonempty", "quote_is_substring": true, "state": "valid", "human_reason": "missing hypothesis that ι is nonempty"}
+{"id": "cc_0768", "category": "C0", "quote": "Definition of topology is wrong", "quote_is_substring": true, "state": "valid", "human_reason": "Definition of topology is wrong."}
+{"id": "cc_0774", "category": "C0", "quote": "Definition of subbasis for a topology is wrong", "quote_is_substring": true, "state": "valid", "human_reason": "Definition of subbasis for a topology is wrong."}
+{"id": "cc_0770", "category": "C2", "quote": "Goal is wrong, (⋂ i : I, T i) should be (⋃ i : I, T i).", "quote_is_substring": true, "state": "valid", "human_reason": "Goal is wrong, (⋂ i : I, T i) should be (⋃ i : I, T i)."}
+{"id": "cc_0777", "category": "C5", "quote": "Set.Ico should be Set.Ioo", "quote_is_substring": true, "state": "valid", "human_reason": "Set.Ico should be Set.Ioo"}
+{"id": "cc_0775", "category": "C1", "quote": "n should be positive", "quote_is_substring": true, "state": "valid", "human_reason": "n should be positive"}
+{"id": "cc_0780", "category": "C0", "quote": "Definition of S is wrong.", "quote_is_substring": true, "state": "valid", "human_reason": "Definition of S is wrong."}
+{"id": "cc_0778", "category": "C5", "quote": "is Set Y but we need a Set X", "quote_is_substring": true, "state": "valid", "human_reason": "(Subtype.val '' U) is Set Y but we need a Set X."}
+{"id": "cc_0784", "category": "C2", "quote": "f(x) should equal to g(x) for x in A", "quote_is_substring": true, "state": "valid", "human_reason": "f(x) should equal to g(x) for x in A."}
+{"id": "cc_0795", "category": "C0", "quote": "correct definition of CofiniteTopology", "quote_is_substring": true, "state": "valid", "human_reason": "correct definition of CofiniteTopology"}
+{"id": "cc_0785", "category": "C5", "quote": "index type might be infinte", "quote_is_substring": true, "state": "valid", "human_reason": "index type might be infinte"}
+{"id": "cc_0794", "category": "C5", "quote": "index type might be uncoutable", "quote_is_substring": true, "state": "valid", "human_reason": "index type might be uncoutable"}
+{"id": "cc_0797", "category": "C1", "quote": "X,Y should be connected", "quote_is_substring": true, "state": "valid", "human_reason": "X,Y should be connected."}
+{"id": "cc_0799", "category": "C5", "quote": "use Complex.UnitDisc instead of Metric.sphere", "quote_is_substring": true, "state": "valid", "human_reason": "use Complex.UnitDisc instead of Metric.sphere"}
+{"id": "cc_0800", "category": "C3", "quote": "TopologicalSpace and CompactSpace is unnecessary", "quote_is_substring": true, "state": "valid", "human_reason": "TopologicalSpace and CompactSpace is unnecessary."}
+{"id": "cc_0802", "category": "C0", "quote": "we need to show component of G containing $e$ is a subgroup first", "quote_is_substring": true, "state": "valid", "human_reason": "we need to show component of G containing $e$ is a subgroup first"}
+{"id": "cc_0804", "category": "C1", "quote": "missing hypothesis that p is a closed map", "quote_is_substring": true, "state": "valid", "human_reason": "missing hypothesis that p is a closed map"}
+{"id": "cc_0807", "category": "C2", "quote": "`C n ⊆ C (n + 1)` should be `C (n + 1) ⊆ C n`", "quote_is_substring": true, "state": "valid", "human_reason": "`C n ⊆ C (n + 1)` should be `C (n + 1) ⊆ C n`."}
+{"id": "cc_0806", "category": "C0", "quote": "use derivedSet for limit point", "quote_is_substring": true, "state": "valid", "human_reason": "use derivedSet for limit point"}
+{"id": "cc_0811", "category": "C0", "quote": "correct definition of locally compact", "quote_is_substring": true, "state": "valid", "human_reason": "correct definition of locally compact"}
+{"id": "cc_0813", "category": "C1", "quote": "Sets in U should be open", "quote_is_substring": true, "state": "valid", "human_reason": "Sets in U should be open."}
+{"id": "cc_0810", "category": "C0", "quote": "difficult to fix", "quote_is_substring": true, "state": "valid", "human_reason": "difficult to fix"}
+{"id": "cc_0758", "category": "C5", "quote": "`MvPolynomial.X i` in hf should be `MvPolynomial.X (2*i)`", "quote_is_substring": true, "state": "valid", "human_reason": "`MvPolynomial.X i` in hf should be `MvPolynomial.X (2*i)` and `MvPolynomial.X (i+1)` in hf should be `MvPolynomial.X (2*i+1)`."}
+{"id": "cc_0814", "category": "C1", "quote": "x,y should be distinct", "quote_is_substring": true, "state": "valid", "human_reason": "x,y should be distinct"}
+{"id": "cc_0823", "category": "C3", "quote": "RegularSpace is unnecessary", "quote_is_substring": true, "state": "valid", "human_reason": "RegularSpace is unnecessary."}
+{"id": "cc_0824", "category": "C1", "quote": "X should be Hausdorff", "quote_is_substring": true, "state": "valid", "human_reason": "X should be Hausdorff"}
+{"id": "cc_0826", "category": "C5", "quote": "codomain of g should be closure A", "quote_is_substring": true, "state": "valid", "human_reason": "codomain of g should be closure A to ensure uniqueness"}
+{"id": "cc_0825", "category": "C3", "quote": "RegularSpace is unnecessary", "quote_is_substring": true, "state": "valid", "human_reason": "RegularSpace is unnecessary."}
+{"id": "cc_0830", "category": "C2", "quote": "gcd(a^2^n+1,a^2^m+1) should be 2", "quote_is_substring": true, "state": "valid", "human_reason": "if a is odd then gcd(a^2^n+1,a^2^m+1) should be 2"}
+{"id": "cc_0828", "category": "C5", "quote": "n should be greater than or equal to 2", "quote_is_substring": true, "state": "valid", "human_reason": "n should be greater than or equal to 2."}
+{"id": "cc_0831", "category": "C5", "quote": "n in hl should be positive", "quote_is_substring": true, "state": "valid", "human_reason": "n in hl should be positive."}
+{"id": "cc_0836", "category": "C1", "quote": "n should be positive", "quote_is_substring": true, "state": "valid", "human_reason": "n should be positive"}
+{"id": "cc_0832", "category": "C5", "quote": "real numbers instead of rational numbers", "quote_is_substring": true, "state": "valid", "human_reason": "use real numbers instead of rational numbers"}
+{"id": "cc_0838", "category": "C5", "quote": "`IsPrimitiveRoot` is not primitive root modulo $p$", "quote_is_substring": true, "state": "valid", "human_reason": "`IsPrimitiveRoot` is not primitive root modulo $p$"}
+{"id": "cc_0840", "category": "C0", "quote": "`IsPrimitiveRoot` is not primitive root modulo $p$", "quote_is_substring": true, "state": "valid", "human_reason": "`IsPrimitiveRoot` is not primitive root modulo $p$"}
+{"id": "cc_0839", "category": "C5", "quote": "`IsPrimitiveRoot` is not primitive root modulo $p$", "quote_is_substring": true, "state": "valid", "human_reason": "`IsPrimitiveRoot` is not primitive root modulo $p$"}
+{"id": "cc_0841", "category": "C5", "quote": "`IsPrimitiveRoot` is not primitive root modulo $p$", "quote_is_substring": true, "state": "valid", "human_reason": "`IsPrimitiveRoot` is not primitive root modulo $p$"}
+{"id": "cc_0842", "category": "C0", "quote": "`optParam` which is not appropiate here", "quote_is_substring": true, "state": "valid", "human_reason": "syntax `s := sth` is for `optParam` which is not appropiate here"}
+{"id": "cc_0843", "category": "C5", "quote": "p should be natrual number", "quote_is_substring": true, "state": "valid", "human_reason": "p should be natrual number"}
+{"id": "cc_0844", "category": "C5", "quote": "the existential quantifier is too large", "quote_is_substring": true, "state": "valid", "human_reason": "The scope of the existential quantifier is too large"}
+{"id": "cc_0847", "category": "C0", "quote": "should use IsLeast", "quote_is_substring": true, "state": "valid", "human_reason": "should use IsLeast"}
+{"id": "cc_0848", "category": "C0", "quote": "constraint of zn is wrong", "quote_is_substring": true, "state": "valid", "human_reason": "constraint of zn is wrong"}
+{"id": "cc_0816", "category": "C5", "quote": "LinearOrder instead of PartialOrder", "quote_is_substring": true, "state": "valid", "human_reason": "use LinearOrder instead of PartialOrder"}
+{"id": "cc_0851", "category": "C0", "quote": "x0 is 1", "quote_is_substring": true, "state": "valid", "human_reason": "x0 is 1 and c should be positive"}
+{"id": "cc_0849", "category": "C0", "quote": "we need to show nth deriv of f is negtive for some point", "quote_is_substring": true, "state": "valid", "human_reason": "we need to show nth deriv of f is negtive for some point"}
+{"id": "cc_0854", "category": "C1", "quote": "missing hypothesis that n is positive", "quote_is_substring": true, "state": "valid", "human_reason": "missing hypothesis that n is positive"}
+{"id": "cc_0858", "category": "C0", "quote": "This is an improper informal statement", "quote_is_substring": true, "state": "valid", "human_reason": "This is an improper informal statement; no condition or conclusion is specified after \"such that\" making any proof impossible."}

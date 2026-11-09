@@ -1,0 +1,639 @@
+{
+  "time": "2026-11-09T01:07:22.036806+00:00",
+  "passed": true,
+  "master_seed": 20261109,
+  "method": "percentile",
+  "reported_coverage": 0.95,
+  "noninferiority_coverage": 0.975,
+  "noninferiority_quantile": 0.9875,
+  "iterations": 1000,
+  "bootstrap_draws": 2000,
+  "source_hashes": {
+    "src/statistics_core.py": "ca46bb5ad089590f286203b9b93807b7a4bab795d9db49424070568d38cd08cf",
+    "src/rehearsal.py": "b28fbcf7d84ac62dc5b82c754a05a42589708ca8c4a685cf5eddce17f7e5744f",
+    "src/confirm_analysis.py": "49b73545641ff5996f50ef893e545c32081af9483e69c1dc8cf5b3734ccaa828"
+  },
+  "simulation": [
+    {
+      "scenario": "S0",
+      "sc": 0,
+      "sr": 0.8,
+      "m": 3,
+      "iterations": 1000,
+      "bootstrap_draws": 2000,
+      "coverage": 0.966,
+      "superior_rate": 0.003,
+      "noninferior_rate": 0.772,
+      "tree_superiority_rate": null,
+      "mean_q": 0.25099768518518517,
+      "mean_rho": 0.0006132398283798401,
+      "derived_seed": 9883668343212455395,
+      "passed": true,
+      "binomial_intervals": {
+        "coverage": {
+          "events": 966,
+          "n": 1000,
+          "estimate": 0.966,
+          "low": 0.9528105613842911,
+          "high": 0.9763413518919118
+        },
+        "superior_rate": {
+          "events": 3,
+          "n": 1000,
+          "estimate": 0.003,
+          "low": 0.0006190999316499173,
+          "high": 0.008742023238657722
+        },
+        "noninferior_rate": {
+          "events": 772,
+          "n": 1000,
+          "estimate": 0.772,
+          "low": 0.7447168224784205,
+          "high": 0.7976712701289688
+        }
+      }
+    },
+    {
+      "scenario": "S0",
+      "sc": 0.5,
+      "sr": 0.5,
+      "m": 1,
+      "iterations": 1000,
+      "bootstrap_draws": 2000,
+      "coverage": 0.961,
+      "superior_rate": 0.002,
+      "noninferior_rate": 0.298,
+      "tree_superiority_rate": null,
+      "mean_q": 0.23164583333333336,
+      "mean_rho": null,
+      "derived_seed": 11916991314778151135,
+      "passed": true,
+      "binomial_intervals": {
+        "coverage": {
+          "events": 961,
+          "n": 1000,
+          "estimate": 0.961,
+          "low": 0.947069064214555,
+          "high": 0.9721228512046636
+        },
+        "superior_rate": {
+          "events": 2,
+          "n": 1000,
+          "estimate": 0.002,
+          "low": 0.00024230111688164864,
+          "high": 0.007205838911937413
+        },
+        "noninferior_rate": {
+          "events": 298,
+          "n": 1000,
+          "estimate": 0.298,
+          "low": 0.2697813314145047,
+          "high": 0.32741333854604404
+        }
+      }
+    },
+    {
+      "scenario": "S0",
+      "sc": 0.5,
+      "sr": 0.5,
+      "m": 2,
+      "iterations": 1000,
+      "bootstrap_draws": 2000,
+      "coverage": 0.952,
+      "superior_rate": 0.006,
+      "noninferior_rate": 0.448,
+      "tree_superiority_rate": null,
+      "mean_q": 0.22986458333333332,
+      "mean_rho": 0.30105845684138677,
+      "derived_seed": 18092173746216704916,
+      "passed": true,
+      "binomial_intervals": {
+        "coverage": {
+          "events": 952,
+          "n": 1000,
+          "estimate": 0.952,
+          "low": 0.9368598845984234,
+          "high": 0.9643997346571099
+        },
+        "superior_rate": {
+          "events": 6,
+          "n": 1000,
+          "estimate": 0.006,
+          "low": 0.0022049824851513773,
+          "high": 0.013013423270974548
+        },
+        "noninferior_rate": {
+          "events": 448,
+          "n": 1000,
+          "estimate": 0.448,
+          "low": 0.4168702927319092,
+          "high": 0.47943669323774774
+        }
+      }
+    },
+    {
+      "scenario": "S0",
+      "sc": 0.5,
+      "sr": 0.5,
+      "m": 3,
+      "iterations": 1000,
+      "bootstrap_draws": 2000,
+      "coverage": 0.943,
+      "superior_rate": 0.009,
+      "noninferior_rate": 0.585,
+      "tree_superiority_rate": null,
+      "mean_q": 0.23032754629629631,
+      "mean_rho": 0.30153974601682626,
+      "derived_seed": 7698908167702064733,
+      "passed": true,
+      "binomial_intervals": {
+        "coverage": {
+          "events": 943,
+          "n": 1000,
+          "estimate": 0.943,
+          "low": 0.9267772705393374,
+          "high": 0.9565464180630414
+        },
+        "superior_rate": {
+          "events": 9,
+          "n": 1000,
+          "estimate": 0.009,
+          "low": 0.004123395660314189,
+          "high": 0.017015783070048945
+        },
+        "noninferior_rate": {
+          "events": 585,
+          "n": 1000,
+          "estimate": 0.585,
+          "low": 0.5537481738680577,
+          "high": 0.6157499260741751
+        }
+      }
+    },
+    {
+      "scenario": "S0",
+      "sc": 0.8,
+      "sr": 0,
+      "m": 3,
+      "iterations": 1000,
+      "bootstrap_draws": 2000,
+      "coverage": 0.95,
+      "superior_rate": 0.011,
+      "noninferior_rate": 0.211,
+      "tree_superiority_rate": null,
+      "mean_q": 0.25077777777777777,
+      "mean_rho": 1.0,
+      "derived_seed": 16772508064705485339,
+      "passed": true,
+      "binomial_intervals": {
+        "coverage": {
+          "events": 950,
+          "n": 1000,
+          "estimate": 0.95,
+          "low": 0.9346095120845064,
+          "high": 0.9626646023953394
+        },
+        "superior_rate": {
+          "events": 11,
+          "n": 1000,
+          "estimate": 0.011,
+          "low": 0.0055035941922526475,
+          "high": 0.01959662822202004
+        },
+        "noninferior_rate": {
+          "events": 211,
+          "n": 1000,
+          "estimate": 0.211,
+          "low": 0.18609195401077558,
+          "high": 0.23762187223554082
+        }
+      }
+    },
+    {
+      "scenario": "S1",
+      "sc": 0,
+      "sr": 0.8,
+      "m": 3,
+      "iterations": 1000,
+      "bootstrap_draws": 2000,
+      "coverage": 0.947,
+      "superior_rate": 0.478,
+      "noninferior_rate": 0.02,
+      "tree_superiority_rate": null,
+      "mean_q": 0.26266550925925924,
+      "mean_rho": 0.004184814587837257,
+      "derived_seed": 9219024210725915573,
+      "passed": true,
+      "binomial_intervals": {
+        "coverage": {
+          "events": 947,
+          "n": 1000,
+          "estimate": 0.947,
+          "low": 0.9312448167100368,
+          "high": 0.9600507476399807
+        },
+        "superior_rate": {
+          "events": 478,
+          "n": 1000,
+          "estimate": 0.478,
+          "low": 0.4466440437624667,
+          "high": 0.5094858229532518
+        },
+        "noninferior_rate": {
+          "events": 20,
+          "n": 1000,
+          "estimate": 0.02,
+          "low": 0.012258267972406896,
+          "high": 0.03072003268260916
+        }
+      }
+    },
+    {
+      "scenario": "S1",
+      "sc": 0.5,
+      "sr": 0.5,
+      "m": 1,
+      "iterations": 1000,
+      "bootstrap_draws": 2000,
+      "coverage": 0.949,
+      "superior_rate": 0.137,
+      "noninferior_rate": 0.012,
+      "tree_superiority_rate": null,
+      "mean_q": 0.24342708333333335,
+      "mean_rho": null,
+      "derived_seed": 6229725980306310838,
+      "passed": true,
+      "binomial_intervals": {
+        "coverage": {
+          "events": 949,
+          "n": 1000,
+          "estimate": 0.949,
+          "low": 0.9334865384049413,
+          "high": 0.9617947632253139
+        },
+        "superior_rate": {
+          "events": 137,
+          "n": 1000,
+          "estimate": 0.137,
+          "low": 0.11628168943360064,
+          "high": 0.15988096510537625
+        },
+        "noninferior_rate": {
+          "events": 12,
+          "n": 1000,
+          "estimate": 0.012,
+          "low": 0.006215525559595244,
+          "high": 0.02086767959103675
+        }
+      }
+    },
+    {
+      "scenario": "S1",
+      "sc": 0.5,
+      "sr": 0.5,
+      "m": 2,
+      "iterations": 1000,
+      "bootstrap_draws": 2000,
+      "coverage": 0.965,
+      "superior_rate": 0.235,
+      "noninferior_rate": 0.01,
+      "tree_superiority_rate": null,
+      "mean_q": 0.24337152777777776,
+      "mean_rho": 0.30371383604793084,
+      "derived_seed": 8448123869573880301,
+      "passed": true,
+      "binomial_intervals": {
+        "coverage": {
+          "events": 965,
+          "n": 1000,
+          "estimate": 0.965,
+          "low": 0.9516576183857751,
+          "high": 0.9755024721052413
+        },
+        "superior_rate": {
+          "events": 235,
+          "n": 1000,
+          "estimate": 0.235,
+          "low": 0.2090323580446224,
+          "high": 0.2625376654313564
+        },
+        "noninferior_rate": {
+          "events": 10,
+          "n": 1000,
+          "estimate": 0.01,
+          "low": 0.004805510691058102,
+          "high": 0.01831324305511234
+        }
+      }
+    },
+    {
+      "scenario": "S1",
+      "sc": 0.5,
+      "sr": 0.5,
+      "m": 3,
+      "iterations": 1000,
+      "bootstrap_draws": 2000,
+      "coverage": 0.957,
+      "superior_rate": 0.402,
+      "noninferior_rate": 0.014,
+      "tree_superiority_rate": null,
+      "mean_q": 0.24361458333333336,
+      "mean_rho": 0.3045261563081206,
+      "derived_seed": 18292962188928185788,
+      "passed": true,
+      "binomial_intervals": {
+        "coverage": {
+          "events": 957,
+          "n": 1000,
+          "estimate": 0.957,
+          "low": 0.9425137420380272,
+          "high": 0.9687088295439074
+        },
+        "superior_rate": {
+          "events": 402,
+          "n": 1000,
+          "estimate": 0.402,
+          "low": 0.37143810083226964,
+          "high": 0.4331406199351779
+        },
+        "noninferior_rate": {
+          "events": 14,
+          "n": 1000,
+          "estimate": 0.014,
+          "low": 0.00767450156502046,
+          "high": 0.02337815601031454
+        }
+      }
+    },
+    {
+      "scenario": "S1",
+      "sc": 0.8,
+      "sr": 0,
+      "m": 3,
+      "iterations": 1000,
+      "bootstrap_draws": 2000,
+      "coverage": 0.946,
+      "superior_rate": 0.239,
+      "noninferior_rate": 0.012,
+      "tree_superiority_rate": null,
+      "mean_q": 0.26362847222222224,
+      "mean_rho": 1.0,
+      "derived_seed": 7720126563988500847,
+      "passed": true,
+      "binomial_intervals": {
+        "coverage": {
+          "events": 946,
+          "n": 1000,
+          "estimate": 0.946,
+          "low": 0.930125994422613,
+          "high": 0.9591766488739144
+        },
+        "superior_rate": {
+          "events": 239,
+          "n": 1000,
+          "estimate": 0.239,
+          "low": 0.21286749037549116,
+          "high": 0.26667861888521016
+        },
+        "noninferior_rate": {
+          "events": 12,
+          "n": 1000,
+          "estimate": 0.012,
+          "low": 0.006215525559595244,
+          "high": 0.02086767959103675
+        }
+      }
+    },
+    {
+      "scenario": "S3",
+      "sc": 0,
+      "sr": 0.8,
+      "m": 3,
+      "iterations": 1000,
+      "bootstrap_draws": 2000,
+      "coverage": 0.949,
+      "superior_rate": 0.003,
+      "noninferior_rate": 0.76,
+      "tree_superiority_rate": 0.003,
+      "mean_q": 0.2501157407407407,
+      "mean_rho": 5.1237855902451667e-05,
+      "derived_seed": 5835062101231098288,
+      "passed": true,
+      "binomial_intervals": {
+        "coverage": {
+          "events": 949,
+          "n": 1000,
+          "estimate": 0.949,
+          "low": 0.9334865384049413,
+          "high": 0.9617947632253139
+        },
+        "superior_rate": {
+          "events": 3,
+          "n": 1000,
+          "estimate": 0.003,
+          "low": 0.0006190999316499173,
+          "high": 0.008742023238657722
+        },
+        "noninferior_rate": {
+          "events": 760,
+          "n": 1000,
+          "estimate": 0.76,
+          "low": 0.7322866416528979,
+          "high": 0.7861732255254937
+        },
+        "tree_superiority_rate": {
+          "events": 3,
+          "n": 1000,
+          "estimate": 0.003,
+          "low": 0.0006190999316499173,
+          "high": 0.008742023238657722
+        }
+      }
+    },
+    {
+      "scenario": "S3",
+      "sc": 0.5,
+      "sr": 0.5,
+      "m": 1,
+      "iterations": 1000,
+      "bootstrap_draws": 2000,
+      "coverage": 0.963,
+      "superior_rate": 0.003,
+      "noninferior_rate": 0.28,
+      "tree_superiority_rate": 0.003,
+      "mean_q": 0.23281597222222222,
+      "mean_rho": null,
+      "derived_seed": 11762448830035619569,
+      "passed": true,
+      "binomial_intervals": {
+        "coverage": {
+          "events": 963,
+          "n": 1000,
+          "estimate": 0.963,
+          "low": 0.9493588769400392,
+          "high": 0.9738172911560096
+        },
+        "superior_rate": {
+          "events": 3,
+          "n": 1000,
+          "estimate": 0.003,
+          "low": 0.0006190999316499173,
+          "high": 0.008742023238657722
+        },
+        "noninferior_rate": {
+          "events": 280,
+          "n": 1000,
+          "estimate": 0.28,
+          "low": 0.25235288300340364,
+          "high": 0.30894878601906384
+        },
+        "tree_superiority_rate": {
+          "events": 3,
+          "n": 1000,
+          "estimate": 0.003,
+          "low": 0.0006190999316499173,
+          "high": 0.008742023238657722
+        }
+      }
+    },
+    {
+      "scenario": "S3",
+      "sc": 0.5,
+      "sr": 0.5,
+      "m": 2,
+      "iterations": 1000,
+      "bootstrap_draws": 2000,
+      "coverage": 0.949,
+      "superior_rate": 0.003,
+      "noninferior_rate": 0.442,
+      "tree_superiority_rate": 0.003,
+      "mean_q": 0.23161458333333335,
+      "mean_rho": 0.30000755426374404,
+      "derived_seed": 10864419092754802552,
+      "passed": true,
+      "binomial_intervals": {
+        "coverage": {
+          "events": 949,
+          "n": 1000,
+          "estimate": 0.949,
+          "low": 0.9334865384049413,
+          "high": 0.9617947632253139
+        },
+        "superior_rate": {
+          "events": 3,
+          "n": 1000,
+          "estimate": 0.003,
+          "low": 0.0006190999316499173,
+          "high": 0.008742023238657722
+        },
+        "noninferior_rate": {
+          "events": 442,
+          "n": 1000,
+          "estimate": 0.442,
+          "low": 0.41092906177725713,
+          "high": 0.4734133551087486
+        },
+        "tree_superiority_rate": {
+          "events": 3,
+          "n": 1000,
+          "estimate": 0.003,
+          "low": 0.0006190999316499173,
+          "high": 0.008742023238657722
+        }
+      }
+    },
+    {
+      "scenario": "S3",
+      "sc": 0.5,
+      "sr": 0.5,
+      "m": 3,
+      "iterations": 1000,
+      "bootstrap_draws": 2000,
+      "coverage": 0.954,
+      "superior_rate": 0.004,
+      "noninferior_rate": 0.545,
+      "tree_superiority_rate": 0.004,
+      "mean_q": 0.23060300925925928,
+      "mean_rho": 0.3029836537872384,
+      "derived_seed": 2864470663540088089,
+      "passed": true,
+      "binomial_intervals": {
+        "coverage": {
+          "events": 954,
+          "n": 1000,
+          "estimate": 0.954,
+          "low": 0.9391164472862573,
+          "high": 0.966128501452322
+        },
+        "superior_rate": {
+          "events": 4,
+          "n": 1000,
+          "estimate": 0.004,
+          "low": 0.0010909079880819285,
+          "high": 0.010209664683929752
+        },
+        "noninferior_rate": {
+          "events": 545,
+          "n": 1000,
+          "estimate": 0.545,
+          "low": 0.5135417946628332,
+          "high": 0.5761925519209224
+        },
+        "tree_superiority_rate": {
+          "events": 4,
+          "n": 1000,
+          "estimate": 0.004,
+          "low": 0.0010909079880819285,
+          "high": 0.010209664683929752
+        }
+      }
+    },
+    {
+      "scenario": "S3",
+      "sc": 0.8,
+      "sr": 0,
+      "m": 3,
+      "iterations": 1000,
+      "bootstrap_draws": 2000,
+      "coverage": 0.954,
+      "superior_rate": 0.007,
+      "noninferior_rate": 0.245,
+      "tree_superiority_rate": 0.007,
+      "mean_q": 0.2503680555555556,
+      "mean_rho": 1.0,
+      "derived_seed": 7787941690034664344,
+      "passed": true,
+      "binomial_intervals": {
+        "coverage": {
+          "events": 954,
+          "n": 1000,
+          "estimate": 0.954,
+          "low": 0.9391164472862573,
+          "high": 0.966128501452322
+        },
+        "superior_rate": {
+          "events": 7,
+          "n": 1000,
+          "estimate": 0.007,
+          "low": 0.0028188587596180152,
+          "high": 0.014369194979269544
+        },
+        "noninferior_rate": {
+          "events": 245,
+          "n": 1000,
+          "estimate": 0.245,
+          "low": 0.2186261583938605,
+          "high": 0.2728841044622731
+        },
+        "tree_superiority_rate": {
+          "events": 7,
+          "n": 1000,
+          "estimate": 0.007,
+          "low": 0.0028188587596180152,
+          "high": 0.014369194979269544
+        }
+      }
+    }
+  ],
+  "scope": "Independent confirmation under author-fixed seed and unchanged gates; estimates with marginal binomial intervals, not proof of a universal error bound."
+}

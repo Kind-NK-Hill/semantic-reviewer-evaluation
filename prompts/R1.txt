@@ -1,0 +1,23 @@
+You will be given a natural-language mathematics problem and a Lean 4 theorem statement with its header. The proof is omitted; do not evaluate the proof. Decide whether the Lean statement faithfully formalizes the problem.
+
+Apply these criteria:
+1. First list every hypothesis and every conclusion stated in the problem, then map each one to the Lean statement.
+2. The Lean conclusion must not be missing, weakened, or limited to only some of the cases in the problem.
+3. The Lean statement must not add hypotheses that are absent from the problem and cannot be derived from the problem's stated conditions.
+4. Neither what the problem asks to prove nor an intermediate result needed to prove it may be assumed as a hypothesis in the Lean statement. This rule takes precedence over criterion 3.
+5. Objects, domains, value ranges, and quantifier order must be semantically consistent with the problem; equivalent rephrasings are acceptable.
+6. Concepts must not be replaced by empty or placeholder definitions, and default values (such as division by zero giving 0) must not hide a domain, existence, or convergence condition that the problem requires. The omitted proof is not a placeholder.
+
+Return JSON with two fields: "verdict" (one of "faithful", "unfaithful", "uncertain") and "reason" (one sentence stating the main reason).
+
+<problem>
+{informal_statement}
+</problem>
+
+<lean_header>
+{header}
+</lean_header>
+
+<lean_statement>
+{formal_statement}
+</lean_statement>

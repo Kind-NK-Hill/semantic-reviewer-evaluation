@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "properties": {
+    "verdict": {
+      "type": "string",
+      "enum": [
+        "faithful",
+        "unfaithful",
+        "uncertain"
+      ]
+    },
+    "reason": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "verdict",
+    "reason"
+  ],
+  "additionalProperties": false
+}

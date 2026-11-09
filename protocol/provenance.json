@@ -1,0 +1,30 @@
+{
+  "assembled": "2026-11-09T11:54:48.917741+00:00",
+  "source_statistics_sha256": "ca46bb5ad089590f286203b9b93807b7a4bab795d9db49424070568d38cd08cf",
+  "source_analyzer_sha256": "40f0856f78ad1066841914e5d0b37ecbba7887f6c1a9bde4a2a3d342b0d342cc",
+  "extracted_functions": [
+    "analyze_model",
+    "blocked_tool_sensitivity",
+    "matrix",
+    "planned_configs",
+    "summarize_votes",
+    "unanimous_opposition"
+  ],
+  "function_bodies_unchanged": true,
+  "source_telemetry_sha256": "8e8673fcc1af89f9b11b33e9794e7fbb517ef71a80bbba913814a4cdf2bcbf81",
+  "full_local_input_manifest_sha256": "db3f58c761f491b30d41fc71008ffc9d5dbb9e0c8f353ca110b18fb080ed8f72",
+  "public_data": "Final outputs and normalized records only; raw execution streams remain local.",
+  "original_tags": [
+    "freeze-collection",
+    "freeze-analysis",
+    "freeze-analysis-input-01",
+    "freeze-collection-runtime-01",
+    "freeze-collection-runtime-02",
+    "freeze-collection-runtime-03",
+    "freeze-collection-runtime-04",
+    "freeze-collection-runtime-05",
+    "freeze-collection-runtime-06",
+    "freeze-collection-runtime-07",
+    "freeze-collection-runtime-08"
+  ]
+}

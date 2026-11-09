@@ -1,0 +1,147 @@
+# 探索性错误例子
+
+例子由固定种子的程序抽取；只并列发布标签理由与模型理由，不作语义裁决。误拒归类使用冻结的词面匹配规则，仅表示模型自称的问题，规则未匹配的归 C0。
+
+## flash / C0 / cc_0335
+
+人工理由：['k is outside the scope of production']
+
+模型理由：The sole hypothesis that n is a positive integer is exactly h₀ : 0 < n, and the conclusion ∏_{k=1}^n (1 + 1/k³) ≤ 3 - 1/n is represented by the finite real product over Finset.Icc 1 n with the same inequality and no added assumptions.
+
+解释：这是按发布标签计算的漏放实例；不判断模型理由或发布标签在语义上是否正确。
+
+## flash / C0 / cc_0033
+
+人工理由：['x should be greater than 1']
+
+模型理由：The hypothesis exactly states that the original cube's volume exceeds the modified solid's volume by 5, and it entails x = 5 and therefore x³ = 125; the real-valued side length is broader than a geometric side length but adds no unproved assumption and does not weaken the conclusion.
+
+解释：这是按发布标签计算的漏放实例；不判断模型理由或发布标签在语义上是否正确。
+
+## flash / C1 / cc_0037
+
+人工理由：['missing hypothesis that n is positive']
+
+模型理由：The summand, index range, and right-hand side match the problem exactly for every positive natural n; quantifying over all ℕ additionally includes n = 0, where the identity is also true, so it does not weaken or alter the requested result.
+
+解释：这是按发布标签计算的漏放实例；不判断模型理由或发布标签在语义上是否正确。
+
+## flash / C1 / cc_0490
+
+人工理由：['Ω should be connected']
+
+模型理由：The Lean statement maps all hypotheses—Ω open, f complex-differentiable on Ω, and Im(f) constant on Ω—and its conclusion f a = f b for arbitrary a b : Ω is equivalent to f being constant on Ω.
+
+解释：这是按发布标签计算的漏放实例；不判断模型理由或发布标签在语义上是否正确。
+
+## flash / C2 / cc_0713
+
+人工理由：['Goal is wrong, we need an isomorphism of $G$ and $Z_{p}$.']
+
+模型理由：The abelian and simple hypotheses map to [CommGroup G] and [IsSimpleGroup G] without adding finiteness, and the conclusion that G is cyclic with a finite prime cardinality is equivalent to G ≅ Z_p for some prime p.
+
+解释：这是按发布标签计算的漏放实例；不判断模型理由或发布标签在语义上是否正确。
+
+## flash / C2 / cc_0046
+
+人工理由：['we are asking tens digit not last two digits']
+
+模型理由：The Lean sum matches $11^1$ through $11^9$, and the conclusion `(... ) % 100 = 59` identifies the final two digits as 59, which establishes that the tens digit is 5 without adding hypotheses or assuming the result.
+
+解释：这是按发布标签计算的漏放实例；不判断模型理由或发布标签在语义上是否正确。
+
+## flash / C3 / cc_0825
+
+人工理由：['RegularSpace is unnecessary.']
+
+模型理由：The Lean hypotheses encode complete regularity via regular separation by continuous maps into [0,1], and the conclusion states exactly that X is connected if and only if its Stone-Čech compactification is connected.
+
+解释：这是按发布标签计算的漏放实例；不判断模型理由或发布标签在语义上是否正确。
+
+## flash / C3 / cc_0823
+
+人工理由：['RegularSpace is unnecessary.']
+
+模型理由：The Lean statement maps closedness and disjointness of A and B, compactness of A, complete regularity (encoded by RegularSpace plus the point–closed-set separation hypothesis h), and the required continuous separator f with f(A)={0} and f(B)={1} exactly and without assuming the desired conclusion.
+
+解释：这是按发布标签计算的漏放实例；不判断模型理由或发布标签在语义上是否正确。
+
+## flash / C5 / cc_0412
+
+人工理由：['n should be greater than or equal to 1.']
+
+模型理由：The Lean statement has the same recurrence for positive indices, the same inequalities, and the same uniqueness claim; although `a` is an `NNReal` and `h₁` also includes `n = 0`, any solution is forced to have `a > 0`, while the extra `n = 0` clause only fixes the otherwise unused value `f 0`, so uniqueness over nonnegative reals is equivalent to uniqueness over all reals.
+
+解释：这是按发布标签计算的漏放实例；不判断模型理由或发布标签在语义上是否正确。
+
+## flash / C5 / cc_0097
+
+人工理由：['use `Finset.Ioo 0 60` instead of `Finset.range 60` because n is positive']
+
+模型理由：The constraints 0 < n < 60 map to n in Finset.range 60 together with the integer divisibility condition 6 ∣ 4n − 2 (with n = 0 excluded automatically since 6 ∤ −2), and the requested count of 20 is exactly the Lean conclusion.
+
+解释：这是按发布标签计算的漏放实例；不判断模型理由或发布标签在语义上是否正确。
+
+## terra / C0 / cc_0768
+
+人工理由：['Definition of topology is wrong.']
+
+模型理由：The problem has no hypotheses and asks for a set X where the stated collection is not a topology; the Lean statement expresses this through a family of members whose union is not a member, which is equivalent because the collection always contains ∅ and X and is closed under finite intersections.
+
+解释：这是按发布标签计算的漏放实例；不判断模型理由或发布标签在语义上是否正确。
+
+## terra / C0 / cc_0567
+
+人工理由：['use Std.Commutative instead of CommGroup']
+
+模型理由：The group hypothesis maps to `[Group G]`, the three consecutive exponent identities map to `hP` and `hP1`, and the abelian conclusion maps to `CommGroup G`; although Lean uses natural exponents, a qualifying triple of integers also yields a qualifying triple of natural exponents.
+
+解释：这是按发布标签计算的漏放实例；不判断模型理由或发布标签在语义上是否正确。
+
+## terra / C1 / cc_0660
+
+人工理由：['missing hypothesis that V is finite dimensional']
+
+模型理由：The linear map is represented by L, and the two conclusions are expressed by U ⊓ ker L = ⊥ and equality of the ranges; omitting finite dimensionality strengthens the statement without excluding any case of the problem.
+
+解释：这是按发布标签计算的漏放实例；不判断模型理由或发布标签在语义上是否正确。
+
+## terra / C1 / cc_0296
+
+人工理由：['missing hypothesis that `σ.2 2 = 4`']
+
+模型理由：The equivalence represents an invertible real function, the stated values f(2) = f⁻¹(2) = 4 imply the Lean hypothesis, and the Lean conclusion is exactly f(f(2)) = 2; the unused value 4 is not needed for the result.
+
+解释：这是按发布标签计算的漏放实例；不判断模型理由或发布标签在语义上是否正确。
+
+## terra / C2 / cc_0634
+
+人工理由：['Goal is wrong, `false` should be `False`.']
+
+模型理由：The hypotheses that G is a finite group, p and q are prime, and |G| = p²q map to the group and finiteness instances, hp, hq, and hG; the conclusion that G is not simple maps to IsSimpleGroup G → false.
+
+解释：这是按发布标签计算的漏放实例；不判断模型理由或发布标签在语义上是否正确。
+
+## terra / C2 / cc_0285
+
+人工理由：['Need to state that there are four intersection points.']
+
+模型理由：The hypotheses define the two graphs and select intersection coordinates with ordered squares, corresponding to n and m, and the conclusion states that m − n = 1.
+
+解释：这是按发布标签计算的漏放实例；不判断模型理由或发布标签在语义上是否正确。
+
+## terra / C5 / cc_0466
+
+人工理由：['m,n are integers instead of real numbers']
+
+模型理由：The hypotheses p = 2^m and q = 3^n and the conclusion p^(2n)q^m = 12^(mn) are all represented, and proving the identity for real m and n covers every integer pair required by the problem.
+
+解释：这是按发布标签计算的漏放实例；不判断模型理由或发布标签在语义上是否正确。
+
+## terra / C5 / cc_0832
+
+人工理由：['use real numbers instead of rational numbers']
+
+模型理由：The problem has no hypotheses; the Lean statement indexes all squarefree integers and asserts that their reciprocal series is not summable, which expresses the required divergence, with rational rather than real terms giving an equivalent conclusion here.
+
+解释：这是按发布标签计算的漏放实例；不判断模型理由或发布标签在语义上是否正确。

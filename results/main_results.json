@@ -1,0 +1,4255 @@
+{
+  "generated": "2026-11-09T11:48:07.624222+00:00",
+  "generation": 0,
+  "counts": {
+    "raw_rows": 859,
+    "unique_inputs": 858,
+    "faithful": 570,
+    "unfaithful": 288,
+    "unique_normalized_groups": 858,
+    "source_counts": {
+      "minif2f/true": 378,
+      "minif2f/false": 110,
+      "proofnet/true": 192,
+      "proofnet/false": 178
+    },
+    "known_issues": 4,
+    "sensitivity_items": 854,
+    "type_eligible": 287,
+    "pilot": {
+      "items": 100,
+      "faithful": 50
+    },
+    "controls": 60,
+    "repeat20": 20,
+    "fields": {
+      "ConsistencyCheck": [
+        "name",
+        "split",
+        "goal",
+        "header",
+        "informal_statement",
+        "formal_statement",
+        "human_check",
+        "human_reason",
+        "data_source"
+      ],
+      "ProofNetVerif": [
+        "id",
+        "nl_statement",
+        "lean4_src_header",
+        "lean4_formalization",
+        "lean4_prediction",
+        "correct",
+        "split"
+      ]
+    }
+  },
+  "models": {
+    "terra": {
+      "status": "analyzed",
+      "prefix": [
+        1,
+        2,
+        3
+      ],
+      "m": 3,
+      "configs": {
+        "R0": {
+          "leak": {
+            "estimate": 0.23032407407407407,
+            "low": 0.1840277777777778,
+            "high": 0.2777777777777778,
+            "n": 288,
+            "noninferiority_high": 0.2847222222222222,
+            "noninferiority_coverage": 0.975,
+            "missing_best": 0.23032407407407407,
+            "missing_worst": 0.23032407407407407
+          },
+          "reject": {
+            "estimate": 0.08362573099415206,
+            "low": 0.06198830409356725,
+            "high": 0.10701754385964912,
+            "n": 570,
+            "noninferiority_high": 0.10994152046783626,
+            "noninferiority_coverage": 0.975,
+            "missing_best": 0.08362573099415206,
+            "missing_worst": 0.08362573099415206
+          },
+          "uncertain_unfaithful": {
+            "estimate": 0.010416666666666666,
+            "low": 0.0,
+            "high": 0.024305555555555556,
+            "n": 288,
+            "noninferiority_high": 0.024305555555555556,
+            "noninferiority_coverage": 0.975
+          },
+          "uncertain_faithful": {
+            "estimate": 0.0005847953216374269,
+            "low": 0.0,
+            "high": 0.0017543859649122807,
+            "n": 570,
+            "noninferiority_high": 0.0023391812865497076,
+            "noninferiority_coverage": 0.975
+          },
+          "confirmed_unfaithful": {
+            "estimate": 0.7592592592592592,
+            "low": 0.7106481481481481,
+            "high": 0.806712962962963,
+            "n": 288,
+            "noninferiority_high": 0.8125,
+            "noninferiority_coverage": 0.975
+          },
+          "auxiliary": {
+            "n_complete": 858,
+            "m": 3,
+            "flip_rate": 0.030303030303030304,
+            "kappa_binary": 0.953099245371876,
+            "kappa_three": 0.9524631544322005,
+            "majority": {
+              "leak": 0.2361111111111111,
+              "reject": 0.08070175438596491
+            },
+            "one_veto": {
+              "leak": 0.2013888888888889,
+              "reject": 0.09473684210526316
+            }
+          },
+          "total_votes": 2574,
+          "missing_votes": 0,
+          "not_run_by_design": 0,
+          "cost": {
+            "attempts": 2583,
+            "distinct_calls": 2574,
+            "states": {
+              "valid": 2574,
+              "retryable_failure": 9
+            },
+            "known_usage": {
+              "input_tokens": 20335632,
+              "cached_input_tokens": 17173760,
+              "output_tokens": 196732,
+              "reasoning_output_tokens": 67857
+            },
+            "attempts_without_usage_field": {
+              "input_tokens": 9,
+              "cached_input_tokens": 9,
+              "output_tokens": 9,
+              "reasoning_output_tokens": 9
+            },
+            "attempts_with_unknown_charge": 9,
+            "sum_observed_attempt_seconds": 40808.586,
+            "attempts_without_duration": 0,
+            "elapsed_window_seconds": 36125.41254210472,
+            "usage_scope": "Sums of observed usage only; missing fields and possibly charged interruptions are counted separately, never assumed zero.",
+            "currency_or_credits": "not_observable; no conversion rate recorded",
+            "usage": {
+              "input_tokens": 20335632,
+              "cached_input_tokens": 17173760,
+              "output_tokens": 196732,
+              "reasoning_output_tokens": 67857
+            },
+            "attempts_without_usage": 9,
+            "unique_unfaithful_items_explicitly_detected": 227,
+            "recorded_tokens_per_unique_error_detected": 90450.94273127754,
+            "money_or_credits": "not converted unless an official rate is recorded; token counts are not credits"
+          }
+        },
+        "R1": {
+          "leak": {
+            "estimate": 0.23148148148148145,
+            "low": 0.1851851851851852,
+            "high": 0.2789351851851852,
+            "n": 288,
+            "noninferiority_high": 0.28587962962962965,
+            "noninferiority_coverage": 0.975,
+            "missing_best": 0.23148148148148145,
+            "missing_worst": 0.23148148148148145
+          },
+          "reject": {
+            "estimate": 0.09824561403508772,
+            "low": 0.07543859649122807,
+            "high": 0.12280701754385964,
+            "n": 570,
+            "noninferiority_high": 0.12631578947368421,
+            "noninferiority_coverage": 0.975,
+            "missing_best": 0.09824561403508772,
+            "missing_worst": 0.09824561403508772
+          },
+          "uncertain_unfaithful": {
+            "estimate": 0.004629629629629629,
+            "low": 0.0,
+            "high": 0.01273148148148148,
+            "n": 288,
+            "noninferiority_high": 0.013903356481482323,
+            "noninferiority_coverage": 0.975
+          },
+          "uncertain_faithful": {
+            "estimate": 0.0,
+            "low": 0.0,
+            "high": 0.0,
+            "n": 570,
+            "noninferiority_high": 0.0,
+            "noninferiority_coverage": 0.975
+          },
+          "confirmed_unfaithful": {
+            "estimate": 0.7638888888888888,
+            "low": 0.7164351851851851,
+            "high": 0.8101851851851851,
+            "n": 288,
+            "noninferiority_high": 0.8159722222222222,
+            "noninferiority_coverage": 0.975
+          },
+          "auxiliary": {
+            "n_complete": 858,
+            "m": 3,
+            "flip_rate": 0.037296037296037296,
+            "kappa_binary": 0.9431687715269808,
+            "kappa_three": 0.9415264178167438,
+            "majority": {
+              "leak": 0.22916666666666666,
+              "reject": 0.0912280701754386
+            },
+            "one_veto": {
+              "leak": 0.2048611111111111,
+              "reject": 0.11578947368421053
+            }
+          },
+          "total_votes": 2574,
+          "missing_votes": 0,
+          "not_run_by_design": 0,
+          "cost": {
+            "attempts": 2580,
+            "distinct_calls": 2574,
+            "states": {
+              "valid": 2574,
+              "retryable_failure": 6
+            },
+            "known_usage": {
+              "input_tokens": 20851883,
+              "cached_input_tokens": 17235456,
+              "output_tokens": 266996,
+              "reasoning_output_tokens": 93188
+            },
+            "attempts_without_usage_field": {
+              "input_tokens": 6,
+              "cached_input_tokens": 6,
+              "output_tokens": 6,
+              "reasoning_output_tokens": 6
+            },
+            "attempts_with_unknown_charge": 6,
+            "sum_observed_attempt_seconds": 41284.204,
+            "attempts_without_duration": 0,
+            "elapsed_window_seconds": 36127.320936203,
+            "usage_scope": "Sums of observed usage only; missing fields and possibly charged interruptions are counted separately, never assumed zero.",
+            "currency_or_credits": "not_observable; no conversion rate recorded",
+            "usage": {
+              "input_tokens": 20851883,
+              "cached_input_tokens": 17235456,
+              "output_tokens": 266996,
+              "reasoning_output_tokens": 93188
+            },
+            "attempts_without_usage": 6,
+            "unique_unfaithful_items_explicitly_detected": 228,
+            "recorded_tokens_per_unique_error_detected": 92626.66228070176,
+            "money_or_credits": "not converted unless an official rate is recorded; token counts are not credits"
+          }
+        },
+        "R1g": {
+          "leak": {
+            "estimate": 0.17129629629629628,
+            "low": 0.12962962962962965,
+            "high": 0.21412037037037035,
+            "n": 288,
+            "noninferiority_high": 0.2210648148148148,
+            "noninferiority_coverage": 0.975,
+            "missing_best": 0.17129629629629628,
+            "missing_worst": 0.17129629629629628
+          },
+          "reject": {
+            "estimate": 0.10701754385964912,
+            "low": 0.08362573099415205,
+            "high": 0.13157894736842105,
+            "n": 570,
+            "noninferiority_high": 0.13567251461988303,
+            "noninferiority_coverage": 0.975,
+            "missing_best": 0.10701754385964912,
+            "missing_worst": 0.10701754385964912
+          },
+          "uncertain_unfaithful": {
+            "estimate": 0.004629629629629629,
+            "low": 0.0,
+            "high": 0.011574074074074073,
+            "n": 288,
+            "noninferiority_high": 0.013888888888888888,
+            "noninferiority_coverage": 0.975
+          },
+          "uncertain_faithful": {
+            "estimate": 0.0,
+            "low": 0.0,
+            "high": 0.0,
+            "n": 570,
+            "noninferiority_high": 0.0,
+            "noninferiority_coverage": 0.975
+          },
+          "confirmed_unfaithful": {
+            "estimate": 0.824074074074074,
+            "low": 0.7800925925925926,
+            "high": 0.8645833333333334,
+            "n": 288,
+            "noninferiority_high": 0.8715277777777778,
+            "noninferiority_coverage": 0.975
+          },
+          "auxiliary": {
+            "n_complete": 858,
+            "m": 3,
+            "flip_rate": 0.03496503496503497,
+            "kappa_binary": 0.9487191406703966,
+            "kappa_three": 0.9471354606616516,
+            "majority": {
+              "leak": 0.1736111111111111,
+              "reject": 0.10701754385964912
+            },
+            "one_veto": {
+              "leak": 0.14930555555555555,
+              "reject": 0.12280701754385964
+            }
+          },
+          "total_votes": 2574,
+          "missing_votes": 0,
+          "not_run_by_design": 0,
+          "cost": {
+            "attempts": 2574,
+            "distinct_calls": 2574,
+            "states": {
+              "valid": 2574
+            },
+            "known_usage": {
+              "input_tokens": 21688889,
+              "cached_input_tokens": 17877120,
+              "output_tokens": 233700,
+              "reasoning_output_tokens": 93645
+            },
+            "attempts_without_usage_field": {
+              "input_tokens": 0,
+              "cached_input_tokens": 0,
+              "output_tokens": 0,
+              "reasoning_output_tokens": 0
+            },
+            "attempts_with_unknown_charge": 0,
+            "sum_observed_attempt_seconds": 40645.01,
+            "attempts_without_duration": 0,
+            "elapsed_window_seconds": 36128.028743982315,
+            "usage_scope": "Sums of observed usage only; missing fields and possibly charged interruptions are counted separately, never assumed zero.",
+            "currency_or_credits": "not_observable; no conversion rate recorded",
+            "usage": {
+              "input_tokens": 21688889,
+              "cached_input_tokens": 17877120,
+              "output_tokens": 233700,
+              "reasoning_output_tokens": 93645
+            },
+            "attempts_without_usage": 0,
+            "unique_unfaithful_items_explicitly_detected": 244,
+            "recorded_tokens_per_unique_error_detected": 89846.6762295082,
+            "money_or_credits": "not converted unless an official rate is recorded; token counts are not credits"
+          }
+        },
+        "R1-k": {
+          "leak": {
+            "estimate": 0.23032407407407407,
+            "low": 0.1851851851851852,
+            "high": 0.2777777777777778,
+            "n": 288,
+            "noninferiority_high": 0.2847222222222222,
+            "noninferiority_coverage": 0.975,
+            "missing_best": 0.23032407407407407,
+            "missing_worst": 0.23032407407407407
+          },
+          "reject": {
+            "estimate": 0.095906432748538,
+            "low": 0.07368421052631578,
+            "high": 0.11988304093567251,
+            "n": 570,
+            "noninferiority_high": 0.12339181286549707,
+            "noninferiority_coverage": 0.975,
+            "missing_best": 0.095906432748538,
+            "missing_worst": 0.095906432748538
+          },
+          "uncertain_unfaithful": {
+            "estimate": 0.006944444444444444,
+            "low": 0.0,
+            "high": 0.017361111111111112,
+            "n": 288,
+            "noninferiority_high": 0.020833333333333332,
+            "noninferiority_coverage": 0.975
+          },
+          "uncertain_faithful": {
+            "estimate": 0.0005847953216374269,
+            "low": 0.0,
+            "high": 0.0017543859649122807,
+            "n": 570,
+            "noninferiority_high": 0.0023391812865497076,
+            "noninferiority_coverage": 0.975
+          },
+          "confirmed_unfaithful": {
+            "estimate": 0.7627314814814814,
+            "low": 0.7141203703703703,
+            "high": 0.8090277777777778,
+            "n": 288,
+            "noninferiority_high": 0.8159722222222222,
+            "noninferiority_coverage": 0.975
+          },
+          "auxiliary": {
+            "n_complete": 858,
+            "m": 3,
+            "flip_rate": 0.039627039627039624,
+            "kappa_binary": 0.9395024903135273,
+            "kappa_three": 0.9379698821021527,
+            "majority": {
+              "leak": 0.22569444444444445,
+              "reject": 0.09473684210526316
+            },
+            "one_veto": {
+              "leak": 0.2048611111111111,
+              "reject": 0.11228070175438597
+            }
+          },
+          "total_votes": 2574,
+          "missing_votes": 0,
+          "not_run_by_design": 0,
+          "cost": {
+            "attempts": 2578,
+            "distinct_calls": 2574,
+            "states": {
+              "valid": 2574,
+              "retryable_failure": 4
+            },
+            "known_usage": {
+              "input_tokens": 20765739,
+              "cached_input_tokens": 17257984,
+              "output_tokens": 269301,
+              "reasoning_output_tokens": 95681
+            },
+            "attempts_without_usage_field": {
+              "input_tokens": 4,
+              "cached_input_tokens": 4,
+              "output_tokens": 4,
+              "reasoning_output_tokens": 4
+            },
+            "attempts_with_unknown_charge": 4,
+            "sum_observed_attempt_seconds": 41949.987,
+            "attempts_without_duration": 0,
+            "elapsed_window_seconds": 36127.86857795715,
+            "usage_scope": "Sums of observed usage only; missing fields and possibly charged interruptions are counted separately, never assumed zero.",
+            "currency_or_credits": "not_observable; no conversion rate recorded",
+            "usage": {
+              "input_tokens": 20765739,
+              "cached_input_tokens": 17257984,
+              "output_tokens": 269301,
+              "reasoning_output_tokens": 95681
+            },
+            "attempts_without_usage": 4,
+            "unique_unfaithful_items_explicitly_detected": 227,
+            "recorded_tokens_per_unique_error_detected": 92665.3744493392,
+            "money_or_credits": "not converted unless an official rate is recorded; token counts are not credits"
+          }
+        },
+        "R0a": {
+          "leak": {
+            "estimate": 0.2326388888888889,
+            "low": 0.1840277777777778,
+            "high": 0.28125,
+            "n": 288,
+            "noninferiority_high": 0.2881944444444444,
+            "noninferiority_coverage": 0.975,
+            "missing_best": 0.2326388888888889,
+            "missing_worst": 0.2326388888888889
+          },
+          "reject": {
+            "estimate": null,
+            "low": null,
+            "high": null,
+            "n": 0,
+            "missing_best": null,
+            "missing_worst": null
+          },
+          "uncertain_unfaithful": {
+            "estimate": 0.006944444444444444,
+            "low": 0.0,
+            "high": 0.017361111111111112,
+            "n": 288,
+            "noninferiority_high": 0.020833333333333332,
+            "noninferiority_coverage": 0.975
+          },
+          "uncertain_faithful": {
+            "estimate": null,
+            "low": null,
+            "high": null,
+            "n": 0
+          },
+          "confirmed_unfaithful": {
+            "estimate": 0.7604166666666666,
+            "low": 0.7083333333333334,
+            "high": 0.8090277777777778,
+            "n": 288,
+            "noninferiority_high": 0.8159722222222222,
+            "noninferiority_coverage": 0.975
+          },
+          "auxiliary": {
+            "n_complete": 288,
+            "m": 1,
+            "flip_rate": null,
+            "kappa_binary": null,
+            "kappa_three": null
+          },
+          "total_votes": 288,
+          "missing_votes": 0,
+          "not_run_by_design": 570,
+          "cost": {
+            "attempts": 288,
+            "distinct_calls": 288,
+            "states": {
+              "valid": 288
+            },
+            "known_usage": {
+              "input_tokens": 2294114,
+              "cached_input_tokens": 1910272,
+              "output_tokens": 28675,
+              "reasoning_output_tokens": 13106
+            },
+            "attempts_without_usage_field": {
+              "input_tokens": 0,
+              "cached_input_tokens": 0,
+              "output_tokens": 0,
+              "reasoning_output_tokens": 0
+            },
+            "attempts_with_unknown_charge": 0,
+            "sum_observed_attempt_seconds": 4647.468,
+            "attempts_without_duration": 0,
+            "elapsed_window_seconds": 23863.41412949562,
+            "usage_scope": "Sums of observed usage only; missing fields and possibly charged interruptions are counted separately, never assumed zero.",
+            "currency_or_credits": "not_observable; no conversion rate recorded",
+            "usage": {
+              "input_tokens": 2294114,
+              "cached_input_tokens": 1910272,
+              "output_tokens": 28675,
+              "reasoning_output_tokens": 13106
+            },
+            "attempts_without_usage": 0,
+            "unique_unfaithful_items_explicitly_detected": 219,
+            "recorded_tokens_per_unique_error_detected": 10606.342465753425,
+            "money_or_credits": "not converted unless an official rate is recorded; token counts are not credits"
+          }
+        },
+        "R0b": {
+          "leak": {
+            "estimate": 0.22569444444444445,
+            "low": 0.17708333333333334,
+            "high": 0.2743055555555556,
+            "n": 288,
+            "noninferiority_high": 0.28125,
+            "noninferiority_coverage": 0.975,
+            "missing_best": 0.22569444444444445,
+            "missing_worst": 0.22569444444444445
+          },
+          "reject": {
+            "estimate": null,
+            "low": null,
+            "high": null,
+            "n": 0,
+            "missing_best": null,
+            "missing_worst": null
+          },
+          "uncertain_unfaithful": {
+            "estimate": 0.010416666666666666,
+            "low": 0.0,
+            "high": 0.024305555555555556,
+            "n": 288,
+            "noninferiority_high": 0.024305555555555556,
+            "noninferiority_coverage": 0.975
+          },
+          "uncertain_faithful": {
+            "estimate": null,
+            "low": null,
+            "high": null,
+            "n": 0
+          },
+          "confirmed_unfaithful": {
+            "estimate": 0.7638888888888888,
+            "low": 0.7152777777777778,
+            "high": 0.8125,
+            "n": 288,
+            "noninferiority_high": 0.8194444444444444,
+            "noninferiority_coverage": 0.975
+          },
+          "auxiliary": {
+            "n_complete": 288,
+            "m": 1,
+            "flip_rate": null,
+            "kappa_binary": null,
+            "kappa_three": null
+          },
+          "total_votes": 288,
+          "missing_votes": 0,
+          "not_run_by_design": 570,
+          "cost": {
+            "attempts": 290,
+            "distinct_calls": 288,
+            "states": {
+              "valid": 288,
+              "retryable_failure": 2
+            },
+            "known_usage": {
+              "input_tokens": 2276219,
+              "cached_input_tokens": 1876992,
+              "output_tokens": 29036,
+              "reasoning_output_tokens": 13463
+            },
+            "attempts_without_usage_field": {
+              "input_tokens": 2,
+              "cached_input_tokens": 2,
+              "output_tokens": 2,
+              "reasoning_output_tokens": 2
+            },
+            "attempts_with_unknown_charge": 2,
+            "sum_observed_attempt_seconds": 4712.503,
+            "attempts_without_duration": 0,
+            "elapsed_window_seconds": 23860.09099316597,
+            "usage_scope": "Sums of observed usage only; missing fields and possibly charged interruptions are counted separately, never assumed zero.",
+            "currency_or_credits": "not_observable; no conversion rate recorded",
+            "usage": {
+              "input_tokens": 2276219,
+              "cached_input_tokens": 1876992,
+              "output_tokens": 29036,
+              "reasoning_output_tokens": 13463
+            },
+            "attempts_without_usage": 2,
+            "unique_unfaithful_items_explicitly_detected": 220,
+            "recorded_tokens_per_unique_error_detected": 10478.431818181818,
+            "money_or_credits": "not converted unless an official rate is recorded; token counts are not credits"
+          }
+        }
+      },
+      "comparisons": {
+        "R0": {
+          "leak_diff": {
+            "estimate": -0.0011574074074074058,
+            "low": -0.020833333333333332,
+            "high": 0.017361111111111112,
+            "n": 288,
+            "noninferiority_high": 0.02083333333333333,
+            "noninferiority_coverage": 0.975,
+            "excluded": 0
+          },
+          "reject_diff": {
+            "estimate": -0.01461988304093567,
+            "low": -0.025730994152046778,
+            "high": -0.0040935672514619895,
+            "n": 570,
+            "noninferiority_high": -0.0029239766081871343,
+            "noninferiority_coverage": 0.975,
+            "excluded": 0
+          },
+          "confirmed_diff": {
+            "estimate": 0.00462962962962963,
+            "low": -0.016203703703703703,
+            "high": 0.025462962962962965,
+            "n": 288,
+            "noninferiority_high": 0.028935185185185182,
+            "noninferiority_coverage": 0.975,
+            "excluded": 0
+          },
+          "decision": "x_noninferior",
+          "missing_extremes": {
+            "x_worst_r1_best": {
+              "leak_diff": {
+                "estimate": -0.0011574074074074058,
+                "low": -0.020833333333333332,
+                "high": 0.018518518518518514,
+                "n": 288,
+                "noninferiority_high": 0.020833333333333332,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "reject_diff": {
+                "estimate": -0.01461988304093567,
+                "low": -0.025730994152046785,
+                "high": -0.004093567251461989,
+                "n": 570,
+                "noninferiority_high": -0.0029239766081871343,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "confirmed_diff": {
+                "estimate": 0.00462962962962963,
+                "low": -0.016203703703703703,
+                "high": 0.02546296296296296,
+                "n": 288,
+                "noninferiority_high": 0.028935185185185182,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "decision": "x_noninferior"
+            },
+            "x_best_r1_worst": {
+              "leak_diff": {
+                "estimate": -0.0011574074074074058,
+                "low": -0.019675925925925927,
+                "high": 0.017361111111111115,
+                "n": 288,
+                "noninferiority_high": 0.020833333333333332,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "reject_diff": {
+                "estimate": -0.01461988304093567,
+                "low": -0.025160818713450283,
+                "high": -0.004093567251461989,
+                "n": 570,
+                "noninferiority_high": -0.0029239766081871335,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "confirmed_diff": {
+                "estimate": 0.00462962962962963,
+                "low": -0.016203703703703703,
+                "high": 0.02546296296296296,
+                "n": 288,
+                "noninferiority_high": 0.028935185185185182,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "decision": "x_noninferior"
+            }
+          },
+          "affected_by_missing": false
+        },
+        "R1g": {
+          "leak_diff": {
+            "estimate": -0.060185185185185196,
+            "low": -0.08680555555555555,
+            "high": -0.03587962962962962,
+            "n": 288,
+            "noninferiority_high": -0.03240740740740741,
+            "noninferiority_coverage": 0.975,
+            "excluded": 0
+          },
+          "reject_diff": {
+            "estimate": 0.008771929824561403,
+            "low": -0.0011695906432748538,
+            "high": 0.01929824561403509,
+            "n": 570,
+            "noninferiority_high": 0.021052631578947368,
+            "noninferiority_coverage": 0.975,
+            "excluded": 0
+          },
+          "confirmed_diff": {
+            "estimate": -0.060185185185185196,
+            "low": -0.08680555555555555,
+            "high": -0.034722222222222224,
+            "n": 288,
+            "noninferiority_high": -0.03125,
+            "noninferiority_coverage": 0.975,
+            "excluded": 0
+          },
+          "decision": "x_noninferior",
+          "missing_extremes": {
+            "x_worst_r1_best": {
+              "leak_diff": {
+                "estimate": -0.060185185185185196,
+                "low": -0.08680555555555555,
+                "high": -0.03587962962962962,
+                "n": 288,
+                "noninferiority_high": -0.03240740740740741,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "reject_diff": {
+                "estimate": 0.008771929824561403,
+                "low": -0.0011695906432748536,
+                "high": 0.01929824561403509,
+                "n": 570,
+                "noninferiority_high": 0.021052631578947368,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "confirmed_diff": {
+                "estimate": -0.060185185185185196,
+                "low": -0.08680555555555557,
+                "high": -0.03587962962962963,
+                "n": 288,
+                "noninferiority_high": -0.032407407407407406,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "decision": "x_noninferior"
+            },
+            "x_best_r1_worst": {
+              "leak_diff": {
+                "estimate": -0.060185185185185196,
+                "low": -0.08680555555555555,
+                "high": -0.03587962962962962,
+                "n": 288,
+                "noninferiority_high": -0.032407407407407406,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "reject_diff": {
+                "estimate": 0.008771929824561403,
+                "low": -0.0011695906432748536,
+                "high": 0.01929824561403509,
+                "n": 570,
+                "noninferiority_high": 0.021052631578947368,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "confirmed_diff": {
+                "estimate": -0.060185185185185196,
+                "low": -0.08796296296296297,
+                "high": -0.03472222222222223,
+                "n": 288,
+                "noninferiority_high": -0.032407407407407406,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "decision": "x_noninferior"
+            }
+          },
+          "affected_by_missing": false
+        }
+      },
+      "sensitivity": {
+        "exclude_known_issues": {
+          "R0": {
+            "leak_diff": {
+              "estimate": -0.0011737089201877932,
+              "low": -0.02112676056338028,
+              "high": 0.018779342723004695,
+              "n": 284,
+              "noninferiority_high": 0.02112676056338028,
+              "noninferiority_coverage": 0.975,
+              "excluded": 0
+            },
+            "reject_diff": {
+              "estimate": -0.01461988304093567,
+              "low": -0.025730994152046785,
+              "high": -0.004093567251461988,
+              "n": 570,
+              "noninferiority_high": -0.0029239766081871335,
+              "noninferiority_coverage": 0.975,
+              "excluded": 0
+            },
+            "confirmed_diff": {
+              "estimate": -0.0011737089201877948,
+              "low": -0.02112676056338028,
+              "high": 0.018779342723004695,
+              "n": 284,
+              "noninferiority_high": 0.02112676056338028,
+              "noninferiority_coverage": 0.975,
+              "excluded": 0
+            },
+            "decision": "x_noninferior"
+          },
+          "R1g": {
+            "leak_diff": {
+              "estimate": -0.06103286384976525,
+              "low": -0.0880281690140845,
+              "high": -0.036384976525821594,
+              "n": 284,
+              "noninferiority_high": -0.03286384976525822,
+              "noninferiority_coverage": 0.975,
+              "excluded": 0
+            },
+            "reject_diff": {
+              "estimate": 0.008771929824561403,
+              "low": -0.0011695906432748538,
+              "high": 0.01929824561403509,
+              "n": 570,
+              "noninferiority_high": 0.021052631578947368,
+              "noninferiority_coverage": 0.975,
+              "excluded": 0
+            },
+            "confirmed_diff": {
+              "estimate": -0.05868544600938968,
+              "low": -0.08450704225352114,
+              "high": -0.034037558685446015,
+              "n": 284,
+              "noninferiority_high": -0.03169014084507042,
+              "noninferiority_coverage": 0.975,
+              "excluded": 0
+            },
+            "decision": "x_noninferior"
+          }
+        },
+        "proofnet_only": {
+          "R0": {
+            "leak_diff": {
+              "estimate": -0.009363295880149813,
+              "low": -0.03558052434456929,
+              "high": 0.016853932584269662,
+              "n": 178,
+              "noninferiority_high": 0.02059925093632959,
+              "noninferiority_coverage": 0.975,
+              "excluded": 0
+            },
+            "reject_diff": {
+              "estimate": -0.0034722222222222225,
+              "low": -0.026041666666666668,
+              "high": 0.017361111111111112,
+              "n": 192,
+              "noninferiority_high": 0.020833333333333332,
+              "noninferiority_coverage": 0.975,
+              "excluded": 0
+            },
+            "confirmed_diff": {
+              "estimate": -0.009363295880149813,
+              "low": -0.03558052434456929,
+              "high": 0.016853932584269662,
+              "n": 178,
+              "noninferiority_high": 0.02059925093632959,
+              "noninferiority_coverage": 0.975,
+              "excluded": 0
+            },
+            "decision": "x_noninferior"
+          },
+          "R1g": {
+            "leak_diff": {
+              "estimate": -0.07116104868913857,
+              "low": -0.10674157303370789,
+              "high": -0.039325842696629205,
+              "n": 178,
+              "noninferiority_high": -0.033707865168539325,
+              "noninferiority_coverage": 0.975,
+              "excluded": 0
+            },
+            "reject_diff": {
+              "estimate": 0.01909722222222222,
+              "low": -0.0034722222222222225,
+              "high": 0.04340277777777778,
+              "n": 192,
+              "noninferiority_high": 0.046875,
+              "noninferiority_coverage": 0.975,
+              "excluded": 0
+            },
+            "confirmed_diff": {
+              "estimate": -0.07303370786516854,
+              "low": -0.1104868913857678,
+              "high": -0.03932584269662922,
+              "n": 178,
+              "noninferiority_high": -0.03558052434456929,
+              "noninferiority_coverage": 0.975,
+              "excluded": 0
+            },
+            "decision": "x_noninferior"
+          }
+        },
+        "exclude_uncertain": {
+          "R0": {
+            "leak_diff": {
+              "estimate": -0.0011695906432748536,
+              "low": -0.021052631578947368,
+              "high": 0.01871345029239766,
+              "n": 285,
+              "noninferiority_high": 0.021052631578947368,
+              "noninferiority_coverage": 0.975,
+              "excluded": 3
+            },
+            "reject_diff": {
+              "estimate": -0.014912280701754385,
+              "low": -0.025730994152046785,
+              "high": -0.004678362573099414,
+              "n": 570,
+              "noninferiority_high": -0.002923976608187135,
+              "noninferiority_coverage": 0.975,
+              "excluded": 0
+            },
+            "confirmed_diff": {
+              "estimate": -0.0011695906432748543,
+              "low": -0.019912280701754364,
+              "high": 0.01871345029239766,
+              "n": 285,
+              "noninferiority_high": 0.021052631578947368,
+              "noninferiority_coverage": 0.975,
+              "excluded": 3
+            },
+            "decision": "x_noninferior"
+          },
+          "R1g": {
+            "leak_diff": {
+              "estimate": -0.05807200929152148,
+              "low": -0.08478513356562135,
+              "high": -0.03368176538908246,
+              "n": 287,
+              "noninferiority_high": -0.03134436701509787,
+              "noninferiority_coverage": 0.975,
+              "excluded": 1
+            },
+            "reject_diff": {
+              "estimate": 0.008771929824561403,
+              "low": -0.0011695906432748538,
+              "high": 0.01929824561403509,
+              "n": 570,
+              "noninferiority_high": 0.021052631578947368,
+              "noninferiority_coverage": 0.975,
+              "excluded": 0
+            },
+            "confirmed_diff": {
+              "estimate": -0.05807200929152149,
+              "low": -0.08478513356562138,
+              "high": -0.03368176538908246,
+              "n": 287,
+              "noninferiority_high": -0.030197444831591178,
+              "noninferiority_coverage": 0.975,
+              "excluded": 1
+            },
+            "decision": "x_noninferior"
+          }
+        },
+        "exclude_blocked_tools": {
+          "excluded_valid_calls": 18,
+          "comparisons": {
+            "R0": {
+              "leak_diff": {
+                "estimate": -0.0011574074074074058,
+                "low": -0.020833333333333332,
+                "high": 0.018518518518518514,
+                "n": 288,
+                "noninferiority_high": 0.020833333333333332,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "reject_diff": {
+                "estimate": -0.015789473684210527,
+                "low": -0.026900584795321637,
+                "high": -0.005847953216374269,
+                "n": 570,
+                "noninferiority_high": -0.004678362573099415,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "confirmed_diff": {
+                "estimate": 0.00462962962962963,
+                "low": -0.016203703703703706,
+                "high": 0.025462962962962965,
+                "n": 288,
+                "noninferiority_high": 0.02893518518518519,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "decision": "x_noninferior"
+            },
+            "R1g": {
+              "leak_diff": {
+                "estimate": -0.05749128919860627,
+                "low": -0.08420441347270614,
+                "high": -0.033101045296167246,
+                "n": 287,
+                "noninferiority_high": -0.03019744483159117,
+                "noninferiority_coverage": 0.975,
+                "excluded": 1
+              },
+              "reject_diff": {
+                "estimate": 0.007602339181286549,
+                "low": -0.002339181286549707,
+                "high": 0.01812865497076023,
+                "n": 570,
+                "noninferiority_high": 0.019883040935672513,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "confirmed_diff": {
+                "estimate": -0.05981416957026713,
+                "low": -0.0871225319396051,
+                "high": -0.0348432055749129,
+                "n": 287,
+                "noninferiority_high": -0.03193960511033682,
+                "noninferiority_coverage": 0.975,
+                "excluded": 1
+              },
+              "decision": "x_noninferior"
+            }
+          },
+          "rule": "Exclude individual calls with confirmed blocked tool attempts; keep original published labels and remaining valid calls."
+        },
+        "majority": {
+          "R0": {
+            "leak_diff": {
+              "estimate": 0.006944444444444444,
+              "low": -0.017361111111111112,
+              "high": 0.03125,
+              "n": 288,
+              "noninferiority_high": 0.034722222222222224,
+              "noninferiority_coverage": 0.975,
+              "excluded": 0
+            },
+            "reject_diff": {
+              "estimate": -0.010526315789473684,
+              "low": -0.021052631578947368,
+              "high": 0.0,
+              "n": 570,
+              "noninferiority_high": 0.0017543859649122807,
+              "noninferiority_coverage": 0.975,
+              "excluded": 0
+            },
+            "confirmed_diff": {
+              "estimate": 0.006944444444444444,
+              "low": -0.017361111111111112,
+              "high": 0.03125,
+              "n": 288,
+              "noninferiority_high": 0.034722222222222224,
+              "noninferiority_coverage": 0.975,
+              "excluded": 0
+            },
+            "decision": "x_noninferior",
+            "mcnemar": {
+              "a_only": 7,
+              "b_only": 15,
+              "pvalue": 0.13380050659179688
+            }
+          },
+          "R1g": {
+            "leak_diff": {
+              "estimate": -0.05555555555555555,
+              "low": -0.08680555555555555,
+              "high": -0.027777777777777776,
+              "n": 288,
+              "noninferiority_high": -0.024305555555555556,
+              "noninferiority_coverage": 0.975,
+              "excluded": 0
+            },
+            "reject_diff": {
+              "estimate": 0.015789473684210527,
+              "low": 0.0035087719298245615,
+              "high": 0.028070175438596492,
+              "n": 570,
+              "noninferiority_high": 0.031578947368421054,
+              "noninferiority_coverage": 0.975,
+              "excluded": 0
+            },
+            "confirmed_diff": {
+              "estimate": -0.05555555555555555,
+              "low": -0.08680555555555555,
+              "high": -0.027777777777777776,
+              "n": 288,
+              "noninferiority_high": -0.024305555555555556,
+              "noninferiority_coverage": 0.975,
+              "excluded": 0
+            },
+            "decision": "x_noninferior",
+            "mcnemar": {
+              "a_only": 29,
+              "b_only": 4,
+              "pvalue": 1.0928604751825333e-05
+            }
+          }
+        }
+      },
+      "wording": {
+        "R0a": {
+          "leak_diff": {
+            "estimate": 0.003472222222222222,
+            "low": -0.020833333333333332,
+            "high": 0.027777777777777776,
+            "n": 288,
+            "noninferiority_high": 0.03125,
+            "noninferiority_coverage": 0.975,
+            "excluded": 0
+          },
+          "reject_diff": {
+            "estimate": null,
+            "low": null,
+            "high": null,
+            "n": 0,
+            "excluded": 570
+          },
+          "confirmed_diff": {
+            "estimate": 0.0,
+            "low": -0.024305555555555556,
+            "high": 0.024305555555555556,
+            "n": 288,
+            "noninferiority_high": 0.03125,
+            "noninferiority_coverage": 0.975,
+            "excluded": 0
+          },
+          "decision": "insufficient",
+          "same_scale_as_R0": false,
+          "same_scale_as_R1g": false
+        },
+        "R0b": {
+          "leak_diff": {
+            "estimate": -0.003472222222222222,
+            "low": -0.027777777777777776,
+            "high": 0.020833333333333332,
+            "n": 288,
+            "noninferiority_high": 0.024305555555555556,
+            "noninferiority_coverage": 0.975,
+            "excluded": 0
+          },
+          "reject_diff": {
+            "estimate": null,
+            "low": null,
+            "high": null,
+            "n": 0,
+            "excluded": 570
+          },
+          "confirmed_diff": {
+            "estimate": -0.003472222222222222,
+            "low": -0.027777777777777776,
+            "high": 0.020833333333333332,
+            "n": 288,
+            "noninferiority_high": 0.024305555555555556,
+            "noninferiority_coverage": 0.975,
+            "excluded": 0
+          },
+          "decision": "insufficient",
+          "same_scale_as_R0": false,
+          "same_scale_as_R1g": false
+        }
+      },
+      "source_results": {
+        "minif2f": {
+          "R0": {
+            "leak": {
+              "estimate": 0.3151515151515151,
+              "low": 0.2303030303030303,
+              "high": 0.40303030303030307,
+              "n": 110,
+              "noninferiority_high": 0.4151515151515151,
+              "noninferiority_coverage": 0.975,
+              "missing_best": 0.3151515151515151,
+              "missing_worst": 0.3151515151515151
+            },
+            "reject": {
+              "estimate": 0.047619047619047616,
+              "low": 0.02821869488536155,
+              "high": 0.06880511463844764,
+              "n": 378,
+              "noninferiority_high": 0.07231040564373897,
+              "noninferiority_coverage": 0.975,
+              "missing_best": 0.047619047619047616,
+              "missing_worst": 0.047619047619047616
+            },
+            "uncertain_unfaithful": {
+              "estimate": 0.01818181818181818,
+              "low": 0.0,
+              "high": 0.045454545454545456,
+              "n": 110,
+              "noninferiority_high": 0.05454545454545454,
+              "noninferiority_coverage": 0.975
+            },
+            "uncertain_faithful": {
+              "estimate": 0.0,
+              "low": 0.0,
+              "high": 0.0,
+              "n": 378,
+              "noninferiority_high": 0.0,
+              "noninferiority_coverage": 0.975
+            },
+            "confirmed_unfaithful": {
+              "estimate": 0.6666666666666666,
+              "low": 0.5757575757575758,
+              "high": 0.7515151515151516,
+              "n": 110,
+              "noninferiority_high": 0.7636363636363637,
+              "noninferiority_coverage": 0.975
+            },
+            "auxiliary": {
+              "n_complete": 488,
+              "m": 3,
+              "flip_rate": 0.012295081967213115,
+              "kappa_binary": 0.973503861003861,
+              "kappa_three": 0.9736346063800411,
+              "majority": {
+                "leak": 0.3181818181818182,
+                "reject": 0.04497354497354497
+              },
+              "one_veto": {
+                "leak": 0.3090909090909091,
+                "reject": 0.05555555555555555
+              }
+            },
+            "total_votes": 1464,
+            "missing_votes": 0
+          },
+          "R1": {
+            "leak": {
+              "estimate": 0.303030303030303,
+              "low": 0.2212121212121212,
+              "high": 0.38787878787878793,
+              "n": 110,
+              "noninferiority_high": 0.40303030303030307,
+              "noninferiority_coverage": 0.975,
+              "missing_best": 0.303030303030303,
+              "missing_worst": 0.303030303030303
+            },
+            "reject": {
+              "estimate": 0.06790123456790123,
+              "low": 0.04497354497354497,
+              "high": 0.09259259259259259,
+              "n": 378,
+              "noninferiority_high": 0.09700176366843033,
+              "noninferiority_coverage": 0.975,
+              "missing_best": 0.06790123456790123,
+              "missing_worst": 0.06790123456790123
+            },
+            "uncertain_unfaithful": {
+              "estimate": 0.0030303030303030303,
+              "low": 0.0,
+              "high": 0.00909090909090909,
+              "n": 110,
+              "noninferiority_high": 0.012121212121212121,
+              "noninferiority_coverage": 0.975
+            },
+            "uncertain_faithful": {
+              "estimate": 0.0,
+              "low": 0.0,
+              "high": 0.0,
+              "n": 378,
+              "noninferiority_high": 0.0,
+              "noninferiority_coverage": 0.975
+            },
+            "confirmed_unfaithful": {
+              "estimate": 0.6939393939393939,
+              "low": 0.6090909090909091,
+              "high": 0.7757575757575758,
+              "n": 110,
+              "noninferiority_high": 0.7848484848484849,
+              "noninferiority_coverage": 0.975
+            },
+            "auxiliary": {
+              "n_complete": 488,
+              "m": 3,
+              "flip_rate": 0.03483606557377049,
+              "kappa_binary": 0.9299322351695808,
+              "kappa_three": 0.9258744602748202,
+              "majority": {
+                "leak": 0.3090909090909091,
+                "reject": 0.0582010582010582
+              },
+              "one_veto": {
+                "leak": 0.2818181818181818,
+                "reject": 0.08994708994708994
+              }
+            },
+            "total_votes": 1464,
+            "missing_votes": 0
+          },
+          "R1g": {
+            "leak": {
+              "estimate": 0.2606060606060606,
+              "low": 0.18181818181818182,
+              "high": 0.3393939393939394,
+              "n": 110,
+              "noninferiority_high": 0.35151515151515156,
+              "noninferiority_coverage": 0.975,
+              "missing_best": 0.2606060606060606,
+              "missing_worst": 0.2606060606060606
+            },
+            "reject": {
+              "estimate": 0.07142857142857142,
+              "low": 0.047619047619047616,
+              "high": 0.09700176366843034,
+              "n": 378,
+              "noninferiority_high": 0.10052910052910052,
+              "noninferiority_coverage": 0.975,
+              "missing_best": 0.07142857142857142,
+              "missing_worst": 0.07142857142857142
+            },
+            "uncertain_unfaithful": {
+              "estimate": 0.006060606060606061,
+              "low": 0.0,
+              "high": 0.01818181818181818,
+              "n": 110,
+              "noninferiority_high": 0.024242424242424242,
+              "noninferiority_coverage": 0.975
+            },
+            "uncertain_faithful": {
+              "estimate": 0.0,
+              "low": 0.0,
+              "high": 0.0,
+              "n": 378,
+              "noninferiority_high": 0.0,
+              "noninferiority_coverage": 0.975
+            },
+            "confirmed_unfaithful": {
+              "estimate": 0.7333333333333334,
+              "low": 0.6545454545454545,
+              "high": 0.8121212121212121,
+              "n": 110,
+              "noninferiority_high": 0.8242424242424243,
+              "noninferiority_coverage": 0.975
+            },
+            "auxiliary": {
+              "n_complete": 488,
+              "m": 3,
+              "flip_rate": 0.0389344262295082,
+              "kappa_binary": 0.9248571621530355,
+              "kappa_three": 0.9210400705461664,
+              "majority": {
+                "leak": 0.2727272727272727,
+                "reject": 0.06878306878306878
+              },
+              "one_veto": {
+                "leak": 0.22727272727272727,
+                "reject": 0.08994708994708994
+              }
+            },
+            "total_votes": 1464,
+            "missing_votes": 0
+          },
+          "R1-k": {
+            "leak": {
+              "estimate": 0.3121212121212121,
+              "low": 0.2303030303030303,
+              "high": 0.396969696969697,
+              "n": 110,
+              "noninferiority_high": 0.4090909090909091,
+              "noninferiority_coverage": 0.975,
+              "missing_best": 0.3121212121212121,
+              "missing_worst": 0.3121212121212121
+            },
+            "reject": {
+              "estimate": 0.06613756613756613,
+              "low": 0.043209876543209874,
+              "high": 0.0908289241622575,
+              "n": 378,
+              "noninferiority_high": 0.09435626102292768,
+              "noninferiority_coverage": 0.975,
+              "missing_best": 0.06613756613756613,
+              "missing_worst": 0.06613756613756613
+            },
+            "uncertain_unfaithful": {
+              "estimate": 0.00909090909090909,
+              "low": 0.0,
+              "high": 0.02727272727272727,
+              "n": 110,
+              "noninferiority_high": 0.03636363636363636,
+              "noninferiority_coverage": 0.975
+            },
+            "uncertain_faithful": {
+              "estimate": 0.0,
+              "low": 0.0,
+              "high": 0.0,
+              "n": 378,
+              "noninferiority_high": 0.0,
+              "noninferiority_coverage": 0.975
+            },
+            "confirmed_unfaithful": {
+              "estimate": 0.6787878787878787,
+              "low": 0.5939393939393939,
+              "high": 0.7636363636363637,
+              "n": 110,
+              "noninferiority_high": 0.7727272727272727,
+              "noninferiority_coverage": 0.975
+            },
+            "auxiliary": {
+              "n_complete": 488,
+              "m": 3,
+              "flip_rate": 0.03278688524590164,
+              "kappa_binary": 0.9332505043827156,
+              "kappa_three": 0.9334206883614113,
+              "majority": {
+                "leak": 0.3181818181818182,
+                "reject": 0.06613756613756613
+              },
+              "one_veto": {
+                "leak": 0.2818181818181818,
+                "reject": 0.07936507936507936
+              }
+            },
+            "total_votes": 1464,
+            "missing_votes": 0
+          },
+          "R0a": {
+            "leak": {
+              "estimate": 0.3,
+              "low": 0.21818181818181817,
+              "high": 0.38181818181818183,
+              "n": 110,
+              "noninferiority_high": 0.4,
+              "noninferiority_coverage": 0.975,
+              "missing_best": 0.3,
+              "missing_worst": 0.3
+            },
+            "reject": {
+              "estimate": null,
+              "low": null,
+              "high": null,
+              "n": 0,
+              "missing_best": null,
+              "missing_worst": null
+            },
+            "uncertain_unfaithful": {
+              "estimate": 0.00909090909090909,
+              "low": 0.0,
+              "high": 0.02727272727272727,
+              "n": 110,
+              "noninferiority_high": 0.03636363636363636,
+              "noninferiority_coverage": 0.975
+            },
+            "uncertain_faithful": {
+              "estimate": null,
+              "low": null,
+              "high": null,
+              "n": 0
+            },
+            "confirmed_unfaithful": {
+              "estimate": 0.6909090909090909,
+              "low": 0.6,
+              "high": 0.7727272727272727,
+              "n": 110,
+              "noninferiority_high": 0.7818181818181819,
+              "noninferiority_coverage": 0.975
+            },
+            "auxiliary": {
+              "n_complete": 110,
+              "m": 1,
+              "flip_rate": null,
+              "kappa_binary": null,
+              "kappa_three": null
+            },
+            "total_votes": 110,
+            "missing_votes": 0
+          },
+          "R0b": {
+            "leak": {
+              "estimate": 0.2909090909090909,
+              "low": 0.20909090909090908,
+              "high": 0.38181818181818183,
+              "n": 110,
+              "noninferiority_high": 0.39090909090909093,
+              "noninferiority_coverage": 0.975,
+              "missing_best": 0.2909090909090909,
+              "missing_worst": 0.2909090909090909
+            },
+            "reject": {
+              "estimate": null,
+              "low": null,
+              "high": null,
+              "n": 0,
+              "missing_best": null,
+              "missing_worst": null
+            },
+            "uncertain_unfaithful": {
+              "estimate": 0.01818181818181818,
+              "low": 0.0,
+              "high": 0.045454545454545456,
+              "n": 110,
+              "noninferiority_high": 0.05454545454545454,
+              "noninferiority_coverage": 0.975
+            },
+            "uncertain_faithful": {
+              "estimate": null,
+              "low": null,
+              "high": null,
+              "n": 0
+            },
+            "confirmed_unfaithful": {
+              "estimate": 0.6909090909090909,
+              "low": 0.6,
+              "high": 0.7727272727272727,
+              "n": 110,
+              "noninferiority_high": 0.7909090909090909,
+              "noninferiority_coverage": 0.975
+            },
+            "auxiliary": {
+              "n_complete": 110,
+              "m": 1,
+              "flip_rate": null,
+              "kappa_binary": null,
+              "kappa_three": null
+            },
+            "total_votes": 110,
+            "missing_votes": 0
+          }
+        },
+        "proofnet": {
+          "R0": {
+            "leak": {
+              "estimate": 0.17790262172284643,
+              "low": 0.1254681647940075,
+              "high": 0.2340823970037453,
+              "n": 178,
+              "noninferiority_high": 0.23970037453183518,
+              "noninferiority_coverage": 0.975,
+              "missing_best": 0.17790262172284643,
+              "missing_worst": 0.17790262172284643
+            },
+            "reject": {
+              "estimate": 0.15451388888888887,
+              "low": 0.10590277777777779,
+              "high": 0.20486111111111113,
+              "n": 192,
+              "noninferiority_high": 0.21180555555555555,
+              "noninferiority_coverage": 0.975,
+              "missing_best": 0.15451388888888887,
+              "missing_worst": 0.15451388888888887
+            },
+            "uncertain_unfaithful": {
+              "estimate": 0.0056179775280898875,
+              "low": 0.0,
+              "high": 0.016853932584269662,
+              "n": 178,
+              "noninferiority_high": 0.02247191011235955,
+              "noninferiority_coverage": 0.975
+            },
+            "uncertain_faithful": {
+              "estimate": 0.001736111111111111,
+              "low": 0.0,
+              "high": 0.005208333333333333,
+              "n": 192,
+              "noninferiority_high": 0.006944444444444444,
+              "noninferiority_coverage": 0.975
+            },
+            "confirmed_unfaithful": {
+              "estimate": 0.8164794007490636,
+              "low": 0.7621722846441947,
+              "high": 0.8670411985018727,
+              "n": 178,
+              "noninferiority_high": 0.8745318352059924,
+              "noninferiority_coverage": 0.975
+            },
+            "auxiliary": {
+              "n_complete": 370,
+              "m": 3,
+              "flip_rate": 0.05405405405405406,
+              "kappa_binary": 0.9277569509528273,
+              "kappa_three": 0.9264525262450227,
+              "majority": {
+                "leak": 0.1853932584269663,
+                "reject": 0.15104166666666666
+              },
+              "one_veto": {
+                "leak": 0.1348314606741573,
+                "reject": 0.171875
+              }
+            },
+            "total_votes": 1110,
+            "missing_votes": 0
+          },
+          "R1": {
+            "leak": {
+              "estimate": 0.18726591760299624,
+              "low": 0.1348314606741573,
+              "high": 0.24344569288389512,
+              "n": 178,
+              "noninferiority_high": 0.25280898876404495,
+              "noninferiority_coverage": 0.975,
+              "missing_best": 0.18726591760299624,
+              "missing_worst": 0.18726591760299624
+            },
+            "reject": {
+              "estimate": 0.1579861111111111,
+              "low": 0.109375,
+              "high": 0.21006944444444445,
+              "n": 192,
+              "noninferiority_high": 0.21875,
+              "noninferiority_coverage": 0.975,
+              "missing_best": 0.1579861111111111,
+              "missing_worst": 0.1579861111111111
+            },
+            "uncertain_unfaithful": {
+              "estimate": 0.0056179775280898875,
+              "low": 0.0,
+              "high": 0.016853932584269662,
+              "n": 178,
+              "noninferiority_high": 0.02247191011235955,
+              "noninferiority_coverage": 0.975
+            },
+            "uncertain_faithful": {
+              "estimate": 0.0,
+              "low": 0.0,
+              "high": 0.0,
+              "n": 192,
+              "noninferiority_high": 0.0,
+              "noninferiority_coverage": 0.975
+            },
+            "confirmed_unfaithful": {
+              "estimate": 0.8071161048689138,
+              "low": 0.7490636704119851,
+              "high": 0.8614232209737829,
+              "n": 178,
+              "noninferiority_high": 0.8670411985018727,
+              "noninferiority_coverage": 0.975
+            },
+            "auxiliary": {
+              "n_complete": 370,
+              "m": 3,
+              "flip_rate": 0.04054054054054054,
+              "kappa_binary": 0.9457875457875459,
+              "kappa_three": 0.946062567421791,
+              "majority": {
+                "leak": 0.1797752808988764,
+                "reject": 0.15625
+              },
+              "one_veto": {
+                "leak": 0.15730337078651685,
+                "reject": 0.16666666666666666
+              }
+            },
+            "total_votes": 1110,
+            "missing_votes": 0
+          },
+          "R1g": {
+            "leak": {
+              "estimate": 0.11610486891385767,
+              "low": 0.07303370786516854,
+              "high": 0.1647940074906367,
+              "n": 178,
+              "noninferiority_high": 0.17228464419475653,
+              "noninferiority_coverage": 0.975,
+              "missing_best": 0.11610486891385767,
+              "missing_worst": 0.11610486891385767
+            },
+            "reject": {
+              "estimate": 0.17708333333333334,
+              "low": 0.1267361111111111,
+              "high": 0.23263888888888892,
+              "n": 192,
+              "noninferiority_high": 0.24131944444444445,
+              "noninferiority_coverage": 0.975,
+              "missing_best": 0.17708333333333334,
+              "missing_worst": 0.17708333333333334
+            },
+            "uncertain_unfaithful": {
+              "estimate": 0.0037453183520599247,
+              "low": 0.0,
+              "high": 0.011235955056179775,
+              "n": 178,
+              "noninferiority_high": 0.014981273408239699,
+              "noninferiority_coverage": 0.975
+            },
+            "uncertain_faithful": {
+              "estimate": 0.0,
+              "low": 0.0,
+              "high": 0.0,
+              "n": 192,
+              "noninferiority_high": 0.0,
+              "noninferiority_coverage": 0.975
+            },
+            "confirmed_unfaithful": {
+              "estimate": 0.8801498127340825,
+              "low": 0.8314606741573034,
+              "high": 0.9250936329588014,
+              "n": 178,
+              "noninferiority_high": 0.9307116104868913,
+              "noninferiority_coverage": 0.975
+            },
+            "auxiliary": {
+              "n_complete": 370,
+              "m": 3,
+              "flip_rate": 0.02972972972972973,
+              "kappa_binary": 0.9603138488740965,
+              "kappa_three": 0.9604608688894073,
+              "majority": {
+                "leak": 0.11235955056179775,
+                "reject": 0.18229166666666666
+              },
+              "one_veto": {
+                "leak": 0.10112359550561797,
+                "reject": 0.1875
+              }
+            },
+            "total_votes": 1110,
+            "missing_votes": 0
+          },
+          "R1-k": {
+            "leak": {
+              "estimate": 0.1797752808988764,
+              "low": 0.12734082397003746,
+              "high": 0.23408239700374533,
+              "n": 178,
+              "noninferiority_high": 0.24157303370786518,
+              "noninferiority_coverage": 0.975,
+              "missing_best": 0.1797752808988764,
+              "missing_worst": 0.1797752808988764
+            },
+            "reject": {
+              "estimate": 0.15451388888888887,
+              "low": 0.10590277777777779,
+              "high": 0.20486111111111113,
+              "n": 192,
+              "noninferiority_high": 0.21354166666666666,
+              "noninferiority_coverage": 0.975,
+              "missing_best": 0.15451388888888887,
+              "missing_worst": 0.15451388888888887
+            },
+            "uncertain_unfaithful": {
+              "estimate": 0.0056179775280898875,
+              "low": 0.0,
+              "high": 0.016853932584269662,
+              "n": 178,
+              "noninferiority_high": 0.02247191011235955,
+              "noninferiority_coverage": 0.975
+            },
+            "uncertain_faithful": {
+              "estimate": 0.001736111111111111,
+              "low": 0.0,
+              "high": 0.005208333333333333,
+              "n": 192,
+              "noninferiority_high": 0.006944444444444444,
+              "noninferiority_coverage": 0.975
+            },
+            "confirmed_unfaithful": {
+              "estimate": 0.8146067415730337,
+              "low": 0.7584269662921348,
+              "high": 0.8670411985018727,
+              "n": 178,
+              "noninferiority_high": 0.8745318352059924,
+              "noninferiority_coverage": 0.975
+            },
+            "auxiliary": {
+              "n_complete": 370,
+              "m": 3,
+              "flip_rate": 0.04864864864864865,
+              "kappa_binary": 0.9349696166852731,
+              "kappa_three": 0.9318210472209562,
+              "majority": {
+                "leak": 0.16853932584269662,
+                "reject": 0.15104166666666666
+              },
+              "one_veto": {
+                "leak": 0.15730337078651685,
+                "reject": 0.17708333333333334
+              }
+            },
+            "total_votes": 1110,
+            "missing_votes": 0
+          },
+          "R0a": {
+            "leak": {
+              "estimate": 0.19101123595505617,
+              "low": 0.1348314606741573,
+              "high": 0.24719101123595505,
+              "n": 178,
+              "noninferiority_high": 0.25842696629213485,
+              "noninferiority_coverage": 0.975,
+              "missing_best": 0.19101123595505617,
+              "missing_worst": 0.19101123595505617
+            },
+            "reject": {
+              "estimate": null,
+              "low": null,
+              "high": null,
+              "n": 0,
+              "missing_best": null,
+              "missing_worst": null
+            },
+            "uncertain_unfaithful": {
+              "estimate": 0.0056179775280898875,
+              "low": 0.0,
+              "high": 0.016853932584269662,
+              "n": 178,
+              "noninferiority_high": 0.02247191011235955,
+              "noninferiority_coverage": 0.975
+            },
+            "uncertain_faithful": {
+              "estimate": null,
+              "low": null,
+              "high": null,
+              "n": 0
+            },
+            "confirmed_unfaithful": {
+              "estimate": 0.8033707865168539,
+              "low": 0.7415730337078652,
+              "high": 0.8595505617977528,
+              "n": 178,
+              "noninferiority_high": 0.8707865168539326,
+              "noninferiority_coverage": 0.975
+            },
+            "auxiliary": {
+              "n_complete": 178,
+              "m": 1,
+              "flip_rate": null,
+              "kappa_binary": null,
+              "kappa_three": null
+            },
+            "total_votes": 178,
+            "missing_votes": 0
+          },
+          "R0b": {
+            "leak": {
+              "estimate": 0.1853932584269663,
+              "low": 0.12921348314606743,
+              "high": 0.24157303370786518,
+              "n": 178,
+              "noninferiority_high": 0.25280898876404495,
+              "noninferiority_coverage": 0.975,
+              "missing_best": 0.1853932584269663,
+              "missing_worst": 0.1853932584269663
+            },
+            "reject": {
+              "estimate": null,
+              "low": null,
+              "high": null,
+              "n": 0,
+              "missing_best": null,
+              "missing_worst": null
+            },
+            "uncertain_unfaithful": {
+              "estimate": 0.0056179775280898875,
+              "low": 0.0,
+              "high": 0.016853932584269662,
+              "n": 178,
+              "noninferiority_high": 0.02247191011235955,
+              "noninferiority_coverage": 0.975
+            },
+            "uncertain_faithful": {
+              "estimate": null,
+              "low": null,
+              "high": null,
+              "n": 0
+            },
+            "confirmed_unfaithful": {
+              "estimate": 0.8089887640449438,
+              "low": 0.7471910112359551,
+              "high": 0.8651685393258427,
+              "n": 178,
+              "noninferiority_high": 0.8764044943820225,
+              "noninferiority_coverage": 0.975
+            },
+            "auxiliary": {
+              "n_complete": 178,
+              "m": 1,
+              "flip_rate": null,
+              "kappa_binary": null,
+              "kappa_three": null
+            },
+            "total_votes": 178,
+            "missing_votes": 0
+          }
+        }
+      },
+      "state_counts": {
+        "valid": 10872
+      },
+      "decision": {
+        "action": "replace_with_r0",
+        "rationale": "r0_noninferior",
+        "claims_superiority": false
+      },
+      "error_types": {
+        "C0": {
+          "R0": {
+            "estimate": 0.1981981981981982,
+            "low": 0.12912912912912913,
+            "high": 0.2732732732732733,
+            "n": 111,
+            "noninferiority_high": 0.2822822822822823,
+            "noninferiority_coverage": 0.975
+          },
+          "R1": {
+            "estimate": 0.18618618618618615,
+            "low": 0.11711711711711711,
+            "high": 0.26126126126126126,
+            "n": 111,
+            "noninferiority_high": 0.2702702702702703,
+            "noninferiority_coverage": 0.975
+          },
+          "R1g": {
+            "estimate": 0.16816816816816815,
+            "low": 0.1021021021021021,
+            "high": 0.2402402402402402,
+            "n": 111,
+            "noninferiority_high": 0.24924924924924927,
+            "noninferiority_coverage": 0.975
+          },
+          "R1-k": {
+            "estimate": 0.18618618618618615,
+            "low": 0.11711711711711711,
+            "high": 0.25825825825825827,
+            "n": 111,
+            "noninferiority_high": 0.267304804804807,
+            "noninferiority_coverage": 0.975
+          },
+          "R0a": {
+            "estimate": 0.1891891891891892,
+            "low": 0.11711711711711711,
+            "high": 0.26126126126126126,
+            "n": 111,
+            "noninferiority_high": 0.27927927927927926,
+            "noninferiority_coverage": 0.975
+          },
+          "R0b": {
+            "estimate": 0.1891891891891892,
+            "low": 0.11711711711711711,
+            "high": 0.26126126126126126,
+            "n": 111,
+            "noninferiority_high": 0.2702702702702703,
+            "noninferiority_coverage": 0.975
+          }
+        },
+        "C1": {
+          "R0": {
+            "estimate": 0.29444444444444445,
+            "low": 0.18888888888888886,
+            "high": 0.40555555555555556,
+            "n": 60,
+            "noninferiority_high": 0.4222222222222222,
+            "noninferiority_coverage": 0.975
+          },
+          "R1": {
+            "estimate": 0.3722222222222222,
+            "low": 0.2555555555555556,
+            "high": 0.48888888888888893,
+            "n": 60,
+            "noninferiority_high": 0.5055555555555556,
+            "noninferiority_coverage": 0.975
+          },
+          "R1g": {
+            "estimate": 0.18888888888888886,
+            "low": 0.10555555555555556,
+            "high": 0.2833333333333333,
+            "n": 60,
+            "noninferiority_high": 0.3,
+            "noninferiority_coverage": 0.975
+          },
+          "R1-k": {
+            "estimate": 0.36111111111111105,
+            "low": 0.24444444444444444,
+            "high": 0.4777777777777778,
+            "n": 60,
+            "noninferiority_high": 0.5,
+            "noninferiority_coverage": 0.975
+          },
+          "R0a": {
+            "estimate": 0.31666666666666665,
+            "low": 0.2,
+            "high": 0.43333333333333335,
+            "n": 60,
+            "noninferiority_high": 0.4666666666666667,
+            "noninferiority_coverage": 0.975
+          },
+          "R0b": {
+            "estimate": 0.3,
+            "low": 0.18333333333333332,
+            "high": 0.4166666666666667,
+            "n": 60,
+            "noninferiority_high": 0.43333333333333335,
+            "noninferiority_coverage": 0.975
+          }
+        },
+        "C2": {
+          "R0": {
+            "estimate": 0.29059829059829057,
+            "low": 0.1623931623931624,
+            "high": 0.4358974358974359,
+            "n": 39,
+            "noninferiority_high": 0.46153846153846156,
+            "noninferiority_coverage": 0.975
+          },
+          "R1": {
+            "estimate": 0.26495726495726496,
+            "low": 0.13675213675213677,
+            "high": 0.40170940170940167,
+            "n": 39,
+            "noninferiority_high": 0.4273504273504273,
+            "noninferiority_coverage": 0.975
+          },
+          "R1g": {
+            "estimate": 0.23076923076923078,
+            "low": 0.10256410256410256,
+            "high": 0.358974358974359,
+            "n": 39,
+            "noninferiority_high": 0.38461538461538464,
+            "noninferiority_coverage": 0.975
+          },
+          "R1-k": {
+            "estimate": 0.24786324786324784,
+            "low": 0.1282051282051282,
+            "high": 0.38461538461538464,
+            "n": 39,
+            "noninferiority_high": 0.41025641025641024,
+            "noninferiority_coverage": 0.975
+          },
+          "R0a": {
+            "estimate": 0.28205128205128205,
+            "low": 0.15384615384615385,
+            "high": 0.4358974358974359,
+            "n": 39,
+            "noninferiority_high": 0.4358974358974359,
+            "noninferiority_coverage": 0.975
+          },
+          "R0b": {
+            "estimate": 0.3076923076923077,
+            "low": 0.1794871794871795,
+            "high": 0.46153846153846156,
+            "n": 39,
+            "noninferiority_high": 0.48717948717948717,
+            "noninferiority_coverage": 0.975
+          }
+        },
+        "C3": {
+          "R0": {
+            "estimate": 0.0,
+            "low": 0.0,
+            "high": 0.0,
+            "n": 6,
+            "noninferiority_high": 0.0,
+            "noninferiority_coverage": 0.975
+          },
+          "R1": {
+            "estimate": 0.0,
+            "low": 0.0,
+            "high": 0.0,
+            "n": 6,
+            "noninferiority_high": 0.0,
+            "noninferiority_coverage": 0.975
+          },
+          "R1g": {
+            "estimate": 0.0,
+            "low": 0.0,
+            "high": 0.0,
+            "n": 6,
+            "noninferiority_high": 0.0,
+            "noninferiority_coverage": 0.975
+          },
+          "R1-k": {
+            "estimate": 0.0,
+            "low": 0.0,
+            "high": 0.0,
+            "n": 6,
+            "noninferiority_high": 0.0,
+            "noninferiority_coverage": 0.975
+          },
+          "R0a": {
+            "estimate": 0.16666666666666666,
+            "low": 0.0,
+            "high": 0.5,
+            "n": 6,
+            "noninferiority_high": 0.5,
+            "noninferiority_coverage": 0.975
+          },
+          "R0b": {
+            "estimate": 0.0,
+            "low": 0.0,
+            "high": 0.0,
+            "n": 6,
+            "noninferiority_high": 0.0,
+            "noninferiority_coverage": 0.975
+          }
+        },
+        "C5": {
+          "R0": {
+            "estimate": 0.22222222222222224,
+            "low": 0.13043478260869565,
+            "high": 0.3188405797101449,
+            "n": 69,
+            "noninferiority_high": 0.33816425120772947,
+            "noninferiority_coverage": 0.975
+          },
+          "R1": {
+            "estimate": 0.1932367149758454,
+            "low": 0.11111111111111112,
+            "high": 0.285024154589372,
+            "n": 69,
+            "noninferiority_high": 0.29951690821256033,
+            "noninferiority_coverage": 0.975
+          },
+          "R1g": {
+            "estimate": 0.1497584541062802,
+            "low": 0.07246376811594203,
+            "high": 0.23671497584541062,
+            "n": 69,
+            "noninferiority_high": 0.25120772946859904,
+            "noninferiority_coverage": 0.975
+          },
+          "R1-k": {
+            "estimate": 0.20772946859903382,
+            "low": 0.12077294685990339,
+            "high": 0.2995169082125604,
+            "n": 69,
+            "noninferiority_high": 0.3140096618357488,
+            "noninferiority_coverage": 0.975
+          },
+          "R0a": {
+            "estimate": 0.21739130434782608,
+            "low": 0.13043478260869565,
+            "high": 0.3188405797101449,
+            "n": 69,
+            "noninferiority_high": 0.3333333333333333,
+            "noninferiority_coverage": 0.975
+          },
+          "R0b": {
+            "estimate": 0.18840579710144928,
+            "low": 0.10144927536231885,
+            "high": 0.2898550724637681,
+            "n": 69,
+            "noninferiority_high": 0.30434782608695654,
+            "noninferiority_coverage": 0.975
+          }
+        },
+        "C6": {
+          "R0": {
+            "estimate": 0.0,
+            "low": 0.0,
+            "high": 0.0,
+            "n": 2,
+            "noninferiority_high": 0.0,
+            "noninferiority_coverage": 0.975
+          },
+          "R1": {
+            "estimate": 0.0,
+            "low": 0.0,
+            "high": 0.0,
+            "n": 2,
+            "noninferiority_high": 0.0,
+            "noninferiority_coverage": 0.975
+          },
+          "R1g": {
+            "estimate": 0.0,
+            "low": 0.0,
+            "high": 0.0,
+            "n": 2,
+            "noninferiority_high": 0.0,
+            "noninferiority_coverage": 0.975
+          },
+          "R1-k": {
+            "estimate": 0.0,
+            "low": 0.0,
+            "high": 0.0,
+            "n": 2,
+            "noninferiority_high": 0.0,
+            "noninferiority_coverage": 0.975
+          },
+          "R0a": {
+            "estimate": 0.0,
+            "low": 0.0,
+            "high": 0.0,
+            "n": 2,
+            "noninferiority_high": 0.0,
+            "noninferiority_coverage": 0.975
+          },
+          "R0b": {
+            "estimate": 0.0,
+            "low": 0.0,
+            "high": 0.0,
+            "n": 2,
+            "noninferiority_high": 0.0,
+            "noninferiority_coverage": 0.975
+          }
+        }
+      },
+      "ablation": {
+        "leak_diff": {
+          "estimate": -0.0011574074074074071,
+          "low": -0.015046296296296295,
+          "high": 0.012731481481481483,
+          "n": 288,
+          "noninferiority_high": 0.015046296296296299,
+          "noninferiority_coverage": 0.975,
+          "excluded": 0
+        },
+        "reject_diff": {
+          "estimate": -0.002339181286549708,
+          "low": -0.009941520467836256,
+          "high": 0.004678362573099415,
+          "n": 570,
+          "noninferiority_high": 0.005847953216374269,
+          "noninferiority_coverage": 0.975,
+          "excluded": 0
+        },
+        "confirmed_diff": {
+          "estimate": 0.0011574074074074073,
+          "low": -0.013888888888888888,
+          "high": 0.016203703703703706,
+          "n": 288,
+          "noninferiority_high": 0.018518518518518517,
+          "noninferiority_coverage": 0.975,
+          "excluded": 0
+        },
+        "decision": "x_noninferior",
+        "exploratory": true
+      },
+      "selected_best_description": {
+        "config": "R1g",
+        "leak": {
+          "estimate": 0.17129629629629628,
+          "low": 0.12962962962962965,
+          "high": 0.21412037037037035,
+          "n": 288,
+          "noninferiority_high": 0.2210648148148148,
+          "noninferiority_coverage": 0.975,
+          "missing_best": 0.17129629629629628,
+          "missing_worst": 0.17129629629629628
+        },
+        "accepted_error_fraction": 0.08835820895522387,
+        "selection_bias_warning": true
+      },
+      "all_observed_state_counts": {
+        "valid": 10872
+      },
+      "outside_complete_prefix": {
+        "calls": 0,
+        "states": {},
+        "blocked_attempt_calls": 0,
+        "descriptive_only": true
+      }
+    },
+    "flash": {
+      "status": "analyzed",
+      "prefix": [
+        1,
+        2,
+        3
+      ],
+      "m": 3,
+      "configs": {
+        "R0": {
+          "leak": {
+            "estimate": 0.30787037037037035,
+            "low": 0.2604166666666667,
+            "high": 0.3576388888888889,
+            "n": 288,
+            "noninferiority_high": 0.36459780092592675,
+            "noninferiority_coverage": 0.975,
+            "missing_best": 0.30787037037037035,
+            "missing_worst": 0.30787037037037035
+          },
+          "reject": {
+            "estimate": 0.03684210526315789,
+            "low": 0.023391812865497075,
+            "high": 0.05146198830409356,
+            "n": 570,
+            "noninferiority_high": 0.05380116959064327,
+            "noninferiority_coverage": 0.975,
+            "missing_best": 0.03684210526315789,
+            "missing_worst": 0.03742690058479532
+          },
+          "uncertain_unfaithful": {
+            "estimate": 0.0023148148148148147,
+            "low": 0.0,
+            "high": 0.005787037037037037,
+            "n": 288,
+            "noninferiority_high": 0.006944444444444444,
+            "noninferiority_coverage": 0.975
+          },
+          "uncertain_faithful": {
+            "estimate": 0.0,
+            "low": 0.0,
+            "high": 0.0,
+            "n": 570,
+            "noninferiority_high": 0.0,
+            "noninferiority_coverage": 0.975
+          },
+          "confirmed_unfaithful": {
+            "estimate": 0.6898148148148148,
+            "low": 0.6400462962962963,
+            "high": 0.738425925925926,
+            "n": 288,
+            "noninferiority_high": 0.744212962962963,
+            "noninferiority_coverage": 0.975
+          },
+          "auxiliary": {
+            "n_complete": 857,
+            "m": 3,
+            "flip_rate": 0.07001166861143523,
+            "kappa_binary": 0.8778148291894718,
+            "kappa_three": 0.8779422516355074,
+            "majority": {
+              "leak": 0.3020833333333333,
+              "reject": 0.0351493848857645
+            },
+            "one_veto": {
+              "leak": 0.22916666666666666,
+              "reject": 0.0492091388400703
+            }
+          },
+          "total_votes": 2574,
+          "missing_votes": 1,
+          "not_run_by_design": 0,
+          "cost": {
+            "attempts": 2575,
+            "distinct_calls": 2574,
+            "states": {
+              "valid": 2515,
+              "format_failure": 58,
+              "tool_contaminated": 1,
+              "retryable_failure": 1
+            },
+            "known_usage": {
+              "input_tokens": 15850840,
+              "cached_input_tokens": 15333999,
+              "output_tokens": 2143374,
+              "reasoning_output_tokens": 2012322
+            },
+            "attempts_without_usage_field": {
+              "input_tokens": 1,
+              "cached_input_tokens": 1,
+              "output_tokens": 1,
+              "reasoning_output_tokens": 1
+            },
+            "attempts_with_unknown_charge": 1,
+            "sum_observed_attempt_seconds": 25119.835,
+            "attempts_without_duration": 0,
+            "elapsed_window_seconds": 26950.84703373909,
+            "usage_scope": "Sums of observed usage only; missing fields and possibly charged interruptions are counted separately, never assumed zero.",
+            "currency_or_credits": "not_observable; no conversion rate recorded",
+            "usage": {
+              "input_tokens": 15850840,
+              "cached_input_tokens": 15333999,
+              "output_tokens": 2143374,
+              "reasoning_output_tokens": 2012322
+            },
+            "attempts_without_usage": 1,
+            "unique_unfaithful_items_explicitly_detected": 220,
+            "recorded_tokens_per_unique_error_detected": 81791.88181818182,
+            "money_or_credits": "not converted unless an official rate is recorded; token counts are not credits"
+          }
+        },
+        "R1": {
+          "leak": {
+            "estimate": 0.24537037037037035,
+            "low": 0.20023148148148148,
+            "high": 0.29282407407407407,
+            "n": 288,
+            "noninferiority_high": 0.2997685185185185,
+            "noninferiority_coverage": 0.975,
+            "missing_best": 0.24537037037037035,
+            "missing_worst": 0.24537037037037035
+          },
+          "reject": {
+            "estimate": 0.05380116959064327,
+            "low": 0.038011695906432746,
+            "high": 0.07134502923976609,
+            "n": 570,
+            "noninferiority_high": 0.07485380116959064,
+            "noninferiority_coverage": 0.975,
+            "missing_best": 0.05380116959064327,
+            "missing_worst": 0.05380116959064327
+          },
+          "uncertain_unfaithful": {
+            "estimate": 0.0011574074074074073,
+            "low": 0.0,
+            "high": 0.003472222222222222,
+            "n": 288,
+            "noninferiority_high": 0.004629629629629629,
+            "noninferiority_coverage": 0.975
+          },
+          "uncertain_faithful": {
+            "estimate": 0.0,
+            "low": 0.0,
+            "high": 0.0,
+            "n": 570,
+            "noninferiority_high": 0.0,
+            "noninferiority_coverage": 0.975
+          },
+          "confirmed_unfaithful": {
+            "estimate": 0.7534722222222222,
+            "low": 0.707175925925926,
+            "high": 0.7986111111111112,
+            "n": 288,
+            "noninferiority_high": 0.8055555555555556,
+            "noninferiority_coverage": 0.975
+          },
+          "auxiliary": {
+            "n_complete": 858,
+            "m": 3,
+            "flip_rate": 0.0641025641025641,
+            "kappa_binary": 0.8960206240084609,
+            "kappa_three": 0.8960773360210178,
+            "majority": {
+              "leak": 0.24305555555555555,
+              "reject": 0.05087719298245614
+            },
+            "one_veto": {
+              "leak": 0.1875,
+              "reject": 0.07368421052631578
+            }
+          },
+          "total_votes": 2574,
+          "missing_votes": 0,
+          "not_run_by_design": 0,
+          "cost": {
+            "attempts": 2574,
+            "distinct_calls": 2574,
+            "states": {
+              "valid": 2547,
+              "format_failure": 27
+            },
+            "known_usage": {
+              "input_tokens": 16399805,
+              "cached_input_tokens": 15730528,
+              "output_tokens": 3269278,
+              "reasoning_output_tokens": 3098835
+            },
+            "attempts_without_usage_field": {
+              "input_tokens": 0,
+              "cached_input_tokens": 0,
+              "output_tokens": 0,
+              "reasoning_output_tokens": 0
+            },
+            "attempts_with_unknown_charge": 0,
+            "sum_observed_attempt_seconds": 34179.458,
+            "attempts_without_duration": 0,
+            "elapsed_window_seconds": 26980.508657217026,
+            "usage_scope": "Sums of observed usage only; missing fields and possibly charged interruptions are counted separately, never assumed zero.",
+            "currency_or_credits": "not_observable; no conversion rate recorded",
+            "usage": {
+              "input_tokens": 16399805,
+              "cached_input_tokens": 15730528,
+              "output_tokens": 3269278,
+              "reasoning_output_tokens": 3098835
+            },
+            "attempts_without_usage": 0,
+            "unique_unfaithful_items_explicitly_detected": 233,
+            "recorded_tokens_per_unique_error_detected": 84416.6652360515,
+            "money_or_credits": "not converted unless an official rate is recorded; token counts are not credits"
+          }
+        },
+        "R1g": {
+          "leak": {
+            "estimate": 0.18518518518518517,
+            "low": 0.14583333333333334,
+            "high": 0.22569444444444445,
+            "n": 288,
+            "noninferiority_high": 0.2314814814814815,
+            "noninferiority_coverage": 0.975,
+            "missing_best": 0.18518518518518517,
+            "missing_worst": 0.18518518518518517
+          },
+          "reject": {
+            "estimate": 0.05614035087719297,
+            "low": 0.039766081871345026,
+            "high": 0.07485380116959064,
+            "n": 570,
+            "noninferiority_high": 0.07720029239766125,
+            "noninferiority_coverage": 0.975,
+            "missing_best": 0.05614035087719297,
+            "missing_worst": 0.05614035087719297
+          },
+          "uncertain_unfaithful": {
+            "estimate": 0.004629629629629629,
+            "low": 0.0,
+            "high": 0.01273148148148148,
+            "n": 288,
+            "noninferiority_high": 0.015046296296296295,
+            "noninferiority_coverage": 0.975
+          },
+          "uncertain_faithful": {
+            "estimate": 0.0,
+            "low": 0.0,
+            "high": 0.0,
+            "n": 570,
+            "noninferiority_high": 0.0,
+            "noninferiority_coverage": 0.975
+          },
+          "confirmed_unfaithful": {
+            "estimate": 0.8101851851851851,
+            "low": 0.7696759259259259,
+            "high": 0.8506944444444444,
+            "n": 288,
+            "noninferiority_high": 0.8541666666666666,
+            "noninferiority_coverage": 0.975
+          },
+          "auxiliary": {
+            "n_complete": 858,
+            "m": 3,
+            "flip_rate": 0.06876456876456877,
+            "kappa_binary": 0.8929918263810599,
+            "kappa_three": 0.8914217257786927,
+            "majority": {
+              "leak": 0.1736111111111111,
+              "reject": 0.054385964912280704
+            },
+            "one_veto": {
+              "leak": 0.125,
+              "reject": 0.07543859649122807
+            }
+          },
+          "total_votes": 2574,
+          "missing_votes": 0,
+          "not_run_by_design": 0,
+          "cost": {
+            "attempts": 2574,
+            "distinct_calls": 2574,
+            "states": {
+              "valid": 2560,
+              "format_failure": 14
+            },
+            "known_usage": {
+              "input_tokens": 17260701,
+              "cached_input_tokens": 16748002,
+              "output_tokens": 3070250,
+              "reasoning_output_tokens": 2918569
+            },
+            "attempts_without_usage_field": {
+              "input_tokens": 0,
+              "cached_input_tokens": 0,
+              "output_tokens": 0,
+              "reasoning_output_tokens": 0
+            },
+            "attempts_with_unknown_charge": 0,
+            "sum_observed_attempt_seconds": 32625.877,
+            "attempts_without_duration": 0,
+            "elapsed_window_seconds": 26965.088260650635,
+            "usage_scope": "Sums of observed usage only; missing fields and possibly charged interruptions are counted separately, never assumed zero.",
+            "currency_or_credits": "not_observable; no conversion rate recorded",
+            "usage": {
+              "input_tokens": 17260701,
+              "cached_input_tokens": 16748002,
+              "output_tokens": 3070250,
+              "reasoning_output_tokens": 2918569
+            },
+            "attempts_without_usage": 0,
+            "unique_unfaithful_items_explicitly_detected": 251,
+            "recorded_tokens_per_unique_error_detected": 80999.8047808765,
+            "money_or_credits": "not converted unless an official rate is recorded; token counts are not credits"
+          }
+        },
+        "R0a": {
+          "leak": {
+            "estimate": 0.2951388888888889,
+            "low": 0.24305555555555555,
+            "high": 0.3506944444444444,
+            "n": 288,
+            "noninferiority_high": 0.3576388888888889,
+            "noninferiority_coverage": 0.975,
+            "missing_best": 0.2951388888888889,
+            "missing_worst": 0.2951388888888889
+          },
+          "reject": {
+            "estimate": null,
+            "low": null,
+            "high": null,
+            "n": 0,
+            "missing_best": null,
+            "missing_worst": null
+          },
+          "uncertain_unfaithful": {
+            "estimate": 0.0,
+            "low": 0.0,
+            "high": 0.0,
+            "n": 288,
+            "noninferiority_high": 0.0,
+            "noninferiority_coverage": 0.975
+          },
+          "uncertain_faithful": {
+            "estimate": null,
+            "low": null,
+            "high": null,
+            "n": 0
+          },
+          "confirmed_unfaithful": {
+            "estimate": 0.7048611111111112,
+            "low": 0.6527777777777778,
+            "high": 0.7569444444444444,
+            "n": 288,
+            "noninferiority_high": 0.7638888888888888,
+            "noninferiority_coverage": 0.975
+          },
+          "auxiliary": {
+            "n_complete": 288,
+            "m": 1,
+            "flip_rate": null,
+            "kappa_binary": null,
+            "kappa_three": null
+          },
+          "total_votes": 288,
+          "missing_votes": 0,
+          "not_run_by_design": 570,
+          "cost": {
+            "attempts": 288,
+            "distinct_calls": 288,
+            "states": {
+              "valid": 279,
+              "format_failure": 9
+            },
+            "known_usage": {
+              "input_tokens": 1860817,
+              "cached_input_tokens": 1756928,
+              "output_tokens": 526166,
+              "reasoning_output_tokens": 507071
+            },
+            "attempts_without_usage_field": {
+              "input_tokens": 0,
+              "cached_input_tokens": 0,
+              "output_tokens": 0,
+              "reasoning_output_tokens": 0
+            },
+            "attempts_with_unknown_charge": 0,
+            "sum_observed_attempt_seconds": 4979.763,
+            "attempts_without_duration": 0,
+            "elapsed_window_seconds": 1886.4832651615143,
+            "usage_scope": "Sums of observed usage only; missing fields and possibly charged interruptions are counted separately, never assumed zero.",
+            "currency_or_credits": "not_observable; no conversion rate recorded",
+            "usage": {
+              "input_tokens": 1860817,
+              "cached_input_tokens": 1756928,
+              "output_tokens": 526166,
+              "reasoning_output_tokens": 507071
+            },
+            "attempts_without_usage": 0,
+            "unique_unfaithful_items_explicitly_detected": 203,
+            "recorded_tokens_per_unique_error_detected": 11758.536945812808,
+            "money_or_credits": "not converted unless an official rate is recorded; token counts are not credits"
+          }
+        },
+        "R0b": {
+          "leak": {
+            "estimate": 0.3055555555555556,
+            "low": 0.2534722222222222,
+            "high": 0.3611111111111111,
+            "n": 288,
+            "noninferiority_high": 0.3680555555555556,
+            "noninferiority_coverage": 0.975,
+            "missing_best": 0.3055555555555556,
+            "missing_worst": 0.3055555555555556
+          },
+          "reject": {
+            "estimate": null,
+            "low": null,
+            "high": null,
+            "n": 0,
+            "missing_best": null,
+            "missing_worst": null
+          },
+          "uncertain_unfaithful": {
+            "estimate": 0.0,
+            "low": 0.0,
+            "high": 0.0,
+            "n": 288,
+            "noninferiority_high": 0.0,
+            "noninferiority_coverage": 0.975
+          },
+          "uncertain_faithful": {
+            "estimate": null,
+            "low": null,
+            "high": null,
+            "n": 0
+          },
+          "confirmed_unfaithful": {
+            "estimate": 0.6944444444444444,
+            "low": 0.6423611111111112,
+            "high": 0.7465277777777778,
+            "n": 288,
+            "noninferiority_high": 0.7535156250000025,
+            "noninferiority_coverage": 0.975
+          },
+          "auxiliary": {
+            "n_complete": 288,
+            "m": 1,
+            "flip_rate": null,
+            "kappa_binary": null,
+            "kappa_three": null
+          },
+          "total_votes": 288,
+          "missing_votes": 0,
+          "not_run_by_design": 570,
+          "cost": {
+            "attempts": 288,
+            "distinct_calls": 288,
+            "states": {
+              "valid": 282,
+              "format_failure": 6
+            },
+            "known_usage": {
+              "input_tokens": 1833034,
+              "cached_input_tokens": 1730432,
+              "output_tokens": 584885,
+              "reasoning_output_tokens": 567299
+            },
+            "attempts_without_usage_field": {
+              "input_tokens": 0,
+              "cached_input_tokens": 0,
+              "output_tokens": 0,
+              "reasoning_output_tokens": 0
+            },
+            "attempts_with_unknown_charge": 0,
+            "sum_observed_attempt_seconds": 5413.438,
+            "attempts_without_duration": 0,
+            "elapsed_window_seconds": 1890.434262752533,
+            "usage_scope": "Sums of observed usage only; missing fields and possibly charged interruptions are counted separately, never assumed zero.",
+            "currency_or_credits": "not_observable; no conversion rate recorded",
+            "usage": {
+              "input_tokens": 1833034,
+              "cached_input_tokens": 1730432,
+              "output_tokens": 584885,
+              "reasoning_output_tokens": 567299
+            },
+            "attempts_without_usage": 0,
+            "unique_unfaithful_items_explicitly_detected": 200,
+            "recorded_tokens_per_unique_error_detected": 12089.595,
+            "money_or_credits": "not converted unless an official rate is recorded; token counts are not credits"
+          }
+        }
+      },
+      "comparisons": {
+        "R0": {
+          "leak_diff": {
+            "estimate": 0.0625,
+            "low": 0.03356481481481481,
+            "high": 0.09259259259259259,
+            "n": 288,
+            "noninferiority_high": 0.09606481481481483,
+            "noninferiority_coverage": 0.975,
+            "excluded": 0
+          },
+          "reject_diff": {
+            "estimate": -0.01695906432748538,
+            "low": -0.029239766081871347,
+            "high": -0.005263157894736842,
+            "n": 570,
+            "noninferiority_high": -0.004093567251461988,
+            "noninferiority_coverage": 0.975,
+            "excluded": 0
+          },
+          "confirmed_diff": {
+            "estimate": 0.0636574074074074,
+            "low": 0.034693287037037064,
+            "high": 0.09375,
+            "n": 288,
+            "noninferiority_high": 0.09837962962962964,
+            "noninferiority_coverage": 0.975,
+            "excluded": 0
+          },
+          "decision": "r1_superior",
+          "missing_extremes": {
+            "x_worst_r1_best": {
+              "leak_diff": {
+                "estimate": 0.0625,
+                "low": 0.03356481481481481,
+                "high": 0.09143518518518519,
+                "n": 288,
+                "noninferiority_high": 0.09606481481481481,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "reject_diff": {
+                "estimate": -0.01637426900584795,
+                "low": -0.028654970760233923,
+                "high": -0.004678362573099415,
+                "n": 570,
+                "noninferiority_high": -0.0035087719298245606,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "confirmed_diff": {
+                "estimate": 0.0636574074074074,
+                "low": 0.03356481481481482,
+                "high": 0.09375,
+                "n": 288,
+                "noninferiority_high": 0.09837962962962962,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "decision": "r1_superior"
+            },
+            "x_best_r1_worst": {
+              "leak_diff": {
+                "estimate": 0.0625,
+                "low": 0.03356481481481481,
+                "high": 0.09259259259259259,
+                "n": 288,
+                "noninferiority_high": 0.09606481481481483,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "reject_diff": {
+                "estimate": -0.01695906432748538,
+                "low": -0.029254385964912276,
+                "high": -0.005263157894736842,
+                "n": 570,
+                "noninferiority_high": -0.0035087719298245615,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "confirmed_diff": {
+                "estimate": 0.0636574074074074,
+                "low": 0.034722222222222224,
+                "high": 0.0925925925925926,
+                "n": 288,
+                "noninferiority_high": 0.09722222222222224,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "decision": "r1_superior"
+            }
+          },
+          "affected_by_missing": false
+        },
+        "R1g": {
+          "leak_diff": {
+            "estimate": -0.060185185185185196,
+            "low": -0.08912037037037036,
+            "high": -0.033564814814814804,
+            "n": 288,
+            "noninferiority_high": -0.030092592592592584,
+            "noninferiority_coverage": 0.975,
+            "excluded": 0
+          },
+          "reject_diff": {
+            "estimate": 0.002339181286549707,
+            "low": -0.007032163742690047,
+            "high": 0.012280701754385965,
+            "n": 570,
+            "noninferiority_high": 0.014035087719298246,
+            "noninferiority_coverage": 0.975,
+            "excluded": 0
+          },
+          "confirmed_diff": {
+            "estimate": -0.05671296296296296,
+            "low": -0.08564814814814814,
+            "high": -0.028935185185185182,
+            "n": 288,
+            "noninferiority_high": -0.025462962962962972,
+            "noninferiority_coverage": 0.975,
+            "excluded": 0
+          },
+          "decision": "x_noninferior",
+          "missing_extremes": {
+            "x_worst_r1_best": {
+              "leak_diff": {
+                "estimate": -0.060185185185185196,
+                "low": -0.08912037037037036,
+                "high": -0.03240740740740741,
+                "n": 288,
+                "noninferiority_high": -0.02893518518518519,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "reject_diff": {
+                "estimate": 0.002339181286549707,
+                "low": -0.007602339181286549,
+                "high": 0.012280701754385967,
+                "n": 570,
+                "noninferiority_high": 0.014035087719298246,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "confirmed_diff": {
+                "estimate": -0.05671296296296296,
+                "low": -0.08564814814814814,
+                "high": -0.028935185185185182,
+                "n": 288,
+                "noninferiority_high": -0.025462962962962958,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "decision": "x_noninferior"
+            },
+            "x_best_r1_worst": {
+              "leak_diff": {
+                "estimate": -0.060185185185185196,
+                "low": -0.08912037037037036,
+                "high": -0.032407407407407406,
+                "n": 288,
+                "noninferiority_high": -0.028935185185185182,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "reject_diff": {
+                "estimate": 0.002339181286549707,
+                "low": -0.007602339181286549,
+                "high": 0.01286549707602339,
+                "n": 570,
+                "noninferiority_high": 0.014035087719298246,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "confirmed_diff": {
+                "estimate": -0.05671296296296296,
+                "low": -0.08564814814814815,
+                "high": -0.03009259259259259,
+                "n": 288,
+                "noninferiority_high": -0.02660590277777693,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "decision": "x_noninferior"
+            }
+          },
+          "affected_by_missing": false
+        }
+      },
+      "sensitivity": {
+        "exclude_known_issues": {
+          "R0": {
+            "leak_diff": {
+              "estimate": 0.062206572769953054,
+              "low": 0.03286384976525821,
+              "high": 0.09154929577464789,
+              "n": 284,
+              "noninferiority_high": 0.09624413145539906,
+              "noninferiority_coverage": 0.975,
+              "excluded": 0
+            },
+            "reject_diff": {
+              "estimate": -0.01695906432748538,
+              "low": -0.02982456140350877,
+              "high": -0.005263157894736842,
+              "n": 570,
+              "noninferiority_high": -0.0035087719298245615,
+              "noninferiority_coverage": 0.975,
+              "excluded": 0
+            },
+            "confirmed_diff": {
+              "estimate": 0.06220657276995304,
+              "low": 0.03286384976525822,
+              "high": 0.0915492957746479,
+              "n": 284,
+              "noninferiority_high": 0.09624413145539906,
+              "noninferiority_coverage": 0.975,
+              "excluded": 0
+            },
+            "decision": "r1_superior"
+          },
+          "R1g": {
+            "leak_diff": {
+              "estimate": -0.05868544600938968,
+              "low": -0.0880281690140845,
+              "high": -0.030516431924882632,
+              "n": 284,
+              "noninferiority_high": -0.02699530516431925,
+              "noninferiority_coverage": 0.975,
+              "excluded": 0
+            },
+            "reject_diff": {
+              "estimate": 0.002339181286549707,
+              "low": -0.007602339181286549,
+              "high": 0.012280701754385965,
+              "n": 570,
+              "noninferiority_high": 0.014035087719298246,
+              "noninferiority_coverage": 0.975,
+              "excluded": 0
+            },
+            "confirmed_diff": {
+              "estimate": -0.058685446009389665,
+              "low": -0.08685446009389672,
+              "high": -0.030516431924882632,
+              "n": 284,
+              "noninferiority_high": -0.02699530516431925,
+              "noninferiority_coverage": 0.975,
+              "excluded": 0
+            },
+            "decision": "x_noninferior"
+          }
+        },
+        "proofnet_only": {
+          "R0": {
+            "leak_diff": {
+              "estimate": 0.026217228464419474,
+              "low": -0.009363295880149817,
+              "high": 0.06367041198501872,
+              "n": 178,
+              "noninferiority_high": 0.06741573033707865,
+              "noninferiority_coverage": 0.975,
+              "excluded": 0
+            },
+            "reject_diff": {
+              "estimate": -0.024305555555555552,
+              "low": -0.05381944444444445,
+              "high": 0.0034722222222222225,
+              "n": 192,
+              "noninferiority_high": 0.008680555555555554,
+              "noninferiority_coverage": 0.975,
+              "excluded": 0
+            },
+            "confirmed_diff": {
+              "estimate": 0.026217228464419474,
+              "low": -0.009363295880149815,
+              "high": 0.06367041198501873,
+              "n": 178,
+              "noninferiority_high": 0.0692883895131086,
+              "noninferiority_coverage": 0.975,
+              "excluded": 0
+            },
+            "decision": "insufficient"
+          },
+          "R1g": {
+            "leak_diff": {
+              "estimate": -0.07116104868913858,
+              "low": -0.10861423220973782,
+              "high": -0.03558052434456929,
+              "n": 178,
+              "noninferiority_high": -0.03183520599250936,
+              "noninferiority_coverage": 0.975,
+              "excluded": 0
+            },
+            "reject_diff": {
+              "estimate": 0.010416666666666666,
+              "low": -0.01736111111111111,
+              "high": 0.03819444444444445,
+              "n": 192,
+              "noninferiority_high": 0.04340277777777777,
+              "noninferiority_coverage": 0.975,
+              "excluded": 0
+            },
+            "confirmed_diff": {
+              "estimate": -0.06741573033707865,
+              "low": -0.10299625468164796,
+              "high": -0.033707865168539325,
+              "n": 178,
+              "noninferiority_high": -0.029962546816479398,
+              "noninferiority_coverage": 0.975,
+              "excluded": 0
+            },
+            "decision": "x_noninferior"
+          }
+        },
+        "exclude_uncertain": {
+          "R0": {
+            "leak_diff": {
+              "estimate": 0.0636574074074074,
+              "low": 0.034722222222222224,
+              "high": 0.09375,
+              "n": 288,
+              "noninferiority_high": 0.09837962962962962,
+              "noninferiority_coverage": 0.975,
+              "excluded": 0
+            },
+            "reject_diff": {
+              "estimate": -0.01695906432748538,
+              "low": -0.02923976608187134,
+              "high": -0.005847953216374268,
+              "n": 570,
+              "noninferiority_high": -0.004093567251461988,
+              "noninferiority_coverage": 0.975,
+              "excluded": 0
+            },
+            "confirmed_diff": {
+              "estimate": 0.0636574074074074,
+              "low": 0.034722222222222224,
+              "high": 0.09375,
+              "n": 288,
+              "noninferiority_high": 0.09722222222222222,
+              "noninferiority_coverage": 0.975,
+              "excluded": 0
+            },
+            "decision": "r1_superior"
+          },
+          "R1g": {
+            "leak_diff": {
+              "estimate": -0.05807200929152148,
+              "low": -0.08710801393728224,
+              "high": -0.031358885017421595,
+              "n": 287,
+              "noninferiority_high": -0.026713124274099886,
+              "noninferiority_coverage": 0.975,
+              "excluded": 1
+            },
+            "reject_diff": {
+              "estimate": 0.002339181286549707,
+              "low": -0.007602339181286549,
+              "high": 0.012280701754385967,
+              "n": 570,
+              "noninferiority_high": 0.014035087719298246,
+              "noninferiority_coverage": 0.975,
+              "excluded": 0
+            },
+            "confirmed_diff": {
+              "estimate": -0.05807200929152148,
+              "low": -0.08710801393728222,
+              "high": -0.030197444831591178,
+              "n": 287,
+              "noninferiority_high": -0.026713124274099883,
+              "noninferiority_coverage": 0.975,
+              "excluded": 1
+            },
+            "decision": "x_noninferior"
+          }
+        },
+        "exclude_blocked_tools": {
+          "excluded_valid_calls": 87,
+          "comparisons": {
+            "R0": {
+              "leak_diff": {
+                "estimate": 0.06539351851851853,
+                "low": 0.036458333333333336,
+                "high": 0.0949074074074074,
+                "n": 288,
+                "noninferiority_high": 0.09895833333333333,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "reject_diff": {
+                "estimate": -0.017543859649122806,
+                "low": -0.030409356725146195,
+                "high": -0.005847953216374269,
+                "n": 570,
+                "noninferiority_high": -0.004093567251461989,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "confirmed_diff": {
+                "estimate": 0.06655092592592593,
+                "low": 0.03703703703703704,
+                "high": 0.09606481481481483,
+                "n": 288,
+                "noninferiority_high": 0.10069444444444445,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "decision": "r1_superior"
+            },
+            "R1g": {
+              "leak_diff": {
+                "estimate": -0.05944055944055944,
+                "low": -0.08857808857808858,
+                "high": -0.03205128205128205,
+                "n": 286,
+                "noninferiority_high": -0.029137529137529133,
+                "noninferiority_coverage": 0.975,
+                "excluded": 2
+              },
+              "reject_diff": {
+                "estimate": 0.0008771929824561402,
+                "low": -0.009356725146198829,
+                "high": 0.011695906432748537,
+                "n": 570,
+                "noninferiority_high": 0.013157894736842105,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "confirmed_diff": {
+                "estimate": -0.055944055944055944,
+                "low": -0.0844988344988345,
+                "high": -0.028554778554778552,
+                "n": 286,
+                "noninferiority_high": -0.024475524475524476,
+                "noninferiority_coverage": 0.975,
+                "excluded": 2
+              },
+              "decision": "x_noninferior"
+            }
+          },
+          "rule": "Exclude individual calls with confirmed blocked tool attempts; keep original published labels and remaining valid calls."
+        },
+        "majority": {
+          "R0": {
+            "leak_diff": {
+              "estimate": 0.059027777777777776,
+              "low": 0.020833333333333332,
+              "high": 0.09722222222222222,
+              "n": 288,
+              "noninferiority_high": 0.10416666666666667,
+              "noninferiority_coverage": 0.975,
+              "excluded": 0
+            },
+            "reject_diff": {
+              "estimate": -0.015817223198594025,
+              "low": -0.029876977152899824,
+              "high": -0.0017574692442882249,
+              "n": 569,
+              "noninferiority_high": 0.0,
+              "noninferiority_coverage": 0.975,
+              "excluded": 0
+            },
+            "confirmed_diff": {
+              "estimate": 0.059027777777777776,
+              "low": 0.020833333333333332,
+              "high": 0.09722222222222222,
+              "n": 288,
+              "noninferiority_high": 0.10416666666666667,
+              "noninferiority_coverage": 0.975,
+              "excluded": 0
+            },
+            "decision": "r1_superior",
+            "mcnemar": {
+              "a_only": 12,
+              "b_only": 38,
+              "pvalue": 0.00030586400160359517
+            }
+          },
+          "R1g": {
+            "leak_diff": {
+              "estimate": -0.06944444444444445,
+              "low": -0.10416666666666667,
+              "high": -0.034722222222222224,
+              "n": 288,
+              "noninferiority_high": -0.03125,
+              "noninferiority_coverage": 0.975,
+              "excluded": 0
+            },
+            "reject_diff": {
+              "estimate": 0.0035087719298245615,
+              "low": -0.008771929824561403,
+              "high": 0.015789473684210527,
+              "n": 570,
+              "noninferiority_high": 0.017543859649122806,
+              "noninferiority_coverage": 0.975,
+              "excluded": 0
+            },
+            "confirmed_diff": {
+              "estimate": -0.06944444444444445,
+              "low": -0.10416666666666667,
+              "high": -0.034722222222222224,
+              "n": 288,
+              "noninferiority_high": -0.03125,
+              "noninferiority_coverage": 0.975,
+              "excluded": 0
+            },
+            "decision": "x_noninferior",
+            "mcnemar": {
+              "a_only": 31,
+              "b_only": 9,
+              "pvalue": 0.0006795482549932785
+            }
+          }
+        }
+      },
+      "wording": {
+        "R0a": {
+          "leak_diff": {
+            "estimate": -0.010416666666666666,
+            "low": -0.04861111111111111,
+            "high": 0.027777777777777776,
+            "n": 288,
+            "noninferiority_high": 0.03125,
+            "noninferiority_coverage": 0.975,
+            "excluded": 0
+          },
+          "reject_diff": {
+            "estimate": null,
+            "low": null,
+            "high": null,
+            "n": 0,
+            "excluded": 570
+          },
+          "confirmed_diff": {
+            "estimate": -0.013888888888888888,
+            "low": -0.052083333333333336,
+            "high": 0.024305555555555556,
+            "n": 288,
+            "noninferiority_high": 0.027777777777777776,
+            "noninferiority_coverage": 0.975,
+            "excluded": 0
+          },
+          "decision": "insufficient",
+          "same_scale_as_R0": false,
+          "same_scale_as_R1g": false
+        },
+        "R0b": {
+          "leak_diff": {
+            "estimate": 0.0,
+            "low": -0.041666666666666664,
+            "high": 0.041666666666666664,
+            "n": 288,
+            "noninferiority_high": 0.04861111111111111,
+            "noninferiority_coverage": 0.975,
+            "excluded": 0
+          },
+          "reject_diff": {
+            "estimate": null,
+            "low": null,
+            "high": null,
+            "n": 0,
+            "excluded": 570
+          },
+          "confirmed_diff": {
+            "estimate": -0.003472222222222222,
+            "low": -0.04513888888888889,
+            "high": 0.03819444444444445,
+            "n": 288,
+            "noninferiority_high": 0.04171006944444697,
+            "noninferiority_coverage": 0.975,
+            "excluded": 0
+          },
+          "decision": "insufficient",
+          "same_scale_as_R0": false,
+          "same_scale_as_R1g": false
+        }
+      },
+      "source_results": {
+        "minif2f": {
+          "R0": {
+            "leak": {
+              "estimate": 0.44545454545454544,
+              "low": 0.36363636363636365,
+              "high": 0.5303030303030303,
+              "n": 110,
+              "noninferiority_high": 0.5424242424242424,
+              "noninferiority_coverage": 0.975,
+              "missing_best": 0.44545454545454544,
+              "missing_worst": 0.44545454545454544
+            },
+            "reject": {
+              "estimate": 0.01763668430335097,
+              "low": 0.00617283950617284,
+              "high": 0.030864197530864196,
+              "n": 378,
+              "noninferiority_high": 0.03350970017636684,
+              "noninferiority_coverage": 0.975,
+              "missing_best": 0.01763668430335097,
+              "missing_worst": 0.01763668430335097
+            },
+            "uncertain_unfaithful": {
+              "estimate": 0.0030303030303030303,
+              "low": 0.0,
+              "high": 0.00909090909090909,
+              "n": 110,
+              "noninferiority_high": 0.012121212121212121,
+              "noninferiority_coverage": 0.975
+            },
+            "uncertain_faithful": {
+              "estimate": 0.0,
+              "low": 0.0,
+              "high": 0.0,
+              "n": 378,
+              "noninferiority_high": 0.0,
+              "noninferiority_coverage": 0.975
+            },
+            "confirmed_unfaithful": {
+              "estimate": 0.5515151515151515,
+              "low": 0.4666666666666666,
+              "high": 0.6333333333333334,
+              "n": 110,
+              "noninferiority_high": 0.6454545454545455,
+              "noninferiority_coverage": 0.975
+            },
+            "auxiliary": {
+              "n_complete": 488,
+              "m": 3,
+              "flip_rate": 0.05942622950819672,
+              "kappa_binary": 0.8341452362070915,
+              "kappa_three": 0.8342760114760813,
+              "majority": {
+                "leak": 0.43636363636363634,
+                "reject": 0.015873015873015872
+              },
+              "one_veto": {
+                "leak": 0.33636363636363636,
+                "reject": 0.023809523809523808
+              }
+            },
+            "total_votes": 1464,
+            "missing_votes": 0
+          },
+          "R1": {
+            "leak": {
+              "estimate": 0.3242424242424242,
+              "low": 0.24242424242424243,
+              "high": 0.4090909090909091,
+              "n": 110,
+              "noninferiority_high": 0.42121212121212115,
+              "noninferiority_coverage": 0.975,
+              "missing_best": 0.3242424242424242,
+              "missing_worst": 0.3242424242424242
+            },
+            "reject": {
+              "estimate": 0.030864197530864196,
+              "low": 0.015873015873015872,
+              "high": 0.048500881834215165,
+              "n": 378,
+              "noninferiority_high": 0.05114638447971781,
+              "noninferiority_coverage": 0.975,
+              "missing_best": 0.030864197530864196,
+              "missing_worst": 0.030864197530864196
+            },
+            "uncertain_unfaithful": {
+              "estimate": 0.0,
+              "low": 0.0,
+              "high": 0.0,
+              "n": 110,
+              "noninferiority_high": 0.0,
+              "noninferiority_coverage": 0.975
+            },
+            "uncertain_faithful": {
+              "estimate": 0.0,
+              "low": 0.0,
+              "high": 0.0,
+              "n": 378,
+              "noninferiority_high": 0.0,
+              "noninferiority_coverage": 0.975
+            },
+            "confirmed_unfaithful": {
+              "estimate": 0.6757575757575759,
+              "low": 0.5939393939393939,
+              "high": 0.7575757575757576,
+              "n": 110,
+              "noninferiority_high": 0.7666666666666667,
+              "noninferiority_coverage": 0.975
+            },
+            "auxiliary": {
+              "n_complete": 488,
+              "m": 3,
+              "flip_rate": 0.0389344262295082,
+              "kappa_binary": 0.910602028616607,
+              "kappa_three": 0.910602028616607,
+              "majority": {
+                "leak": 0.3181818181818182,
+                "reject": 0.031746031746031744
+              },
+              "one_veto": {
+                "leak": 0.2727272727272727,
+                "reject": 0.03968253968253968
+              }
+            },
+            "total_votes": 1464,
+            "missing_votes": 0
+          },
+          "R1g": {
+            "leak": {
+              "estimate": 0.2818181818181818,
+              "low": 0.20909090909090908,
+              "high": 0.3606060606060606,
+              "n": 110,
+              "noninferiority_high": 0.36969696969696975,
+              "noninferiority_coverage": 0.975,
+              "missing_best": 0.2818181818181818,
+              "missing_worst": 0.2818181818181818
+            },
+            "reject": {
+              "estimate": 0.0291005291005291,
+              "low": 0.014109347442680775,
+              "high": 0.04673721340388006,
+              "n": 378,
+              "noninferiority_high": 0.049382716049382706,
+              "noninferiority_coverage": 0.975,
+              "missing_best": 0.0291005291005291,
+              "missing_worst": 0.0291005291005291
+            },
+            "uncertain_unfaithful": {
+              "estimate": 0.0030303030303030303,
+              "low": 0.0,
+              "high": 0.00909090909090909,
+              "n": 110,
+              "noninferiority_high": 0.012121212121212121,
+              "noninferiority_coverage": 0.975
+            },
+            "uncertain_faithful": {
+              "estimate": 0.0,
+              "low": 0.0,
+              "high": 0.0,
+              "n": 378,
+              "noninferiority_high": 0.0,
+              "noninferiority_coverage": 0.975
+            },
+            "confirmed_unfaithful": {
+              "estimate": 0.7151515151515151,
+              "low": 0.6363636363636364,
+              "high": 0.7909090909090909,
+              "n": 110,
+              "noninferiority_high": 0.8,
+              "noninferiority_coverage": 0.975
+            },
+            "auxiliary": {
+              "n_complete": 488,
+              "m": 3,
+              "flip_rate": 0.0430327868852459,
+              "kappa_binary": 0.9046342825237298,
+              "kappa_three": 0.9001763526308778,
+              "majority": {
+                "leak": 0.2727272727272727,
+                "reject": 0.0291005291005291
+              },
+              "one_veto": {
+                "leak": 0.20909090909090908,
+                "reject": 0.03439153439153439
+              }
+            },
+            "total_votes": 1464,
+            "missing_votes": 0
+          },
+          "R0a": {
+            "leak": {
+              "estimate": 0.45454545454545453,
+              "low": 0.36363636363636365,
+              "high": 0.5454545454545454,
+              "n": 110,
+              "noninferiority_high": 0.5636363636363636,
+              "noninferiority_coverage": 0.975,
+              "missing_best": 0.45454545454545453,
+              "missing_worst": 0.45454545454545453
+            },
+            "reject": {
+              "estimate": null,
+              "low": null,
+              "high": null,
+              "n": 0,
+              "missing_best": null,
+              "missing_worst": null
+            },
+            "uncertain_unfaithful": {
+              "estimate": 0.0,
+              "low": 0.0,
+              "high": 0.0,
+              "n": 110,
+              "noninferiority_high": 0.0,
+              "noninferiority_coverage": 0.975
+            },
+            "uncertain_faithful": {
+              "estimate": null,
+              "low": null,
+              "high": null,
+              "n": 0
+            },
+            "confirmed_unfaithful": {
+              "estimate": 0.5454545454545454,
+              "low": 0.45454545454545453,
+              "high": 0.6363636363636364,
+              "n": 110,
+              "noninferiority_high": 0.6545454545454545,
+              "noninferiority_coverage": 0.975
+            },
+            "auxiliary": {
+              "n_complete": 110,
+              "m": 1,
+              "flip_rate": null,
+              "kappa_binary": null,
+              "kappa_three": null
+            },
+            "total_votes": 110,
+            "missing_votes": 0
+          },
+          "R0b": {
+            "leak": {
+              "estimate": 0.43636363636363634,
+              "low": 0.34545454545454546,
+              "high": 0.5272727272727272,
+              "n": 110,
+              "noninferiority_high": 0.5454545454545454,
+              "noninferiority_coverage": 0.975,
+              "missing_best": 0.43636363636363634,
+              "missing_worst": 0.43636363636363634
+            },
+            "reject": {
+              "estimate": null,
+              "low": null,
+              "high": null,
+              "n": 0,
+              "missing_best": null,
+              "missing_worst": null
+            },
+            "uncertain_unfaithful": {
+              "estimate": 0.0,
+              "low": 0.0,
+              "high": 0.0,
+              "n": 110,
+              "noninferiority_high": 0.0,
+              "noninferiority_coverage": 0.975
+            },
+            "uncertain_faithful": {
+              "estimate": null,
+              "low": null,
+              "high": null,
+              "n": 0
+            },
+            "confirmed_unfaithful": {
+              "estimate": 0.5636363636363636,
+              "low": 0.4727272727272727,
+              "high": 0.6545454545454545,
+              "n": 110,
+              "noninferiority_high": 0.6727272727272727,
+              "noninferiority_coverage": 0.975
+            },
+            "auxiliary": {
+              "n_complete": 110,
+              "m": 1,
+              "flip_rate": null,
+              "kappa_binary": null,
+              "kappa_three": null
+            },
+            "total_votes": 110,
+            "missing_votes": 0
+          }
+        },
+        "proofnet": {
+          "R0": {
+            "leak": {
+              "estimate": 0.22284644194756553,
+              "low": 0.16853932584269662,
+              "high": 0.2808988764044944,
+              "n": 178,
+              "noninferiority_high": 0.2883895131086142,
+              "noninferiority_coverage": 0.975,
+              "missing_best": 0.22284644194756553,
+              "missing_worst": 0.22284644194756553
+            },
+            "reject": {
+              "estimate": 0.07465277777777778,
+              "low": 0.04340277777777777,
+              "high": 0.109375,
+              "n": 192,
+              "noninferiority_high": 0.11458333333333333,
+              "noninferiority_coverage": 0.975,
+              "missing_best": 0.07465277777777778,
+              "missing_worst": 0.07638888888888888
+            },
+            "uncertain_unfaithful": {
+              "estimate": 0.0018726591760299624,
+              "low": 0.0,
+              "high": 0.0056179775280898875,
+              "n": 178,
+              "noninferiority_high": 0.007490636704119849,
+              "noninferiority_coverage": 0.975
+            },
+            "uncertain_faithful": {
+              "estimate": 0.0,
+              "low": 0.0,
+              "high": 0.0,
+              "n": 192,
+              "noninferiority_high": 0.0,
+              "noninferiority_coverage": 0.975
+            },
+            "confirmed_unfaithful": {
+              "estimate": 0.7752808988764045,
+              "low": 0.7172284644194756,
+              "high": 0.8314606741573034,
+              "n": 178,
+              "noninferiority_high": 0.8389513108614233,
+              "noninferiority_coverage": 0.975
+            },
+            "auxiliary": {
+              "n_complete": 369,
+              "m": 3,
+              "flip_rate": 0.08401084010840108,
+              "kappa_binary": 0.8845486169518438,
+              "kappa_three": 0.8847258472483951,
+              "majority": {
+                "leak": 0.21910112359550563,
+                "reject": 0.07329842931937172
+              },
+              "one_veto": {
+                "leak": 0.16292134831460675,
+                "reject": 0.09947643979057591
+              }
+            },
+            "total_votes": 1110,
+            "missing_votes": 1
+          },
+          "R1": {
+            "leak": {
+              "estimate": 0.19662921348314608,
+              "low": 0.1441947565543071,
+              "high": 0.25098314606741506,
+              "n": 178,
+              "noninferiority_high": 0.26029962546816476,
+              "noninferiority_coverage": 0.975,
+              "missing_best": 0.19662921348314608,
+              "missing_worst": 0.19662921348314608
+            },
+            "reject": {
+              "estimate": 0.09895833333333333,
+              "low": 0.0625,
+              "high": 0.1388888888888889,
+              "n": 192,
+              "noninferiority_high": 0.14409722222222224,
+              "noninferiority_coverage": 0.975,
+              "missing_best": 0.09895833333333333,
+              "missing_worst": 0.09895833333333333
+            },
+            "uncertain_unfaithful": {
+              "estimate": 0.0018726591760299624,
+              "low": 0.0,
+              "high": 0.0056179775280898875,
+              "n": 178,
+              "noninferiority_high": 0.007490636704119849,
+              "noninferiority_coverage": 0.975
+            },
+            "uncertain_faithful": {
+              "estimate": 0.0,
+              "low": 0.0,
+              "high": 0.0,
+              "n": 192,
+              "noninferiority_high": 0.0,
+              "noninferiority_coverage": 0.975
+            },
+            "confirmed_unfaithful": {
+              "estimate": 0.8014981273408239,
+              "low": 0.745318352059925,
+              "high": 0.852059925093633,
+              "n": 178,
+              "noninferiority_high": 0.8595505617977528,
+              "noninferiority_coverage": 0.975
+            },
+            "auxiliary": {
+              "n_complete": 370,
+              "m": 3,
+              "flip_rate": 0.0972972972972973,
+              "kappa_binary": 0.8682336182336182,
+              "kappa_three": 0.868444011338309,
+              "majority": {
+                "leak": 0.19662921348314608,
+                "reject": 0.08854166666666667
+              },
+              "one_veto": {
+                "leak": 0.1348314606741573,
+                "reject": 0.140625
+              }
+            },
+            "total_votes": 1110,
+            "missing_votes": 0
+          },
+          "R1g": {
+            "leak": {
+              "estimate": 0.1254681647940075,
+              "low": 0.08426966292134831,
+              "high": 0.16853932584269662,
+              "n": 178,
+              "noninferiority_high": 0.17602996254681647,
+              "noninferiority_coverage": 0.975,
+              "missing_best": 0.1254681647940075,
+              "missing_worst": 0.1254681647940075
+            },
+            "reject": {
+              "estimate": 0.109375,
+              "low": 0.07118055555555555,
+              "high": 0.15104166666666666,
+              "n": 192,
+              "noninferiority_high": 0.1579861111111111,
+              "noninferiority_coverage": 0.975,
+              "missing_best": 0.109375,
+              "missing_worst": 0.109375
+            },
+            "uncertain_unfaithful": {
+              "estimate": 0.0056179775280898875,
+              "low": 0.0,
+              "high": 0.016853932584269662,
+              "n": 178,
+              "noninferiority_high": 0.02247191011235955,
+              "noninferiority_coverage": 0.975
+            },
+            "uncertain_faithful": {
+              "estimate": 0.0,
+              "low": 0.0,
+              "high": 0.0,
+              "n": 192,
+              "noninferiority_high": 0.0,
+              "noninferiority_coverage": 0.975
+            },
+            "confirmed_unfaithful": {
+              "estimate": 0.8689138576779027,
+              "low": 0.8220973782771536,
+              "high": 0.9101123595505618,
+              "n": 178,
+              "noninferiority_high": 0.9157303370786517,
+              "noninferiority_coverage": 0.975
+            },
+            "auxiliary": {
+              "n_complete": 370,
+              "m": 3,
+              "flip_rate": 0.10270270270270271,
+              "kappa_binary": 0.8627846454131424,
+              "kappa_three": 0.8634867516125585,
+              "majority": {
+                "leak": 0.11235955056179775,
+                "reject": 0.10416666666666667
+              },
+              "one_veto": {
+                "leak": 0.07303370786516854,
+                "reject": 0.15625
+              }
+            },
+            "total_votes": 1110,
+            "missing_votes": 0
+          },
+          "R0a": {
+            "leak": {
+              "estimate": 0.19662921348314608,
+              "low": 0.1404494382022472,
+              "high": 0.25842696629213485,
+              "n": 178,
+              "noninferiority_high": 0.2640449438202247,
+              "noninferiority_coverage": 0.975,
+              "missing_best": 0.19662921348314608,
+              "missing_worst": 0.19662921348314608
+            },
+            "reject": {
+              "estimate": null,
+              "low": null,
+              "high": null,
+              "n": 0,
+              "missing_best": null,
+              "missing_worst": null
+            },
+            "uncertain_unfaithful": {
+              "estimate": 0.0,
+              "low": 0.0,
+              "high": 0.0,
+              "n": 178,
+              "noninferiority_high": 0.0,
+              "noninferiority_coverage": 0.975
+            },
+            "uncertain_faithful": {
+              "estimate": null,
+              "low": null,
+              "high": null,
+              "n": 0
+            },
+            "confirmed_unfaithful": {
+              "estimate": 0.8033707865168539,
+              "low": 0.7415730337078652,
+              "high": 0.8595505617977528,
+              "n": 178,
+              "noninferiority_high": 0.8707865168539326,
+              "noninferiority_coverage": 0.975
+            },
+            "auxiliary": {
+              "n_complete": 178,
+              "m": 1,
+              "flip_rate": null,
+              "kappa_binary": null,
+              "kappa_three": null
+            },
+            "total_votes": 178,
+            "missing_votes": 0
+          },
+          "R0b": {
+            "leak": {
+              "estimate": 0.2247191011235955,
+              "low": 0.16292134831460675,
+              "high": 0.28651685393258425,
+              "n": 178,
+              "noninferiority_high": 0.29775280898876405,
+              "noninferiority_coverage": 0.975,
+              "missing_best": 0.2247191011235955,
+              "missing_worst": 0.2247191011235955
+            },
+            "reject": {
+              "estimate": null,
+              "low": null,
+              "high": null,
+              "n": 0,
+              "missing_best": null,
+              "missing_worst": null
+            },
+            "uncertain_unfaithful": {
+              "estimate": 0.0,
+              "low": 0.0,
+              "high": 0.0,
+              "n": 178,
+              "noninferiority_high": 0.0,
+              "noninferiority_coverage": 0.975
+            },
+            "uncertain_faithful": {
+              "estimate": null,
+              "low": null,
+              "high": null,
+              "n": 0
+            },
+            "confirmed_unfaithful": {
+              "estimate": 0.7752808988764045,
+              "low": 0.7134831460674157,
+              "high": 0.8370786516853933,
+              "n": 178,
+              "noninferiority_high": 0.8426966292134831,
+              "noninferiority_coverage": 0.975
+            },
+            "auxiliary": {
+              "n_complete": 178,
+              "m": 1,
+              "flip_rate": null,
+              "kappa_binary": null,
+              "kappa_three": null
+            },
+            "total_votes": 178,
+            "missing_votes": 0
+          }
+        }
+      },
+      "state_counts": {
+        "valid": 8297,
+        "tool_contaminated": 1
+      },
+      "decision": {
+        "action": "replace_with_r1g",
+        "rationale": "r1_superior_to_r0_and_r1g_noninferior",
+        "claims_superiority": true
+      },
+      "error_types": {
+        "C0": {
+          "R0": {
+            "estimate": 0.3333333333333333,
+            "low": 0.2582582582582582,
+            "high": 0.4114114114114114,
+            "n": 111,
+            "noninferiority_high": 0.42342342342342343,
+            "noninferiority_coverage": 0.975
+          },
+          "R1": {
+            "estimate": 0.24924924924924927,
+            "low": 0.17417417417417416,
+            "high": 0.32732732732732733,
+            "n": 111,
+            "noninferiority_high": 0.3393393393393394,
+            "noninferiority_coverage": 0.975
+          },
+          "R1g": {
+            "estimate": 0.2312312312312312,
+            "low": 0.15915915915915912,
+            "high": 0.3063063063063063,
+            "n": 111,
+            "noninferiority_high": 0.3153153153153153,
+            "noninferiority_coverage": 0.975
+          },
+          "R0a": {
+            "estimate": 0.2882882882882883,
+            "low": 0.2072072072072072,
+            "high": 0.3783783783783784,
+            "n": 111,
+            "noninferiority_high": 0.38738738738738737,
+            "noninferiority_coverage": 0.975
+          },
+          "R0b": {
+            "estimate": 0.27927927927927926,
+            "low": 0.1981981981981982,
+            "high": 0.36036036036036034,
+            "n": 111,
+            "noninferiority_high": 0.3783783783783784,
+            "noninferiority_coverage": 0.975
+          }
+        },
+        "C1": {
+          "R0": {
+            "estimate": 0.28333333333333327,
+            "low": 0.18333333333333332,
+            "high": 0.38888888888888895,
+            "n": 60,
+            "noninferiority_high": 0.40555555555555556,
+            "noninferiority_coverage": 0.975
+          },
+          "R1": {
+            "estimate": 0.2333333333333333,
+            "low": 0.1388888888888889,
+            "high": 0.3333333333333333,
+            "n": 60,
+            "noninferiority_high": 0.35,
+            "noninferiority_coverage": 0.975
+          },
+          "R1g": {
+            "estimate": 0.1,
+            "low": 0.03888888888888889,
+            "high": 0.16666666666666666,
+            "n": 60,
+            "noninferiority_high": 0.17777777777777776,
+            "noninferiority_coverage": 0.975
+          },
+          "R0a": {
+            "estimate": 0.3,
+            "low": 0.18333333333333332,
+            "high": 0.4166666666666667,
+            "n": 60,
+            "noninferiority_high": 0.43333333333333335,
+            "noninferiority_coverage": 0.975
+          },
+          "R0b": {
+            "estimate": 0.2833333333333333,
+            "low": 0.16666666666666666,
+            "high": 0.4,
+            "n": 60,
+            "noninferiority_high": 0.4166666666666667,
+            "noninferiority_coverage": 0.975
+          }
+        },
+        "C2": {
+          "R0": {
+            "estimate": 0.3076923076923077,
+            "low": 0.17094017094017094,
+            "high": 0.44444444444444453,
+            "n": 39,
+            "noninferiority_high": 0.4700854700854701,
+            "noninferiority_coverage": 0.975
+          },
+          "R1": {
+            "estimate": 0.3162393162393162,
+            "low": 0.18803418803418803,
+            "high": 0.45299145299145294,
+            "n": 39,
+            "noninferiority_high": 0.4700854700854701,
+            "noninferiority_coverage": 0.975
+          },
+          "R1g": {
+            "estimate": 0.2222222222222222,
+            "low": 0.1111111111111111,
+            "high": 0.34188034188034183,
+            "n": 39,
+            "noninferiority_high": 0.358974358974359,
+            "noninferiority_coverage": 0.975
+          },
+          "R0a": {
+            "estimate": 0.38461538461538464,
+            "low": 0.23076923076923078,
+            "high": 0.5384615384615384,
+            "n": 39,
+            "noninferiority_high": 0.5641025641025641,
+            "noninferiority_coverage": 0.975
+          },
+          "R0b": {
+            "estimate": 0.38461538461538464,
+            "low": 0.23076923076923078,
+            "high": 0.5384615384615384,
+            "n": 39,
+            "noninferiority_high": 0.5641025641025641,
+            "noninferiority_coverage": 0.975
+          }
+        },
+        "C3": {
+          "R0": {
+            "estimate": 0.05555555555555555,
+            "low": 0.0,
+            "high": 0.16666666666666666,
+            "n": 6,
+            "noninferiority_high": 0.16666666666666666,
+            "noninferiority_coverage": 0.975
+          },
+          "R1": {
+            "estimate": 0.16666666666666666,
+            "low": 0.0,
+            "high": 0.3888888888888889,
+            "n": 6,
+            "noninferiority_high": 0.4444444444444444,
+            "noninferiority_coverage": 0.975
+          },
+          "R1g": {
+            "estimate": 0.0,
+            "low": 0.0,
+            "high": 0.0,
+            "n": 6,
+            "noninferiority_high": 0.0,
+            "noninferiority_coverage": 0.975
+          },
+          "R0a": {
+            "estimate": 0.0,
+            "low": 0.0,
+            "high": 0.0,
+            "n": 6,
+            "noninferiority_high": 0.0,
+            "noninferiority_coverage": 0.975
+          },
+          "R0b": {
+            "estimate": 0.3333333333333333,
+            "low": 0.0,
+            "high": 0.6666666666666666,
+            "n": 6,
+            "noninferiority_high": 0.8333333333333334,
+            "noninferiority_coverage": 0.975
+          }
+        },
+        "C5": {
+          "R0": {
+            "estimate": 0.323671497584541,
+            "low": 0.22705314009661834,
+            "high": 0.42512077294685996,
+            "n": 69,
+            "noninferiority_high": 0.4396135265700483,
+            "noninferiority_coverage": 0.975
+          },
+          "R1": {
+            "estimate": 0.22705314009661834,
+            "low": 0.1400966183574879,
+            "high": 0.3188405797101449,
+            "n": 69,
+            "noninferiority_high": 0.3333333333333333,
+            "noninferiority_coverage": 0.975
+          },
+          "R1g": {
+            "estimate": 0.1884057971014493,
+            "low": 0.1111111111111111,
+            "high": 0.2753623188405797,
+            "n": 69,
+            "noninferiority_high": 0.2898550724637681,
+            "noninferiority_coverage": 0.975
+          },
+          "R0a": {
+            "estimate": 0.2898550724637681,
+            "low": 0.18840579710144928,
+            "high": 0.4057971014492754,
+            "n": 69,
+            "noninferiority_high": 0.42028985507246375,
+            "noninferiority_coverage": 0.975
+          },
+          "R0b": {
+            "estimate": 0.3333333333333333,
+            "low": 0.2318840579710145,
+            "high": 0.4492753623188406,
+            "n": 69,
+            "noninferiority_high": 0.463768115942029,
+            "noninferiority_coverage": 0.975
+          }
+        },
+        "C6": {
+          "R0": {
+            "estimate": 0.0,
+            "low": 0.0,
+            "high": 0.0,
+            "n": 2,
+            "noninferiority_high": 0.0,
+            "noninferiority_coverage": 0.975
+          },
+          "R1": {
+            "estimate": 0.0,
+            "low": 0.0,
+            "high": 0.0,
+            "n": 2,
+            "noninferiority_high": 0.0,
+            "noninferiority_coverage": 0.975
+          },
+          "R1g": {
+            "estimate": 0.0,
+            "low": 0.0,
+            "high": 0.0,
+            "n": 2,
+            "noninferiority_high": 0.0,
+            "noninferiority_coverage": 0.975
+          },
+          "R0a": {
+            "estimate": 0.0,
+            "low": 0.0,
+            "high": 0.0,
+            "n": 2,
+            "noninferiority_high": 0.0,
+            "noninferiority_coverage": 0.975
+          },
+          "R0b": {
+            "estimate": 0.0,
+            "low": 0.0,
+            "high": 0.0,
+            "n": 2,
+            "noninferiority_high": 0.0,
+            "noninferiority_coverage": 0.975
+          }
+        }
+      },
+      "selected_best_description": {
+        "config": "R1g",
+        "leak": {
+          "estimate": 0.18518518518518517,
+          "low": 0.14583333333333334,
+          "high": 0.22569444444444445,
+          "n": 288,
+          "noninferiority_high": 0.2314814814814815,
+          "noninferiority_coverage": 0.975,
+          "missing_best": 0.18518518518518517,
+          "missing_worst": 0.18518518518518517
+        },
+        "accepted_error_fraction": 0.09019165727170235,
+        "selection_bias_warning": true
+      },
+      "all_observed_state_counts": {
+        "valid": 8297,
+        "tool_contaminated": 1
+      },
+      "outside_complete_prefix": {
+        "calls": 0,
+        "states": {},
+        "blocked_attempt_calls": 0,
+        "descriptive_only": true
+      }
+    }
+  },
+  "exploratory_only_cross_model": true,
+  "frozen_plan_verified": true,
+  "format_repair": {
+    "rule": "reason-invalid-json-escape-v1",
+    "decision_after_collection_started": true,
+    "raw_outputs_preserved": true,
+    "amendment": "ANALYSIS_INPUT_AMENDMENT_01.md",
+    "by_model": {
+      "terra": {
+        "repaired_calls": 0,
+        "raw_states": {
+          "valid": 10872
+        }
+      },
+      "flash": {
+        "repaired_calls": 114,
+        "raw_states": {
+          "valid": 8183,
+          "format_failure": 114,
+          "tool_contaminated": 1
+        }
+      }
+    }
+  }
+}

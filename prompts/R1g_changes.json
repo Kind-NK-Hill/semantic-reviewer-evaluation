@@ -1,0 +1,27 @@
+[
+  {
+    "old": "- If any result is Incorrect of consistency, briefly list all inconsistencies and reasons leading to the Incorrect determination in comments",
+    "new": "Return JSON with two fields: \"verdict\" (one of \"faithful\", \"unfaithful\", \"uncertain\") and \"reason\" (one sentence stating the main reason).",
+    "reason": "输出 comments 的要求替换为共同输出要求。"
+  },
+  {
+    "old": "- Result must be strictly ”Correct” or ”Incorrect”",
+    "new": "Return JSON with two fields: \"verdict\" (one of \"faithful\", \"unfaithful\", \"uncertain\") and \"reason\" (one sentence stating the main reason).",
+    "reason": "二分类输出格式替换为共同三分类 JSON 输出要求。"
+  },
+  {
+    "old": "- Use ”Correct” ONLY when 100% mathematical equivalence is confirmed",
+    "new": "- Use ”faithful” ONLY when 100% mathematical equivalence is confirmed",
+    "reason": "按任务单将正确映射为 faithful，保留确认条件。"
+  },
+  {
+    "old": "If correct: clearly confirm why all elements match.\nIf incorrect: list all mismatches and explain how each one affects correctness.",
+    "new": "Return JSON with two fields: \"verdict\" (one of \"faithful\", \"unfaithful\", \"uncertain\") and \"reason\" (one sentence stating the main reason).",
+    "reason": "步骤 5 的输出解释要求替换为共同一句理由要求；步骤标题保留。"
+  },
+  {
+    "old": "Intput Format\nThe Natural Language Statement:\n[A math problem in Natural language]\nThe Formal Statement in Lean4:\n```\nlean4\n[A Lean 4 theorem statement formalizing the problem]\n```\nPrevious round of autoformalization and sematic validation if provided:\n[The existing critique, or an empty string if none exists.]\nOutput Format\nReturn exactly one XML object\n<\n<\ncomments\n>\n>\nYour brief analysis:\n1. Math Assertion Analysis: […]\n2. Lean Statement Analysis (Proof Ignored): […]\n3. Comparative Verification: […]\n4. Conclusion: […]\n5. Accuracy Confirmation: […match confirmation or list of discrepancies…]\n<\n<\n/comments\n>\n>\n<\n<\nconsistency\n>\n>\nCorrect/Incorrect\n<\n<\n/consistency\n>\n>\nNow! It’s your turn to compare the natural language statement with the formal statement in Lean4:\nThe Natural Language Statement\n{INFORMAL STATEMENT (QUESTION) HERE.}\nThe Formal Statement in Lean4:\n```\nlean4\n{FORMAL STATEMENT HERE.}\n```\nPrevious autoformalization and consistency Comments:\n{HISTORY CRITIC HERE}\nThink about the consistent result:\nThe model’s output here.",
+    "new": "Return JSON with two fields: \"verdict\" (one of \"faithful\", \"unfaithful\", \"uncertain\") and \"reason\" (one sentence stating the main reason).\n\n<problem>\n{informal_statement}\n</problem>\n\n<lean_header>\n{header}\n</lean_header>\n\n<lean_statement>\n{formal_statement}\n</lean_statement>",
+    "reason": "替换原输入占位、前轮历史输入和 XML 输出块；本实验没有前轮历史。"
+  }
+]
