@@ -1,4 +1,4 @@
-# Evaluation summary — v0.3
+# Evaluation summary — v0.4
 
 This study calibrates a semantic reviewer against 858 unique externally labeled
 natural-language/Lean-statement pairs. The published reference contains 570

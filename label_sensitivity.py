@@ -10,6 +10,7 @@ import argparse
 from collections import Counter
 import json
 from pathlib import Path
+import re
 import sys
 
 import numpy as np
@@ -57,6 +58,13 @@ def compute():
     queue = json.loads((ROOT / 'results/post_review.json').read_text(encoding='utf-8'))
     assert len(reviews) == 74 and len({r['id'] for r in reviews}) == 74
     assert {r['id'] for r in reviews} == {r['id'] for r in queue['priority_review']['items']}
+    certificates = set(re.findall(r'^theorem (\w+)',
+        (ROOT / 'evidence/lean/LabelChecks48.lean').read_text(encoding='utf-8'), re.M))
+    certificates |= {'scope48', 'type431'}
+    for r in reviews:
+        assert r['decision'] in ('faithful', 'unfaithful', 'convention'), r['id']
+        assert r['rationale'] and r['repair'], r['id']
+        assert all(e in certificates for e in r['evidence']), (r['id'], r['evidence'])
     by_id = {r['id']: r for r in reviews}
     original = np.array([r['label'] == 'true' for r in items])
     revised = original.copy()

@@ -1,3 +1,12 @@
+# 2026-11-10 — v0.4
+
+Rewrote the Chinese evaluation report around concrete findings, with the two
+label scenarios clearly separated. Combined the replay comparisons into one
+table and consolidated limitations. Verified the new tables and corrected
+factual wording about sign conventions, decision branches, planned source
+strata, local ablation effects, evidence coverage and author/AI roles.
+Added validation of review certificate references; numerical results unchanged.
+
 # 2026-11-10 — v0.3
 
 Completed 74 targeted technical reviews with per-item reasoning and repair

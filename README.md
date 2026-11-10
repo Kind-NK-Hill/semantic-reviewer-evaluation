@@ -2,7 +2,7 @@
 
 **Rules, repeated judgments, and second opinions in mathematical formalization**
 
-Shuo Deng · Evaluation report v0.3 · 10 November 2026
+Shuo Deng · Evaluation report v0.4 · 10 November 2026
 
 [中文评估报告](reports/evaluation-draft.zh-CN.md) · [English summary](reports/summary.en.md) · [中文项目说明](README.zh-CN.md) · [Results](results/main_table.csv)
 
@@ -91,8 +91,8 @@ establish improved proof repair, autonomous planning, tool-feedback use, or
 end-to-end completion in that engine. The tested six-rule prompt is adapted,
 not a replay of the complete production reviewer.
 
-All errors are relative to published labels. External model reviews informed
-the revision; full expert case adjudication remains outstanding. The author defined the
+Original error rates use published labels; the technical-review scenario is reported separately. External model reviews informed
+the revision; the 74-item technical review is complete. The author defined the
 study decisions; AI tools assisted implementation, execution, analysis and
 drafting. The draft makes no claim of independent mathematical certification.
 
