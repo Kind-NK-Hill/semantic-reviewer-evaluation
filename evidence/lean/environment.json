@@ -1,0 +1,8 @@
+{
+  "lean": "4.8.0",
+  "mathlib_revision": "b5eba595428809e96f3ed113bc7ba776c5f801ac",
+  "exit_code": 0,
+  "command": "lake env lean <repo>/evidence/lean/ScopeCheck48.lean",
+  "source_sha256": "e842cff92805717a1852a8868a65caa9c5133b15c7d6df5696d21df1ef3c28dd",
+  "note": "One original theorem uses sorry solely to inspect its elaborated type; independent scope/refutation/corrected-expression proofs list their own axioms."
+}

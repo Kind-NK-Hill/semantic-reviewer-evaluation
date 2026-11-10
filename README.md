@@ -2,9 +2,9 @@
 
 **Rules, repeated judgments, and second opinions in mathematical formalization**
 
-Shuo Deng · Evaluation draft v0.1 · 9 November 2026
+Shuo Deng · Evaluation report v0.2 · 10 November 2026
 
-[中文评估初稿](reports/evaluation-draft.zh-CN.md) · [English summary](reports/summary.en.md) · [中文项目说明](README.zh-CN.md) · [Results](results/main_table.csv)
+[中文评估报告](reports/evaluation-draft.zh-CN.md) · [English summary](reports/summary.en.md) · [中文项目说明](README.zh-CN.md) · [Results](results/main_table.csv)
 
 A theorem can compile while expressing the wrong problem. A model reviewer can
 also give the same wrong answer three times. This study calibrates a semantic
@@ -22,8 +22,8 @@ are not independent mathematical tasks. All three planned batches are complete.
   corresponding rates are 30.79% and 24.54%. The frozen selection rule chooses
   the minimal prompt for Terra and the adapted ReForm benchmark-review prompt
   for DeepSeek. These are registered-rule outcomes, not global deployment optima.
-- **Stable judgments can be stably wrong.** Under the six-rule prompt, 59/288
-  Terra items and 54/288 DeepSeek items are falsely accepted on all three calls.
+- **Stable judgments can persistently disagree with labels.** Under the six-rule
+  prompt, 59/288 Terra items and 54/288 DeepSeek false-labeled items are accepted on all three calls.
   Majority voting offers limited improvement. Requiring unanimous acceptance
   reduces false acceptance while increasing rejection of faithful items.
 - **A second opinion adds information but shares blind spots.** On the fixed
@@ -42,14 +42,23 @@ are not independent mathematical tasks. All three planned batches are complete.
 
 ## Read and reproduce
 
+The November 10 review adds two findings. Terra's near-zero R1-minus-R0 average
+combines a +7.78 percentage-point false-accept change on missing-premise items
+with -1.90 on other items. Twenty-six false-labeled items are accepted in all
+25 judgments, motivating a targeted label review. Separately, a Lean probe
+establishes an escaped variable in cc_0335 and refutes cc_0336's original closed
+expression while proving its parenthesized counterpart. See the
+[follow-up record](reports/review-followup.md) and [machine evidence](evidence/lean/README.md).
+
 | Purpose | File |
 |---|---|
-| Read the first evaluation draft | [Chinese report](reports/evaluation-draft.zh-CN.md) |
+| Read the evaluation report | [Chinese report](reports/evaluation-draft.zh-CN.md) |
 | Inspect frozen estimates, intervals and decisions | [Results JSON](results/main_results.json) |
 | Inspect exploratory reliability and second opinions | [Supplement JSON](results/supplement.json) |
 | Read the actual prompts | [Prompt templates](prompts/) |
 | Inspect 15 selected cases, still unadjudicated | [Case record](reports/key_cases.md) |
 | Review three concrete label questions without relabeling | [Pending questions](reports/label-review-questions.md) |
+| Inspect the new subgroup results and 74-item review queue | [Post-review results](results/post_review.json) |
 | Check simulation failures and confirmation | [Simulation rates](protocol/simulation-rates.md) |
 | Understand sources, exclusions and release scope | [Reproducibility](REPRODUCIBILITY.md), [provenance](protocol/provenance.json), [third-party notice](THIRD_PARTY_NOTICES.md) |
 
@@ -60,6 +69,7 @@ python -m pip install -r requirements.txt
 python verify_release.py
 python reproduce.py
 python supplement.py
+python post_review.py --check
 ```
 
 `reproduce.py` reruns the unchanged frozen statistical function bodies with
@@ -80,8 +90,8 @@ establish improved proof repair, autonomous planning, tool-feedback use, or
 end-to-end completion in that engine. The tested six-rule prompt is adapted,
 not a replay of the complete production reviewer.
 
-All errors are relative to published labels. Two external model reviews informed
-the revision; expert case adjudication remains outstanding. The author defined the
+All errors are relative to published labels. External model reviews informed
+the revision; full expert case adjudication remains outstanding. The author defined the
 study decisions; AI tools assisted implementation, execution, analysis and
 drafting. The draft makes no claim of independent mathematical certification.
 

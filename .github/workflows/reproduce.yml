@@ -13,3 +13,4 @@ jobs:
       - run: python verify_release.py
       - run: python reproduce.py
       - run: python supplement.py
+      - run: python post_review.py --check

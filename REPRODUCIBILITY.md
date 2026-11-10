@@ -1,8 +1,9 @@
 # Reproduction scope
 
 The package reproduces analysis from completed judgments. It does not make new
-model calls, recover hidden provider state, rerun Lean, or independently judge
-semantic labels. Python 3.12 and pinned dependencies are recorded in
+model calls, recover hidden provider state, or independently judge semantic
+labels. The Python workflow does not rerun Lean; a separate two-case Lean
+probe is supplied below. Python 3.12 and pinned dependencies are recorded in
 `requirements.txt`.
 
 1. `python verify_release.py` verifies the allowlisted publication files.
@@ -10,6 +11,9 @@ semantic labels. Python 3.12 and pinned dependencies are recorded in
    recomputes the frozen model-level statistics and checks every returned field.
 3. `python supplement.py` computes the explicitly exploratory repeat-policy,
    matched-transition and cross-model diagnostics.
+4. `python post_review.py --check` recomputes the November 10 exploratory C1
+   split, unanimous disagreements, 74-item priority queue, and notation-case
+   counts, comparing them with `results/post_review.json`.
 
 Outputs go to `recomputed/`, preserving saved results. `results/main_results.json`
 contains the original frozen analyzer output. The function bodies in
@@ -41,11 +45,37 @@ each model. The public reproduction checks planned counts, exact source
 statistics and normalization; it does not certify the original sandbox or
 provider identity. See the report for bounded probe claims and runtime changes.
 
+## Dependency-sensitive reproduction
+
+The pinned Python 3.12.12 / NumPy 1.26.4 / SciPy 1.13.1 run matched all 2,958
+comparable leaf fields and both frozen decisions. Four metadata keys exist only
+in the saved results: `all_observed_state_counts` and `outside_complete_prefix`
+for each route. The analysis functions do not recompute these keys.
+
+`python recheck_tolerant.py .` lists all differing leaves and one-sided keys
+instead of stopping at the first difference. The pinned run is recorded in
+[`evidence/reproduction_pinned.txt`](evidence/reproduction_pinned.txt).
+An external reviewer reported 36 interval-endpoint differences under Python
+3.13.18 / NumPy 2.5.3 / SciPy 1.18.1, with a maximum absolute change of about
+0.89 percentage points; point estimates and frozen choices matched. That run
+has not been independently repeated here. The cause is unresolved: exact
+reproduction is established for the pinned environment, not all versions.
+
+## Lean notation evidence
+
+[`evidence/lean/`](evidence/lean/README.md) contains a tested Lean 4.8.0 probe
+for the binding scope in cc_0335 and the false original / true parenthesized
+closed expressions in cc_0336, with the Mathlib revision and output. It preserves
+the source `in` syntax. Type inspection of the original cc_0335 theorem uses a
+placeholder; the separate `rfl` and `decide` proofs do not depend on it.
+This is not a packaged rerun of all 858 Lean tasks or a complete semantic
+adjudication of the dataset.
+
 ## Pending review
 
 - Independent mathematical adjudication of the selected cases.
 - Human spot-check of error-type classifications.
-- External interpretation review of this first draft.
+- Qualified adjudication of the 74-item targeted queue, using a written rubric.
 - Full Lean evidence/environment packaging if a later release requires it.
 
-These are stated limitations of the first draft, not completed validation.
+The external model reviews and local machine checks do not complete these tasks.

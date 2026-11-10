@@ -1,0 +1,2683 @@
+{
+  "scope": "exploratory; published labels unchanged; categories not human-validated",
+  "bootstrap": {
+    "seed": 5,
+    "draws": 10000,
+    "interval": "percentile 95%; unadjusted"
+  },
+  "C1_comparisons": [
+    {
+      "model": "terra",
+      "comparison": "R1-R0",
+      "C1": {
+        "n_items": 60,
+        "difference_pp": 7.777777777777777,
+        "ci95_pp": [
+          2.2222222222222223,
+          13.88888888888889
+        ]
+      },
+      "other": {
+        "n_items": 228,
+        "difference_pp": -1.9005847953216377,
+        "ci95_pp": [
+          -3.8011695906432745,
+          -0.2923976608187134
+        ]
+      }
+    },
+    {
+      "model": "terra",
+      "comparison": "R1g-R1",
+      "C1": {
+        "n_items": 60,
+        "difference_pp": -18.33333333333334,
+        "ci95_pp": [
+          -27.222222222222225,
+          -10.0
+        ]
+      },
+      "other": {
+        "n_items": 228,
+        "difference_pp": -2.7777777777777777,
+        "ci95_pp": [
+          -4.970760233918129,
+          -0.8771929824561401
+        ]
+      }
+    },
+    {
+      "model": "flash",
+      "comparison": "R1-R0",
+      "C1": {
+        "n_items": 60,
+        "difference_pp": -5.0,
+        "ci95_pp": [
+          -12.222222222222221,
+          2.222222222222223
+        ]
+      },
+      "other": {
+        "n_items": 228,
+        "difference_pp": -6.578947368421052,
+        "ci95_pp": [
+          -9.795321637426902,
+          -3.508771929824561
+        ]
+      }
+    },
+    {
+      "model": "flash",
+      "comparison": "R1g-R1",
+      "C1": {
+        "n_items": 60,
+        "difference_pp": -13.333333333333334,
+        "ci95_pp": [
+          -22.22222222222222,
+          -5.555555555555555
+        ]
+      },
+      "other": {
+        "n_items": 228,
+        "difference_pp": -4.093567251461989,
+        "ci95_pp": [
+          -6.871345029239767,
+          -1.4619883040935673
+        ]
+      }
+    }
+  ],
+  "unanimous_false_labeled": {
+    "ids": [
+      "cc_0022",
+      "cc_0029",
+      "cc_0033",
+      "cc_0046",
+      "cc_0049",
+      "cc_0097",
+      "cc_0117",
+      "cc_0135",
+      "cc_0178",
+      "cc_0223",
+      "cc_0228",
+      "cc_0261",
+      "cc_0285",
+      "cc_0328",
+      "cc_0333",
+      "cc_0335",
+      "cc_0336",
+      "cc_0379",
+      "cc_0435",
+      "cc_0499",
+      "cc_0529",
+      "cc_0552",
+      "cc_0611",
+      "cc_0713",
+      "cc_0753",
+      "cc_0774"
+    ],
+    "count": 26,
+    "main_false_accept_votes": 1185,
+    "these_items_main_accept_votes": 468,
+    "share_of_main_false_accept_votes": 0.3949367088607595
+  },
+  "priority_review": {
+    "rule": "R0/R1/R1g, both routes, three repetitions; >=13 explicitly opposite votes",
+    "counts_by_published_label": {
+      "false": 48,
+      "true": 26
+    },
+    "ordered_ids_sha256": "54a17e033a9a55209fbee7493548c2948d7ec1fe13e60b1f84b011fbbfee3e2a",
+    "items": [
+      {
+        "id": "cc_0013",
+        "source": "minif2f",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 14,
+          "unfaithful": 4
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "unfaithful": 3
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "unfaithful": 1,
+            "faithful": 2
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0022",
+        "source": "minif2f",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 18
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "faithful": 3
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "faithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0029",
+        "source": "minif2f",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 18
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "faithful": 3
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "faithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0031",
+        "source": "minif2f",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 17,
+          "unfaithful": 1
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "faithful": 3
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "unfaithful": 1,
+            "faithful": 2
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0033",
+        "source": "minif2f",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 18
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "faithful": 3
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "faithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0037",
+        "source": "minif2f",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 14,
+          "unfaithful": 4
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "unfaithful": 3
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "faithful": 2,
+            "unfaithful": 1
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0044",
+        "source": "minif2f",
+        "published_label": "true",
+        "main_votes": {
+          "unfaithful": 18
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "unfaithful": 3
+          },
+          "flash/R1": {
+            "unfaithful": 3
+          },
+          "flash/R1g": {
+            "unfaithful": 3
+          },
+          "terra/R0": {
+            "unfaithful": 3
+          },
+          "terra/R1": {
+            "unfaithful": 3
+          },
+          "terra/R1g": {
+            "unfaithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0046",
+        "source": "minif2f",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 18
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "faithful": 3
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "faithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0049",
+        "source": "minif2f",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 18
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "faithful": 3
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "faithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0097",
+        "source": "minif2f",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 18
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "faithful": 3
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "faithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0099",
+        "source": "minif2f",
+        "published_label": "true",
+        "main_votes": {
+          "faithful": 4,
+          "unfaithful": 14
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "faithful": 1,
+            "unfaithful": 2
+          },
+          "flash/R1g": {
+            "unfaithful": 3
+          },
+          "terra/R0": {
+            "unfaithful": 3
+          },
+          "terra/R1": {
+            "unfaithful": 3
+          },
+          "terra/R1g": {
+            "unfaithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0117",
+        "source": "minif2f",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 18
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "faithful": 3
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "faithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0135",
+        "source": "minif2f",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 18
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "faithful": 3
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "faithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0173",
+        "source": "minif2f",
+        "published_label": "true",
+        "main_votes": {
+          "unfaithful": 18
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "unfaithful": 3
+          },
+          "flash/R1": {
+            "unfaithful": 3
+          },
+          "flash/R1g": {
+            "unfaithful": 3
+          },
+          "terra/R0": {
+            "unfaithful": 3
+          },
+          "terra/R1": {
+            "unfaithful": 3
+          },
+          "terra/R1g": {
+            "unfaithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0178",
+        "source": "minif2f",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 18
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "faithful": 3
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "faithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0189",
+        "source": "minif2f",
+        "published_label": "true",
+        "main_votes": {
+          "unfaithful": 18
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "unfaithful": 3
+          },
+          "flash/R1": {
+            "unfaithful": 3
+          },
+          "flash/R1g": {
+            "unfaithful": 3
+          },
+          "terra/R0": {
+            "unfaithful": 3
+          },
+          "terra/R1": {
+            "unfaithful": 3
+          },
+          "terra/R1g": {
+            "unfaithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0193",
+        "source": "minif2f",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 14,
+          "unfaithful": 4
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "faithful": 2,
+            "unfaithful": 1
+          },
+          "flash/R1g": {
+            "unfaithful": 2,
+            "faithful": 1
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "faithful": 2,
+            "unfaithful": 1
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0197",
+        "source": "minif2f",
+        "published_label": "true",
+        "main_votes": {
+          "unfaithful": 18
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "unfaithful": 3
+          },
+          "flash/R1": {
+            "unfaithful": 3
+          },
+          "flash/R1g": {
+            "unfaithful": 3
+          },
+          "terra/R0": {
+            "unfaithful": 3
+          },
+          "terra/R1": {
+            "unfaithful": 3
+          },
+          "terra/R1g": {
+            "unfaithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0208",
+        "source": "minif2f",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 16,
+          "unfaithful": 2
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "faithful": 2,
+            "unfaithful": 1
+          },
+          "flash/R1g": {
+            "faithful": 2,
+            "unfaithful": 1
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "faithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0211",
+        "source": "minif2f",
+        "published_label": "true",
+        "main_votes": {
+          "faithful": 3,
+          "unfaithful": 15
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 2,
+            "unfaithful": 1
+          },
+          "flash/R1": {
+            "unfaithful": 2,
+            "faithful": 1
+          },
+          "flash/R1g": {
+            "unfaithful": 3
+          },
+          "terra/R0": {
+            "unfaithful": 3
+          },
+          "terra/R1": {
+            "unfaithful": 3
+          },
+          "terra/R1g": {
+            "unfaithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0223",
+        "source": "minif2f",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 18
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "faithful": 3
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "faithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0225",
+        "source": "minif2f",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 16,
+          "unfaithful": 2
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "faithful": 3
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "unfaithful": 2,
+            "faithful": 1
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0228",
+        "source": "minif2f",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 18
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "faithful": 3
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "faithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0261",
+        "source": "minif2f",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 18
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "faithful": 3
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "faithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0285",
+        "source": "minif2f",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 18
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "faithful": 3
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "faithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0298",
+        "source": "minif2f",
+        "published_label": "true",
+        "main_votes": {
+          "faithful": 3,
+          "unfaithful": 15
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "unfaithful": 3
+          },
+          "flash/R1g": {
+            "unfaithful": 3
+          },
+          "terra/R0": {
+            "unfaithful": 3
+          },
+          "terra/R1": {
+            "unfaithful": 3
+          },
+          "terra/R1g": {
+            "unfaithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0328",
+        "source": "minif2f",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 18
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "faithful": 3
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "faithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0333",
+        "source": "minif2f",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 18
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "faithful": 3
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "faithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0335",
+        "source": "minif2f",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 18
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "faithful": 3
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "faithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0336",
+        "source": "minif2f",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 18
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "faithful": 3
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "faithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0352",
+        "source": "minif2f",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 17,
+          "unfaithful": 1
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 2,
+            "unfaithful": 1
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "faithful": 3
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "faithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0379",
+        "source": "minif2f",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 18
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "faithful": 3
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "faithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0385",
+        "source": "minif2f",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 16,
+          "unfaithful": 2
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "faithful": 1,
+            "unfaithful": 2
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "faithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0407",
+        "source": "minif2f",
+        "published_label": "true",
+        "main_votes": {
+          "unfaithful": 17,
+          "faithful": 1
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "unfaithful": 2,
+            "faithful": 1
+          },
+          "flash/R1": {
+            "unfaithful": 3
+          },
+          "flash/R1g": {
+            "unfaithful": 3
+          },
+          "terra/R0": {
+            "unfaithful": 3
+          },
+          "terra/R1": {
+            "unfaithful": 3
+          },
+          "terra/R1g": {
+            "unfaithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0412",
+        "source": "minif2f",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 13,
+          "unfaithful": 5
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 2,
+            "unfaithful": 1
+          },
+          "flash/R1": {
+            "faithful": 1,
+            "unfaithful": 2
+          },
+          "flash/R1g": {
+            "unfaithful": 2,
+            "faithful": 1
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "faithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0422",
+        "source": "minif2f",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 16,
+          "unfaithful": 2
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "faithful": 3
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 1,
+            "unfaithful": 2
+          },
+          "terra/R1g": {
+            "faithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0435",
+        "source": "minif2f",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 18
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "faithful": 3
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "faithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0467",
+        "source": "minif2f",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 16,
+          "unfaithful": 2
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "unfaithful": 1,
+            "faithful": 2
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "faithful": 2,
+            "unfaithful": 1
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0475",
+        "source": "minif2f",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 16,
+          "unfaithful": 2
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "faithful": 2,
+            "unfaithful": 1
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 2,
+            "unfaithful": 1
+          },
+          "terra/R1g": {
+            "faithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0476",
+        "source": "minif2f",
+        "published_label": "true",
+        "main_votes": {
+          "unfaithful": 18
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "unfaithful": 3
+          },
+          "flash/R1": {
+            "unfaithful": 3
+          },
+          "flash/R1g": {
+            "unfaithful": 3
+          },
+          "terra/R0": {
+            "unfaithful": 3
+          },
+          "terra/R1": {
+            "unfaithful": 3
+          },
+          "terra/R1g": {
+            "unfaithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0487",
+        "source": "minif2f",
+        "published_label": "true",
+        "main_votes": {
+          "faithful": 4,
+          "unfaithful": 14
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "unfaithful": 3
+          },
+          "flash/R1g": {
+            "unfaithful": 2,
+            "faithful": 1
+          },
+          "terra/R0": {
+            "unfaithful": 3
+          },
+          "terra/R1": {
+            "unfaithful": 3
+          },
+          "terra/R1g": {
+            "unfaithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0490",
+        "source": "proofnet",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 16,
+          "unfaithful": 2
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 2,
+            "unfaithful": 1
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "faithful": 3
+          },
+          "terra/R0": {
+            "faithful": 2,
+            "unfaithful": 1
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "faithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0499",
+        "source": "proofnet",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 18
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "faithful": 3
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "faithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0529",
+        "source": "proofnet",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 18
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "faithful": 3
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "faithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0533",
+        "source": "proofnet",
+        "published_label": "true",
+        "main_votes": {
+          "unfaithful": 16,
+          "faithful": 2
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "unfaithful": 2,
+            "faithful": 1
+          },
+          "flash/R1": {
+            "unfaithful": 3
+          },
+          "flash/R1g": {
+            "faithful": 1,
+            "unfaithful": 2
+          },
+          "terra/R0": {
+            "unfaithful": 3
+          },
+          "terra/R1": {
+            "unfaithful": 3
+          },
+          "terra/R1g": {
+            "unfaithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0551",
+        "source": "proofnet",
+        "published_label": "true",
+        "main_votes": {
+          "unfaithful": 15,
+          "faithful": 3
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "unfaithful": 1,
+            "faithful": 2
+          },
+          "flash/R1": {
+            "unfaithful": 2,
+            "faithful": 1
+          },
+          "flash/R1g": {
+            "unfaithful": 3
+          },
+          "terra/R0": {
+            "unfaithful": 3
+          },
+          "terra/R1": {
+            "unfaithful": 3
+          },
+          "terra/R1g": {
+            "unfaithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0552",
+        "source": "proofnet",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 18
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "faithful": 3
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "faithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0589",
+        "source": "proofnet",
+        "published_label": "true",
+        "main_votes": {
+          "unfaithful": 18
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "unfaithful": 3
+          },
+          "flash/R1": {
+            "unfaithful": 3
+          },
+          "flash/R1g": {
+            "unfaithful": 3
+          },
+          "terra/R0": {
+            "unfaithful": 3
+          },
+          "terra/R1": {
+            "unfaithful": 3
+          },
+          "terra/R1g": {
+            "unfaithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0611",
+        "source": "proofnet",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 18
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "faithful": 3
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "faithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0617",
+        "source": "proofnet",
+        "published_label": "true",
+        "main_votes": {
+          "unfaithful": 17,
+          "faithful": 1
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "unfaithful": 3
+          },
+          "flash/R1": {
+            "unfaithful": 3
+          },
+          "flash/R1g": {
+            "unfaithful": 3
+          },
+          "terra/R0": {
+            "unfaithful": 3
+          },
+          "terra/R1": {
+            "unfaithful": 3
+          },
+          "terra/R1g": {
+            "unfaithful": 2,
+            "faithful": 1
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0620",
+        "source": "proofnet",
+        "published_label": "true",
+        "main_votes": {
+          "faithful": 5,
+          "unfaithful": 13
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "unfaithful": 1,
+            "faithful": 2
+          },
+          "flash/R1g": {
+            "unfaithful": 3
+          },
+          "terra/R0": {
+            "unfaithful": 3
+          },
+          "terra/R1": {
+            "unfaithful": 3
+          },
+          "terra/R1g": {
+            "unfaithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0627",
+        "source": "proofnet",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 13,
+          "unfaithful": 5
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 2,
+            "unfaithful": 1
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "faithful": 3
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 2,
+            "unfaithful": 1
+          },
+          "terra/R1g": {
+            "unfaithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0633",
+        "source": "proofnet",
+        "published_label": "false",
+        "main_votes": {
+          "unfaithful": 4,
+          "faithful": 14
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "unfaithful": 2,
+            "faithful": 1
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "faithful": 1,
+            "unfaithful": 2
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "faithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0635",
+        "source": "proofnet",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 17,
+          "unfaithful": 1
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "unfaithful": 1,
+            "faithful": 2
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "faithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0642",
+        "source": "proofnet",
+        "published_label": "true",
+        "main_votes": {
+          "faithful": 3,
+          "unfaithful": 15
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "unfaithful": 3
+          },
+          "flash/R1g": {
+            "unfaithful": 3
+          },
+          "terra/R0": {
+            "unfaithful": 3
+          },
+          "terra/R1": {
+            "unfaithful": 3
+          },
+          "terra/R1g": {
+            "unfaithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0654",
+        "source": "proofnet",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 16,
+          "unfaithful": 2
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "faithful": 2,
+            "unfaithful": 1
+          },
+          "flash/R1g": {
+            "faithful": 2,
+            "unfaithful": 1
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "faithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0662",
+        "source": "proofnet",
+        "published_label": "true",
+        "main_votes": {
+          "unfaithful": 17,
+          "faithful": 1
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "unfaithful": 3
+          },
+          "flash/R1": {
+            "unfaithful": 3
+          },
+          "flash/R1g": {
+            "unfaithful": 2,
+            "faithful": 1
+          },
+          "terra/R0": {
+            "unfaithful": 3
+          },
+          "terra/R1": {
+            "unfaithful": 3
+          },
+          "terra/R1g": {
+            "unfaithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0663",
+        "source": "proofnet",
+        "published_label": "true",
+        "main_votes": {
+          "unfaithful": 18
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "unfaithful": 3
+          },
+          "flash/R1": {
+            "unfaithful": 3
+          },
+          "flash/R1g": {
+            "unfaithful": 3
+          },
+          "terra/R0": {
+            "unfaithful": 3
+          },
+          "terra/R1": {
+            "unfaithful": 3
+          },
+          "terra/R1g": {
+            "unfaithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0666",
+        "source": "proofnet",
+        "published_label": "true",
+        "main_votes": {
+          "unfaithful": 18
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "unfaithful": 3
+          },
+          "flash/R1": {
+            "unfaithful": 3
+          },
+          "flash/R1g": {
+            "unfaithful": 3
+          },
+          "terra/R0": {
+            "unfaithful": 3
+          },
+          "terra/R1": {
+            "unfaithful": 3
+          },
+          "terra/R1g": {
+            "unfaithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0668",
+        "source": "proofnet",
+        "published_label": "true",
+        "main_votes": {
+          "faithful": 4,
+          "unfaithful": 14
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "unfaithful": 3
+          },
+          "flash/R1g": {
+            "faithful": 1,
+            "unfaithful": 2
+          },
+          "terra/R0": {
+            "unfaithful": 3
+          },
+          "terra/R1": {
+            "unfaithful": 3
+          },
+          "terra/R1g": {
+            "unfaithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0676",
+        "source": "proofnet",
+        "published_label": "true",
+        "main_votes": {
+          "faithful": 5,
+          "unfaithful": 13
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "unfaithful": 3
+          },
+          "flash/R1g": {
+            "faithful": 2,
+            "unfaithful": 1
+          },
+          "terra/R0": {
+            "unfaithful": 3
+          },
+          "terra/R1": {
+            "unfaithful": 3
+          },
+          "terra/R1g": {
+            "unfaithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0713",
+        "source": "proofnet",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 18
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "faithful": 3
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "faithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0743",
+        "source": "proofnet",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 13,
+          "unfaithful": 5
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "unfaithful": 2,
+            "faithful": 1
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "unfaithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0751",
+        "source": "proofnet",
+        "published_label": "true",
+        "main_votes": {
+          "faithful": 5,
+          "unfaithful": 13
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 2,
+            "unfaithful": 1
+          },
+          "flash/R1": {
+            "faithful": 2,
+            "unfaithful": 1
+          },
+          "flash/R1g": {
+            "unfaithful": 2,
+            "faithful": 1
+          },
+          "terra/R0": {
+            "unfaithful": 3
+          },
+          "terra/R1": {
+            "unfaithful": 3
+          },
+          "terra/R1g": {
+            "unfaithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0753",
+        "source": "proofnet",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 18
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "faithful": 3
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "faithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0768",
+        "source": "proofnet",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 17,
+          "unfaithful": 1
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "faithful": 2,
+            "unfaithful": 1
+          },
+          "flash/R1g": {
+            "faithful": 3
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "faithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0772",
+        "source": "proofnet",
+        "published_label": "true",
+        "main_votes": {
+          "unfaithful": 13,
+          "faithful": 5
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "unfaithful": 3
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "faithful": 2,
+            "unfaithful": 1
+          },
+          "terra/R0": {
+            "unfaithful": 3
+          },
+          "terra/R1": {
+            "unfaithful": 3
+          },
+          "terra/R1g": {
+            "unfaithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0774",
+        "source": "proofnet",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 18
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "faithful": 3
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "faithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0790",
+        "source": "proofnet",
+        "published_label": "true",
+        "main_votes": {
+          "unfaithful": 18
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "unfaithful": 3
+          },
+          "flash/R1": {
+            "unfaithful": 3
+          },
+          "flash/R1g": {
+            "unfaithful": 3
+          },
+          "terra/R0": {
+            "unfaithful": 3
+          },
+          "terra/R1": {
+            "unfaithful": 3
+          },
+          "terra/R1g": {
+            "unfaithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0795",
+        "source": "proofnet",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 16,
+          "unfaithful": 2
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "unfaithful": 2,
+            "faithful": 1
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "faithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0797",
+        "source": "proofnet",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 14,
+          "unfaithful": 4
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 1,
+            "unfaithful": 2
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "faithful": 1,
+            "unfaithful": 2
+          },
+          "terra/R0": {
+            "faithful": 3
+          },
+          "terra/R1": {
+            "faithful": 3
+          },
+          "terra/R1g": {
+            "faithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0803",
+        "source": "proofnet",
+        "published_label": "true",
+        "main_votes": {
+          "unfaithful": 15,
+          "faithful": 3
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "unfaithful": 3
+          },
+          "flash/R1": {
+            "faithful": 2,
+            "unfaithful": 1
+          },
+          "flash/R1g": {
+            "unfaithful": 2,
+            "faithful": 1
+          },
+          "terra/R0": {
+            "unfaithful": 3
+          },
+          "terra/R1": {
+            "unfaithful": 3
+          },
+          "terra/R1g": {
+            "unfaithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0822",
+        "source": "proofnet",
+        "published_label": "true",
+        "main_votes": {
+          "unfaithful": 17,
+          "faithful": 1
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "unfaithful": 3
+          },
+          "flash/R1": {
+            "faithful": 1,
+            "unfaithful": 2
+          },
+          "flash/R1g": {
+            "unfaithful": 3
+          },
+          "terra/R0": {
+            "unfaithful": 3
+          },
+          "terra/R1": {
+            "unfaithful": 3
+          },
+          "terra/R1g": {
+            "unfaithful": 3
+          }
+        },
+        "adjudication": "pending"
+      },
+      {
+        "id": "cc_0832",
+        "source": "proofnet",
+        "published_label": "false",
+        "main_votes": {
+          "faithful": 13,
+          "unfaithful": 5
+        },
+        "by_route_config": {
+          "flash/R0": {
+            "faithful": 3
+          },
+          "flash/R1": {
+            "faithful": 3
+          },
+          "flash/R1g": {
+            "faithful": 2,
+            "unfaithful": 1
+          },
+          "terra/R0": {
+            "faithful": 2,
+            "unfaithful": 1
+          },
+          "terra/R1": {
+            "unfaithful": 2,
+            "faithful": 1
+          },
+          "terra/R1g": {
+            "faithful": 2,
+            "unfaithful": 1
+          }
+        },
+        "adjudication": "pending"
+      }
+    ]
+  },
+  "scope_reason_matches": [
+    {
+      "id": "cc_0170",
+      "published_label": "false",
+      "human_reasons": [
+        "Parentheses need to be added before and after `c (m + i) - c k`."
+      ],
+      "all_valid_votes": {
+        "unfaithful": 25
+      }
+    },
+    {
+      "id": "cc_0175",
+      "published_label": "false",
+      "human_reasons": [
+        "Parentheses need to be added before and after `2 * k + 1`."
+      ],
+      "all_valid_votes": {
+        "unfaithful": 25
+      }
+    },
+    {
+      "id": "cc_0328",
+      "published_label": "false",
+      "human_reasons": [
+        "k is outside the scope of production"
+      ],
+      "all_valid_votes": {
+        "faithful": 25
+      }
+    },
+    {
+      "id": "cc_0335",
+      "published_label": "false",
+      "human_reasons": [
+        "k is outside the scope of production"
+      ],
+      "all_valid_votes": {
+        "faithful": 25
+      }
+    },
+    {
+      "id": "cc_0336",
+      "published_label": "false",
+      "human_reasons": [
+        "Parentheses need to be added before and after `2 * k + 1`."
+      ],
+      "all_valid_votes": {
+        "faithful": 25
+      }
+    },
+    {
+      "id": "cc_0345",
+      "published_label": "false",
+      "human_reasons": [
+        "Parentheses should not be added before and after `k ^ 2`."
+      ],
+      "all_valid_votes": {
+        "unfaithful": 25
+      }
+    },
+    {
+      "id": "cc_0379",
+      "published_label": "false",
+      "human_reasons": [
+        "k is outside the scope of production"
+      ],
+      "all_valid_votes": {
+        "faithful": 25
+      }
+    },
+    {
+      "id": "cc_0422",
+      "published_label": "false",
+      "human_reasons": [
+        "The scope of the universal quantifier after iff is too large"
+      ],
+      "all_valid_votes": {
+        "faithful": 22,
+        "unfaithful": 3
+      }
+    },
+    {
+      "id": "cc_0435",
+      "published_label": "false",
+      "human_reasons": [
+        "k is outside the scope of production"
+      ],
+      "all_valid_votes": {
+        "faithful": 25
+      }
+    },
+    {
+      "id": "cc_0467",
+      "published_label": "false",
+      "human_reasons": [
+        "k is outside the scope of production"
+      ],
+      "all_valid_votes": {
+        "faithful": 23,
+        "unfaithful": 2
+      }
+    },
+    {
+      "id": "cc_0529",
+      "published_label": "false",
+      "human_reasons": [
+        "existential quantifier scope is too large"
+      ],
+      "all_valid_votes": {
+        "faithful": 25
+      }
+    },
+    {
+      "id": "cc_0658",
+      "published_label": "false",
+      "human_reasons": [
+        "The scope of the existential quantifier is too large"
+      ],
+      "all_valid_votes": {
+        "unfaithful": 25
+      }
+    },
+    {
+      "id": "cc_0667",
+      "published_label": "false",
+      "human_reasons": [
+        "The scope of the existential quantifier is too large"
+      ],
+      "all_valid_votes": {
+        "faithful": 9,
+        "unfaithful": 16
+      }
+    },
+    {
+      "id": "cc_0679",
+      "published_label": "false",
+      "human_reasons": [
+        "The scope of the existential quantifier is too large"
+      ],
+      "all_valid_votes": {
+        "unfaithful": 25
+      }
+    },
+    {
+      "id": "cc_0692",
+      "published_label": "false",
+      "human_reasons": [
+        "The scope of the universal quantifier is too large"
+      ],
+      "all_valid_votes": {
+        "faithful": 9,
+        "unfaithful": 16
+      }
+    },
+    {
+      "id": "cc_0697",
+      "published_label": "false",
+      "human_reasons": [
+        "The scope of the universal quantifier is too large"
+      ],
+      "all_valid_votes": {
+        "unfaithful": 21,
+        "faithful": 4
+      }
+    },
+    {
+      "id": "cc_0844",
+      "published_label": "false",
+      "human_reasons": [
+        "The scope of the existential quantifier is too large"
+      ],
+      "all_valid_votes": {
+        "faithful": 3,
+        "unfaithful": 22
+      }
+    }
+  ],
+  "big_operator_reason_matches": [
+    {
+      "id": "cc_0170",
+      "published_label": "false",
+      "human_reasons": [
+        "Parentheses need to be added before and after `c (m + i) - c k`."
+      ],
+      "all_valid_votes": {
+        "unfaithful": 25
+      }
+    },
+    {
+      "id": "cc_0175",
+      "published_label": "false",
+      "human_reasons": [
+        "Parentheses need to be added before and after `2 * k + 1`."
+      ],
+      "all_valid_votes": {
+        "unfaithful": 25
+      }
+    },
+    {
+      "id": "cc_0328",
+      "published_label": "false",
+      "human_reasons": [
+        "k is outside the scope of production"
+      ],
+      "all_valid_votes": {
+        "faithful": 25
+      }
+    },
+    {
+      "id": "cc_0335",
+      "published_label": "false",
+      "human_reasons": [
+        "k is outside the scope of production"
+      ],
+      "all_valid_votes": {
+        "faithful": 25
+      }
+    },
+    {
+      "id": "cc_0336",
+      "published_label": "false",
+      "human_reasons": [
+        "Parentheses need to be added before and after `2 * k + 1`."
+      ],
+      "all_valid_votes": {
+        "faithful": 25
+      }
+    },
+    {
+      "id": "cc_0345",
+      "published_label": "false",
+      "human_reasons": [
+        "Parentheses should not be added before and after `k ^ 2`."
+      ],
+      "all_valid_votes": {
+        "unfaithful": 25
+      }
+    },
+    {
+      "id": "cc_0379",
+      "published_label": "false",
+      "human_reasons": [
+        "k is outside the scope of production"
+      ],
+      "all_valid_votes": {
+        "faithful": 25
+      }
+    },
+    {
+      "id": "cc_0435",
+      "published_label": "false",
+      "human_reasons": [
+        "k is outside the scope of production"
+      ],
+      "all_valid_votes": {
+        "faithful": 25
+      }
+    },
+    {
+      "id": "cc_0467",
+      "published_label": "false",
+      "human_reasons": [
+        "k is outside the scope of production"
+      ],
+      "all_valid_votes": {
+        "faithful": 23,
+        "unfaithful": 2
+      }
+    }
+  ],
+  "scope_six": {
+    "ids": [
+      "cc_0328",
+      "cc_0335",
+      "cc_0336",
+      "cc_0379",
+      "cc_0435",
+      "cc_0467"
+    ],
+    "valid_votes": 150,
+    "verdicts": {
+      "faithful": 148,
+      "unfaithful": 2
+    }
+  },
+  "raw_counts_from_provenance_rows": {
+    "minif2f": {
+      "true": 378,
+      "false": 110
+    },
+    "proofnet": {
+      "true": 192,
+      "false": 179
+    }
+  },
+  "unique_counts": {
+    "minif2f": {
+      "true": 378,
+      "false": 110
+    },
+    "proofnet": {
+      "true": 192,
+      "false": 178
+    }
+  }
+}

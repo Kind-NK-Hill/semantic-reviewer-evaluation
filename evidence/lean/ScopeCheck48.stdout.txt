@@ -1,0 +1,11 @@
+<workspace>\publication\semantic-reviewer-evaluation\evidence\lean\ScopeCheck48.lean:9:8: warning: declaration uses 'sorry'
+<workspace>\publication\semantic-reviewer-evaluation\evidence\lean\ScopeCheck48.lean:14:7: warning: unused variable `k`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+<workspace>\publication\semantic-reviewer-evaluation\evidence\lean\ScopeCheck48.lean:17:31: warning: unused variable `j`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+def cc0335_expression : Nat → Real → Real :=
+fun n k => HAdd.hAdd ((Finset.Icc 1 n).prod fun k => 1) (HDiv.hDiv 1 (HPow.hPow k 3))
+@induction_prod1p1onk3le3m1onn : ∀ {k : ℝ} (n : ℕ), 0 < n → ∏ k ∈ Finset.Icc 1 n, 1 + 1 / k ^ 3 ≤ 3 - 1 / ↑n
+'cc0335_scope' depends on axioms: [propext, Classical.choice, Quot.sound]
+'cc0336_original_false' depends on axioms: [propext, Quot.sound]
+'cc0336_parenthesized_true' depends on axioms: [propext, Quot.sound]

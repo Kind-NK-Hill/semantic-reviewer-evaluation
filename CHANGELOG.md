@@ -1,5 +1,25 @@
 # Changes
 
+## v0.2 — 2026-11-10
+
+- Applied verified Fable 5.2 review suggestions: exploratory C1-versus-other
+  paired differences, 26 unanimously opposed labels, and a 74-item priority
+  review queue with explicit selection rules.
+- Added a separate reproducible analysis script and saved results; CI checks
+  them without changing frozen statistical code or primary results.
+- Added a Lean 4.8.0 probe preserving the original notation: cc_0335 scope
+  expansion, cc_0336 original-expression refutation and parenthesized-expression
+  proof. Published the fixed Mathlib revision and output, and corrected the
+  earlier surface-reading doubt about cc_0335.
+- Recorded the raw source snapshot's hash and label counts, whose proportions
+  remain unmatched to the paper's reported percentages.
+- Documented pinned-environment reproduction, four non-recomputed metadata
+  keys, and the external reviewer's unresolved cross-environment differences.
+- Corrected prompt provenance and public-release wording; distinguished the
+  three related projects. Added a follow-up record of completed and pending work.
+- No new model calls, expert relabeling, or changes to the collected judgments,
+  registered decision rule, or frozen primary results.
+
 ## Review corrections — 2026-11-09
 
 Corrected the decision-tree description, clarified the benchmark-origin prompt, and added exploratory strategy/cost and raw-format sensitivity comparisons. Added three concrete, unadjudicated label questions. Frozen primary results and source judgments remain unchanged.

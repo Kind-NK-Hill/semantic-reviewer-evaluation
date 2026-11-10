@@ -15,7 +15,9 @@ https://huggingface.co/datasets/PAug/ProofNetVerif/tree/91183e5b12d64374827bf278
 It is not a second independent main sample in this evaluation.
 
 R1 is an adaptation of semantic requirements from the author's formalization
-project; R1g adapts a public general consistency-check prompt. Original prompt
+project; R1g adapts the consistency-check prompt used by the benchmark's
+originating work (ReForm, Appendix D.2), not a benchmark-independent general
+prompt. Original prompt
 templates and the preparation source documenting transformations are included.
 These are experimentally different prompt packages, not an isolated test of
 one principle.
@@ -24,7 +26,6 @@ Related author projects:
 - https://github.com/Kind-NK-Hill/ProbabilityTheoryFormalization
 - https://github.com/Kind-NK-Hill/review-history-evaluation
 
-This initial private draft does not grant a new blanket license over
+This publication does not grant a new blanket license over
 third-party data, model outputs or the related projects. Their existing terms
-remain applicable. Publication/licensing decisions can be made separately
-before a public release.
+remain applicable.

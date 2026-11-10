@@ -1,0 +1,7 @@
+python 3.12.12  numpy 1.26.4  scipy 1.13.1
+leaves compared: 2958   differing: 0   keys on one side only: 4
+KEY  terra.all_observed_state_counts	frozen only
+KEY  terra.outside_complete_prefix	frozen only
+KEY  flash.all_observed_state_counts	frozen only
+KEY  flash.outside_complete_prefix	frozen only
+decisions: {'terra': {'action': 'replace_with_r0', 'rationale': 'r0_noninferior', 'claims_superiority': False}, 'flash': {'action': 'replace_with_r1g', 'rationale': 'r1_superior_to_r0_and_r1g_noninferior', 'claims_superiority': True}} | frozen: {'terra': {'action': 'replace_with_r0', 'rationale': 'r0_noninferior', 'claims_superiority': False}, 'flash': {'action': 'replace_with_r1g', 'rationale': 'r1_superior_to_r0_and_r1g_noninferior', 'claims_superiority': True}}

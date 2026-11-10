@@ -1,4 +1,4 @@
-# Evaluation summary — draft v0.1
+# Evaluation summary — v0.2
 
 This study calibrates a semantic reviewer against 858 unique externally labeled
 natural-language/Lean-statement pairs. The published reference contains 570
@@ -59,6 +59,31 @@ show 55 shared misses under R1, with 11 and 16 additional explicit detections
 provided by the other reviewer. These are offline policy replays, not deployed
 multi-agent workflow results.
 
+The November 10 review exposed heterogeneity hidden by the aggregate. Terra's
+R1-minus-R0 false-acceptance difference is +7.78 percentage points on 60 items
+categorized as missing a premise (95% interval [2.22,13.89]) and -1.90 on the
+other 228 ([-3.80,-0.29]). R1g-minus-R1 differences are -18.33 and -2.78 for
+Terra, and -13.33 and -4.09 for DeepSeek. These are post-hoc subgroup estimates
+using model-assigned categories that still require human checking; intervals
+are unadjusted. `post_review.py --check` reproduces the added results.
+
+Twenty-six false-labeled items are accepted in every one of their 25 valid
+judgments. They account for 468 of 1,185 main-comparison false-accept votes
+(39.5%), but contribute zero to within-item prompt differences. This motivates
+targeted review, not automatic relabeling. A saved 74-item queue selects at least
+13 explicitly label-opposing verdicts among the 18 main-comparison votes:
+48 false-labeled and 26 true-labeled items. It is not a random label-error audit.
+
+Two notation cases now have direct Lean evidence. With the original `in`
+syntax under Lean 4.8.0, cc_0335's product body ends before the addition and
+the remaining `k` becomes an implicit real parameter. A separate `rfl` proof
+checks the expansion. For cc_0336, `decide` proves the original closed expression
+false and the parenthesized expression true. Six related items receive 148
+acceptances across 150 judgments. This count alone does not establish the
+models' internal mechanism or the effect of repairing their input; no new
+model experiment was run. Source, Mathlib revision and output are published
+in `evidence/lean/`.
+
 The revised report also compares matched replay costs from the actual selected
 attempts. Terra R1g once misses 47 items and rejects 66 faithful items, versus
 59/66 for Terra R1 unanimous-three; their observed costs are 53.99 and 145.33
@@ -103,7 +128,7 @@ persistent/shared error. They do not certify the published labels, establish
 general optimal rules, explain historical model failures, or demonstrate
 improved end-to-end formalization. Fifteen selected cases remain unadjudicated;
 three concrete label questions, including the zero-filter issue in cc_0097,
-are prepared for qualified review without relabeling. Two external model
+have review records, with the scope portion of cc_0335 now checked. External model
 reviews informed the revision but do not constitute independent mathematical
 certification. Full Chinese draft, frozen outputs and offline reproduction
 accompany this summary.

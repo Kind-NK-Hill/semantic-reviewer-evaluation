@@ -1,0 +1,24 @@
+{
+  "dataset": "GuoxinChen/ConsistencyCheck",
+  "revision": "1c6a6cca0f87b48d4cccb49946d3b8fc57a1eef9",
+  "file": "consistency_check.jsonl",
+  "sha256": "81cf6d9988625d84efbd8e1d6a0af4c234b2206da8350ee1d8bf547e612b1d47",
+  "rows": 859,
+  "source_label_counts": {
+    "minif2f": {
+      "true": 378,
+      "false": 110
+    },
+    "proofnet": {
+      "true": 192,
+      "false": 179
+    }
+  },
+  "fixed_source_url": "https://huggingface.co/datasets/GuoxinChen/ConsistencyCheck/blob/1c6a6cca0f87b48d4cccb49946d3b8fc57a1eef9/consistency_check.jsonl",
+  "paper_url": "https://arxiv.org/html/2510.24592v3",
+  "paper_reported_percent": {
+    "minif2f": 16.4,
+    "proofnet": 38.5
+  },
+  "comparison_status": "Snapshot counts disagree with paper percentages; version/denominator/annotation cause unresolved."
+}
