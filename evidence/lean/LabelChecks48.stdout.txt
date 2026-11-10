@@ -1,0 +1,33 @@
+..\publication\semantic-reviewer-evaluation\evidence\lean\LabelChecks48.lean:96:43: warning: unused variable `R`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+..\publication\semantic-reviewer-evaluation\evidence\lean\LabelChecks48.lean:120:2: warning: try 'simp at hy' instead of 'simpa using hy'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+'LabelChecks.boundary_extension' does not depend on any axioms
+'LabelChecks.cc0013_zero' depends on axioms: [propext, Quot.sound]
+'LabelChecks.cc0037_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LabelChecks.cc0189_zero' depends on axioms: [propext]
+'LabelChecks.cc0298_zero' depends on axioms: [propext]
+'LabelChecks.cc0407_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LabelChecks.cc0022_zero_excluded' does not depend on any axioms
+'LabelChecks.cc0178_zero_excluded' does not depend on any axioms
+'LabelChecks.cc0029_same_sum' depends on axioms: [propext, Quot.sound, Classical.choice]
+'LabelChecks.cc0049_same_sum' depends on axioms: [propext, Quot.sound, Classical.choice]
+'LabelChecks.cc0097_same_set' depends on axioms: [propext, Quot.sound, Classical.choice]
+'LabelChecks.cc0097_count' depends on axioms: [propext, Quot.sound]
+'LabelChecks.cc0117_same_set' depends on axioms: [propext, Quot.sound, Classical.choice]
+'LabelChecks.cc0033_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LabelChecks.cc0193_premise' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LabelChecks.cc0223_base' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LabelChecks.cc0333_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LabelChecks.cc0352_same_predicate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LabelChecks.cc0422_scope' depends on axioms: [Classical.choice, propext, Quot.sound]
+'LabelChecks.cc0529_scope' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LabelChecks.cc0552_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LabelChecks.cc0633_cc0635_bool' depends on axioms: [propext]
+'LabelChecks.cc0753_unused_type' does not depend on any axioms
+'LabelChecks.cc0589_identity_excluded' depends on axioms: [Quot.sound, propext]
+'LabelChecks.cc0044_false_solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LabelChecks.cc0662_cc0663_zero_map' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LabelChecks.cc0822_empty_image' depends on axioms: [propext, Quot.sound]
+'LabelChecks.cc0654_reverse' depends on axioms: [propext]
+'LabelChecks.cc0795_wrapper' does not depend on any axioms

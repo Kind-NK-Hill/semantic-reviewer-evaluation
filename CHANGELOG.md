@@ -1,3 +1,12 @@
+# 2026-11-10 — v0.3
+
+Completed 74 targeted technical reviews with per-item reasoning and repair
+suggestions. Added 29 checked local Lean lemmas, six original header expansions,
+a type-error probe and a finite quotient-map counterexample. Replayed the
+comparison on all 858 items with 48 reviewed label changes; error levels change,
+but the existing selection rule still chooses Terra R0 and DeepSeek R1g.
+Original labels, frozen analysis and model outputs remain available.
+
 # Changes
 
 ## v0.2 — 2026-11-10

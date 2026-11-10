@@ -14,3 +14,4 @@ jobs:
       - run: python reproduce.py
       - run: python supplement.py
       - run: python post_review.py --check
+      - run: python label_sensitivity.py --check

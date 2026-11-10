@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-10",
+  "checks": [
+    {
+      "source": "LabelChecks48.lean",
+      "lean": "4.8.0",
+      "mathlib_revision": "b5eba595428809e96f3ed113bc7ba776c5f801ac",
+      "exit_code": 0,
+      "source_sha256": "8c49c4fc0df90e37aa3c46a65f20662bd1d6c5c4a98f8f87f8930c7cd5c41f7d"
+    },
+    {
+      "source": "BindingHeaders48.lean",
+      "lean": "4.8.0",
+      "mathlib_revision": "b5eba595428809e96f3ed113bc7ba776c5f801ac",
+      "exit_code": 0,
+      "source_sha256": "b9970d9b92cb8e10d7c1126033f55843bfc30ec95b2aba27d658b0ebc8faee40"
+    },
+    {
+      "source": "TypeChecks431.lean",
+      "lean": "4.31.0",
+      "mathlib_revision": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+      "exit_code": 1,
+      "source_sha256": "f2cea204033c854622f4c2a6dc320172912faf5993b5118a0bab73022a98b774"
+    }
+  ],
+  "notes": [
+    "LabelChecks48: all 29 local lemma proofs checked; no sorryAx in any printed dependency list.",
+    "BindingHeaders48: placeholders only for elaborated-header inspection; no theorem truth claim.",
+    "TypeChecks431: expected negative fixture, exit 1. Output is the compiler diagnostic excerpt with the absolute path normalized. Existing environment warned of local changes in auxiliary packages; the inspected Mathlib finrank source was clean. This is not claimed as a pristine lockfile rebuild."
+  ]
+}

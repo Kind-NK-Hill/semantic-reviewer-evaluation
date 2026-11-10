@@ -1,0 +1,74 @@
+{"id": "cc_0013", "decision": "faithful", "mechanism": "零边界等价", "rationale": "原题的正整数断言加上可直接计算的 n=0 恒等式，恰好等价于所有自然数版本；不是任意放宽定义域。", "repair": "无需修正；可补 0<n 以贴近原文字面。", "evidence": ["cc0013_zero", "boundary_extension"]}
+{"id": "cc_0022", "decision": "faithful", "mechanism": "筛选隐含约束", "rationale": "0 不满足 30x≡42 (mod 47)，所以自然数解集已经只含正整数。", "repair": "无需增加重复条件。", "evidence": ["cc0022_zero_excluded"]}
+{"id": "cc_0029", "decision": "faithful", "mechanism": "中性项", "rationale": "range 11 比 1…10 多出的项是 0，和值完全相同。", "repair": "无需修正。", "evidence": ["cc0029_same_sum"]}
+{"id": "cc_0031", "decision": "faithful", "mechanism": "等价编码", "rationale": "由给定函数关系得到 f(y)=9y²+3y+1；f(y)=7 的根为 2/3、−1。有限性由题设推出，y↦y/3 正好得到原题 z，求和为 −1/9；不用 finsum 不构成错误。", "repair": "无需修正；可把可推导的有限性写成局部实例。", "evidence": []}
+{"id": "cc_0033", "decision": "faithful", "mechanism": "冗余前提", "rationale": "体积差式化简为 x=5，因此 x>1 已经由原有假设推出。", "repair": "无需再加 x>1。", "evidence": ["cc0033_positive"]}
+{"id": "cc_0037", "decision": "faithful", "mechanism": "零边界等价", "rationale": "n=0 时空和与右端都为 0；正整数版本与形式版本只差这一可计算恒等式。", "repair": "无需修正；撤销“缺少正数条件所以不忠实”的判断。", "evidence": ["cc0037_zero", "boundary_extension"]}
+{"id": "cc_0044", "decision": "unfaithful", "mechanism": "错误解集", "rationale": "结论第三支令 m=−1 就包含 x=0，但原方程左端为 3，不是 1。", "repair": "解集可写为 x=π/4+mπ/2 或 x=π/6+mπ/3（m∈ℤ）；由 cos(2x)(cos(2x)+cos(4x))=0 推出。", "evidence": ["cc0044_false_solution"]}
+{"id": "cc_0046", "decision": "convention", "mechanism": "输出粒度", "rationale": "严格保持目标谓词时，末两位等于 59 不等于十位等于 5；按“能交付所问答案”验收则可从 59 直接读出 5。这不是计算错误。", "repair": "建议按原问法写 (sum/10)%10=5；本次不把它计为确定的标签更正。", "evidence": []}
+{"id": "cc_0049", "decision": "faithful", "mechanism": "中性项", "rationale": "1…100 的总和与 range 101 的总和相等，多出的 0 不改变去掉卡片后的和值。", "repair": "无需修正。", "evidence": ["cc0049_same_sum"]}
+{"id": "cc_0097", "decision": "faithful", "mechanism": "筛选隐含约束", "rationale": "零虽在枚举范围中，却不满足 6∣−2；原筛选集合与正整数开区间筛选集合相同，基数为 20。", "repair": "无需把 range 改成 Ioo；发布理由不成立。", "evidence": ["cc0097_same_set", "cc0097_count"]}
+{"id": "cc_0099", "decision": "convention", "mechanism": "任务完成形式", "rationale": "命题给出首项的两个必要候选，却没有直接陈述选项 B 可实现；取 r=−√3、a=−2/√3 可补上实现。接受解题式编码时可用，严格存在性目标下缺少这一方向。", "repair": "写出符合题设且首项为 B 的存在命题，或完整充要条件。", "evidence": []}
+{"id": "cc_0117", "decision": "faithful", "mechanism": "筛选隐含约束", "rationale": "8 与 8 不互素，删去端点 8 后筛选集合完全相同。", "repair": "无需修正。", "evidence": ["cc0117_same_set"]}
+{"id": "cc_0135", "decision": "convention", "mechanism": "输出粒度", "rationale": "末两位为 25 正确且能读出十位 2，但比原题要求的目标谓词更细。", "repair": "将结论改为 (5^2005/10)%10=2，使严格翻译和答题验收一致。", "evidence": []}
+{"id": "cc_0173", "decision": "unfaithful", "mechanism": "题面缺项被补写", "rationale": "原文只对 n≥1 定义递推，a₁ 未定；形式命题额外在 n=0 递推，强制 a₁=5。原文允许 a₁=1，此时 a₂=5，n=1 的结论不成立。", "repair": "题面先明确 a₁=5 或允许 n=0 的递推，再对应形式化。", "evidence": []}
+{"id": "cc_0178", "decision": "faithful", "mechanism": "冗余前提", "rationale": "a≡2 (mod 3) 已排除 0，所以正整数与非负整数中的候选集合相同。", "repair": "无需修正。", "evidence": ["cc0178_zero_excluded"]}
+{"id": "cc_0189", "decision": "faithful", "mechanism": "零边界等价", "rationale": "唯一省略的 n=0 情形为 9∣0，直接成立。与 0013、0037 使用同一边界判据。", "repair": "无需实质修正；去掉正数前提可更贴近文字。", "evidence": ["cc0189_zero", "boundary_extension"]}
+{"id": "cc_0193", "decision": "faithful", "mechanism": "冗余前提", "rationale": "k=0 总在给定测试区间内，故假设已经给出 Prime(p)，继而 p≥2。", "repair": "无需重复添加 p≥2。", "evidence": ["cc0193_premise"]}
+{"id": "cc_0197", "decision": "unfaithful", "mechanism": "题面符号被改写", "rationale": "按通常含义 Im(1)=0，形式命题却令 c=i。原文在字面解释下推出 ac+bc=0，不是 −2；形式化实际修复了另一道题。", "repair": "先核对并将题面改成 c=i；不能悄悄把 Im(1) 读成 i。", "evidence": []}
+{"id": "cc_0208", "decision": "faithful", "mechanism": "等价定义域扩展", "rationale": "正整数解可令 f(0)=0 扩展；反向由严格递增、f(1)=2 及 f(f(0))=f(0) 排除 f(0)=1，得到 f(0)=0，正整数部分符合原题。", "repair": "无需改成 PNat；可补上这段扩展说明。", "evidence": []}
+{"id": "cc_0211", "decision": "faithful", "mechanism": "候选验证", "rationale": "必要性命题给出唯一候选 n=3，而 3>1 且 9∣9 可直接验证，恢复原题“求所有解”。", "repair": "可写成充要条件以便阅读。", "evidence": []}
+{"id": "cc_0223", "decision": "faithful", "mechanism": "冗余前提", "rationale": "若 b=1，Lean 的 logb 使 x=0；代回指数方程要求 7⁷=1，矛盾。因此 b≠1 已由假设排除。", "repair": "无需补重复前提。", "evidence": ["cc0223_base"]}
+{"id": "cc_0225", "decision": "faithful", "mechanism": "等价根集编码", "rationale": "式子分解为 (2x+3)(2x−10)，根为 −3/2、5，互异且均为实数。有限根集求和与根的和相同，不强制使用 Polynomial.roots。", "repair": "无需修正；可内建可推导的有限实例。", "evidence": []}
+{"id": "cc_0228", "decision": "faithful", "mechanism": "等价根编码", "rationale": "两个互异正素数 m、n 满足同一个二次式为零，已经表达题设的两个根；无需指定某个库对象名称。", "repair": "无需为了使用 Polynomial.roots 而改写。", "evidence": []}
+{"id": "cc_0261", "decision": "faithful", "mechanism": "等价定义域扩展", "rationale": "条件和结论只涉及正下标；假设又保证 f(n)>0，所以复合调用不落到 0。任何正整数函数可任意设 f(0)=1 扩展。", "repair": "无需改成 PNat。", "evidence": []}
+{"id": "cc_0285", "decision": "faithful", "mechanism": "可推导结构", "rationale": "交点满足 (x²−2)(x²−3)=0，因此四个实交点及平方值 2、3 由给定曲线推出；x²<y² 选定顺序。", "repair": "无需把四个交点另列为前提。", "evidence": []}
+{"id": "cc_0298", "decision": "faithful", "mechanism": "零边界等价", "rationale": "省略的 n=0 情形是 gcd(4,3)=1，可直接计算。", "repair": "无需实质修正。", "evidence": ["cc0298_zero", "boundary_extension"]}
+{"id": "cc_0328", "decision": "unfaithful", "mechanism": "大算子绑定", "rationale": "求积主体在加号前结束，1/2^k 落在乘积外，k 成为额外参数。它改变了被比较的乘积对象，不能用两个命题都可能为真来豁免。", "repair": "给乘积主体 (1+1/2^k) 加括号。", "evidence": []}
+{"id": "cc_0333", "decision": "faithful", "mechanism": "冗余前提", "rationale": "平方和假设排除 n≤2；因此三连偶数中的最小数 n−2 为正。", "repair": "无需补正数约束。", "evidence": ["cc0333_positive"]}
+{"id": "cc_0335", "decision": "unfaithful", "mechanism": "大算子绑定", "rationale": "原写法展开为对常数 1 求积后再加 1/k³，且出现额外隐含实参数 k；与逐项相乘的原题不同。", "repair": "把 (1+1/k³) 整体括起。", "evidence": ["scope48"]}
+{"id": "cc_0336", "decision": "unfaithful", "mechanism": "大算子绑定", "rationale": "原表达式可证明不等于题目答案；括起 2*k+1 后的表达式可证明个位数为 5。", "repair": "给乘积主体 (2*k+1) 加括号。", "evidence": ["scope48"]}
+{"id": "cc_0352", "decision": "faithful", "mechanism": "离散解集等价", "rationale": "整数运算把 5+6/10 化为 5，但整数 ", "repair": "n−2", "evidence": ["≤5 与实数 "]}
+{"id": "cc_0379", "decision": "unfaithful", "mechanism": "大算子绑定", "rationale": "加号右边的 3^(2^k) 不在乘积主体内，破坏了原题各因子的结构。", "repair": "括起每个因子 (2^(2^k)+3^(2^k))。", "evidence": []}
+{"id": "cc_0385", "decision": "convention", "mechanism": "输出粒度", "rationale": "给出 n=42 可判断选项 E 为假并核对其余选项，但严格目标应陈述 ¬n>84。", "repair": "按原问法写结论；把 n=42 留作证明中的中间结果。", "evidence": []}
+{"id": "cc_0407", "decision": "faithful", "mechanism": "零边界等价", "rationale": "省略的 n=0 情形为 1≤1。", "repair": "无需实质修正。", "evidence": ["cc0407_zero", "boundary_extension"]}
+{"id": "cc_0412", "decision": "faithful", "mechanism": "等价定义域扩展", "rationale": "合格初值必为正，限制为 NNReal 不丢解；n=0 的递推仅要求 f(0,x)²=x，可取 √x 扩展，正下标序列不变。", "repair": "可把递推限制在 n≥1 以免无关的零项，但该零项不损失原题解。", "evidence": []}
+{"id": "cc_0422", "decision": "faithful", "mechanism": "量词等价", "rationale": "第二个析取支不含外层 z，经典逻辑中 (∀z,Pz∨Q) 等价于 (∀z,Pz)∨Q；并未允许逐点选择不同的线性函数。", "repair": "可移出量词方便阅读；不应据此判不忠实。", "evidence": ["cc0422_scope"]}
+{"id": "cc_0435", "decision": "unfaithful", "mechanism": "大算子绑定", "rationale": "原式是 5a+kd=70、10a+kd=210，非逐项累加等差数列；例如 k=1,d=−70,a=28 符合这两式却不满足结论 a=42/5。", "repair": "给两个求和主体 (a+k*d) 加括号。", "evidence": []}
+{"id": "cc_0467", "decision": "unfaithful", "mechanism": "大算子绑定", "rationale": "奇数和与偶数和的加法都落出求和主体，改变了原题两个数列的总和。", "repair": "给两个求和主体分别加括号。", "evidence": []}
+{"id": "cc_0475", "decision": "faithful", "mechanism": "无关点扩展", "rationale": "待求的 (3,11) 满足非零且不相等，直接代入得 1/33；总函数在对角线上的额外定义不限制这些有效点的值。", "repair": "可在定义关系中补 x≠y 增进可读性，所问答案无需修正。", "evidence": []}
+{"id": "cc_0476", "decision": "unfaithful", "mechanism": "漏掉关键定义域", "rationale": "N 允许为 0，而 f(0) 不受定义约束；把 f(0) 设得比所有正下标值更大，N=0 就满足最大性假设，数字和却是 0。正下标最大值的存在已是原题给定事实。", "repair": "补 N>0，且仍保留原来正下标比较范围。", "evidence": []}
+{"id": "cc_0487", "decision": "convention", "mechanism": "未明确数域", "rationale": "原文没有明确正整数还是全体整数；形式命题只覆盖正自然数。n=0 可直接补，但负数范围取决于题目惯例。", "repair": "把题面写成正整数，或将形式量化改为 ℤ 后用整除条件。", "evidence": []}
+{"id": "cc_0490", "decision": "convention", "mechanism": "题面自身缺条件", "rationale": "就所给文字，形式命题忠实保留“开集”而没有“连通”。两者都因两块不相交开圆盘上取不同实常数而为假；若书本全局约定 Ω 为域，则是上下文丢失。", "repair": "推荐同时给题面和形式命题补连通性；当前不能把“原命题为假”直接等同于“翻译不忠实”。", "evidence": []}
+{"id": "cc_0499", "decision": "faithful", "mechanism": "特定积分等价", "rationale": "a>0 时被积函数在紧区间连续，远处绝对值≤1/x²，故绝对可积。对此函数，对称截断极限与通常的双侧广义积分相同；不是声称主值总等于广义积分。", "repair": "无需修正；补绝对收敛说明。", "evidence": []}
+{"id": "cc_0529", "decision": "faithful", "mechanism": "量词等价", "rationale": "上界断言不含极限变量 x，∃x(Px∧Q) 等价于 (∃xPx)∧Q；从 s₁ 到 f(0) 是一致重编号。", "repair": "无需修正。", "evidence": ["cc0529_scope"]}
+{"id": "cc_0533", "decision": "unfaithful", "mechanism": "只覆盖一个方向", "rationale": "通常的“单调”包含单调递增或递减；Monotone 仅为非递减。例如 b₀=1、其后为0 是有界递减而非 Monotone。", "repair": "将前提写为 Monotone b ∨ Antitone b。", "evidence": []}
+{"id": "cc_0551", "decision": "unfaithful", "mechanism": "中间值性质被削弱", "rationale": "只检查 a<b 且 f(a)<f(b) 的一侧。取 x<0 时 f(x)=√2、其余 −√2，前提从不触发，所有有理数纤维为空且闭，函数却不连续。", "repair": "同时覆盖下降方向，或用端点函数值的 min/max 表示“介于”。", "evidence": []}
+{"id": "cc_0552", "decision": "faithful", "mechanism": "存在间隔等价", "rationale": "存在正 δ 且距离≥δ，等价于存在正 δ 且距离>δ；前者取 δ/2 即得后者。", "repair": "无需把非严格号当作翻译错误。", "evidence": ["cc0552_gap"]}
+{"id": "cc_0589", "decision": "unfaithful", "mechanism": "逻辑连接词错误", "rationale": "“没有共同扰动元素”允许双方都固定同一点；当前 iff 要求恰有一方扰动，连两者均为恒等置换也被排除。", "repair": "改为 ∀a, σ a=a ∨ τ a=a。", "evidence": ["cc0589_identity_excluded"]}
+{"id": "cc_0611", "decision": "faithful", "mechanism": "点外闭包等价", "rationale": "被检查的 x∈U，故 x∉Uᶜ；在这个位置，补集的聚点/闭包与删去该点的极限点条件相同。", "repair": "无需强制替换为 derivedSet；可说明 x 不在补集中。", "evidence": []}
+{"id": "cc_0617", "decision": "convention", "mechanism": "环境条件缺失", "rationale": "任意拓扑空间下不成立：自然数余有限拓扑中的尾集均非空紧、严格递减，交为空。提供的自然语言也未写 Hausdorff/度量环境，无法确定原书全局假设是否被遗漏。", "repair": "同时明确环境；在 Hausdorff 空间可保留紧集说法，或使用非空闭子集的紧空间版本。另把严格递减改为非增，以覆盖允许相邻集合相等的通常表述。", "evidence": []}
+{"id": "cc_0620", "decision": "convention", "mechanism": "变量类型推断", "rationale": "内层 λn 的类型由 Real.sqrt 推成 ℝ，外层自然数 n 未使用。它证明实变量极限，确实推出所需数列极限，但严格输入域不同。", "repair": "显式写 λ (n:ℕ) => Real.sqrt ((n:ℝ)+1)−Real.sqrt n。", "evidence": ["type431"]}
+{"id": "cc_0627", "decision": "convention", "mechanism": "对应关系强度", "rationale": "抽象乘法同构不说明同构就是坐标映射，而原题的中心等式通常意指同一乘积群中的子群相等。按抽象结构任务可接受，按具体子群识别不足。", "repair": "使用 ambient Subgroup.prod 等式，或给同构补坐标投影性质。", "evidence": []}
+{"id": "cc_0633", "decision": "faithful", "mechanism": "布尔到命题强制转换", "rationale": "Lean 将 false:Bool 转成命题 false=true，它等价于 False；P→false 与 ¬P 相同，不是仅凭大小写就出现语义错误。", "repair": "可改为 False 便于阅读；无需改变标签。", "evidence": ["cc0633_cc0635_bool"]}
+{"id": "cc_0635", "decision": "faithful", "mechanism": "布尔到命题强制转换", "rationale": "与 cc_0633 同一强制转换；当前结论确实表示该群不为单群。", "repair": "可改为 False 便于阅读。", "evidence": ["cc0633_cc0635_bool"]}
+{"id": "cc_0642", "decision": "unfaithful", "mechanism": "题面被额外前提修复", "rationale": "原文若允许全环理想 M=R，则“环外元素均为单位”空真，M 却不是极大理想；形式命题加入真理想条件，实质修复了题面。", "repair": "在题面明确 M 是真理想，并保留形式前提；若原书把 ideal 限为真理想，需补出该上下文。", "evidence": []}
+{"id": "cc_0654", "decision": "faithful", "mechanism": "平凡逆向", "rationale": "原题只要求零乘积推出某项为零；形式额外的逆向由 0•v=0 和 a•0=0 直接成立，没有额外数学负担或对象变化。", "repair": "无需把 iff 改成单向。", "evidence": ["cc0654_reverse"]}
+{"id": "cc_0662", "decision": "unfaithful", "mechanism": "不变误写为满射", "rationale": "不变性是 T(U)⊆U，当前等式要求 T 在 U 上满射。非零子空间上的零映射满足前者却不满足后者。", "repair": "前提和结论中的 map 等式均改成 ≤。", "evidence": ["cc0662_cc0663_zero_map"]}
+{"id": "cc_0663", "decision": "unfaithful", "mechanism": "不变误写为满射", "rationale": "取 S=T=0、c=0、V=ℝ，两算子交换，核为全空间且在 S 下不变，但其像为零子空间而不等于全空间。", "repair": "结论 map S (...) = ... 改成 ≤。", "evidence": ["cc0662_cc0663_zero_map"]}
+{"id": "cc_0666", "decision": "unfaithful", "mechanism": "不变误写为满射", "rationale": "高维空间的零算子保持所有超平面，却不能将非零超平面映满；当前前提排除了原题中的合格算子。", "repair": "把 hS 中的 map 等式改为 ≤，并与适用版本对齐 finrank 名称。", "evidence": []}
+{"id": "cc_0668", "decision": "unfaithful", "mechanism": "类型错误", "rationale": "Module.finrank 需要标量域和模两个显式类型参数；这里只有 U，不能组成自然数维数。另须区分：在有限维、无零特征值条件下，不变子空间上的限制映射确实可推出满射，不能机械照搬前几题的等号批评。", "repair": "先改为 Module.finrank ℝ U；随后可用 ≤ 更直接表达不变性。", "evidence": ["type431"]}
+{"id": "cc_0676", "decision": "convention", "mechanism": "有限维上下文", "rationale": "形式命题限定有限维，提供的题面未写。无限维双边移位是酉正规算子、无特征值而非自伴，说明该限制有数学作用；若原书全局采用有限维 V，则形式化正确。", "repair": "将有限维明确补进题面；不把未提供的书本约定当已知事实。", "evidence": []}
+{"id": "cc_0713", "decision": "faithful", "mechanism": "结构分类等价", "rationale": "“循环且阶为素数 p”等价于同构于 Z/pZ：选生成元，幂映射给出该同构；反向亦成立。形式命题没有预设 G 有限，而是在结论给出有限性。", "repair": "无需强制输出一个同构对象。", "evidence": []}
+{"id": "cc_0743", "decision": "convention", "mechanism": "正确推广与严格范围", "rationale": "Ring+IsDomain 允许非交换无零因子环，较通常的交换整环广。因 1 中心化，(x−1)(x+1)=x²−1 仍成立，结论正确；严格限定原对象时范围不同。", "repair": "写 CommRing 可完全对齐原题；不能把推广本身写成数学错误。", "evidence": []}
+{"id": "cc_0751", "decision": "convention", "mechanism": "指数与解的表示", "rationale": "原文说整数指数及其逆元，形式只用自然数 d 并存在一个自然数逆代表。模单位群中可处理负指数，但普通整数幂的原文也需明确约定。", "repair": "选定非负指数表述，或在 (ZMod N) 的单位群上用整数幂。", "evidence": []}
+{"id": "cc_0753", "decision": "faithful", "mechanism": "无用参数", "rationale": "R 没有出现在前提、结论或实例约束中，量化该参数不改变命题；选择 Unit 即可消去。", "repair": "删除 R 只是清理，无需判为不忠实。", "evidence": ["cc0753_unused_type"]}
+{"id": "cc_0768", "decision": "faithful", "mechanism": "失败公理足够", "rationale": "证明任意并封闭性失败就足以证明该集合族不总是拓扑。例：X=ℕ，所有正数单点集各有无限补集，并集补集却仅为 {0}，且并集既非空也非全体。", "repair": "无需展开完整 TopologicalSpace 结构才算表达了反例任务。", "evidence": []}
+{"id": "cc_0772", "decision": "unfaithful", "mechanism": "极值方向反了", "rationale": "所有共同下界 T″ 应满足 T″⊆T′ 才表示最大；现有 T′⊆T″ 表示最小共同下界，通常得到不可分拓扑。", "repair": "反转最后一个包含号。", "evidence": []}
+{"id": "cc_0774", "decision": "convention", "mechanism": "子基约定", "rationale": "含 A 的所有拓扑之交本身是拓扑，对它再 generateFrom 不改变它；这一重写没有错。争议只在 subbasis 是否另要求覆盖 X，题面未说明。", "repair": "采用原书的覆盖约定时补 ⋃₀A=X；否则保留当前生成拓扑等式。", "evidence": []}
+{"id": "cc_0790", "decision": "unfaithful", "mechanism": "非法加入逆命题", "rationale": "连续右逆能推出商映射，反向不成立。有限反例：三点链的上集拓扑经 0,2↦a、1↦b 映到两点不可分空间，是商映射，却没有连续截面。", "repair": "将 iff 改成“存在连续右逆 → 商映射”。", "evidence": []}
+{"id": "cc_0795", "decision": "unfaithful", "mechanism": "类型别名误作实例", "rationale": "CofiniteTopology X 是带另一个拓扑的类型别名，不是断言当前 X 拓扑为余有限的类。关闭 binder 检查后该参数只要求一个元素，原来的 TopologicalSpace X 仍任意。", "repair": "把空间本身声明为 CofiniteTopology X，或显式指定余有限拓扑实例。", "evidence": ["cc0795_wrapper"]}
+{"id": "cc_0797", "decision": "faithful", "mechanism": "子空间对应", "rationale": "原题 X、Y 可对应形式化中的连通子空间 A₂、B₂；其内真子集为 A₁、B₁。现有 hA、hB 已给出参与乘积的两个空间连通性，不需要更大的环境 X、Y 也连通。", "repair": "可改用子类型使对应更显眼；无需补环境连通假设。", "evidence": []}
+{"id": "cc_0803", "decision": "convention", "mechanism": "空族与连通约定", "rationale": "A=∅ 时交为 X，紧 Hausdorff 并不保证连通；这个空族漏洞同时存在于提供的自然语言中。另有书本连通允许空集与 IsConnected 要求非空的约定差别。", "repair": "明确族非空，并按原书定义选择 IsConnected 或 IsPreconnected；不要只归咎翻译。", "evidence": []}
+{"id": "cc_0822", "decision": "unfaithful", "mechanism": "集合像要求过强", "rationale": "A 可为空，而 f''∅ 永远为空，不可能等于 {0}；原来的分离性质只要求 A 上取零。", "repair": "改成 f''A⊆{0} 或 ∀a∈A,f a=0。", "evidence": ["cc0822_empty_image"]}
+{"id": "cc_0832", "decision": "unfaithful", "mechanism": "级数对象改变", "rationale": "形式命题在有理数值中断言不可和，还包含负平方自由整数；原题通常是正整数上的实数级数。有理数不完备，不能直接用该不可和断言替代实数级数发散。", "repair": "用正自然数下标、实数值，并保留平方自由筛选。", "evidence": []}

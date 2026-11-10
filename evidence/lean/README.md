@@ -38,3 +38,32 @@ the mathematical output and warnings are otherwise retained.
 An earlier Lean 4.31 probe rewrote `in` to `∈`; the 4.8 probe removes that
 rewrite requirement. These two cases do not adjudicate all remaining cases,
 and the parenthesized expression was not submitted in a new model experiment.
+
+## 74-item technical review evidence
+
+`LabelChecks48.lean` contains 29 local proofs. Run with the same Lean 4.8
+environment as above; all declarations pass, and their printed axiom lists
+contain no `sorryAx`. They verify specific equivalences, excluded endpoints,
+redundant assumptions and counterexample steps, not complete proofs of all
+reviewed dataset theorems. See `LabelChecks48.stdout.txt`.
+
+`BindingHeaders48.lean` retains six original theorem statements and prints
+their headers with notation disabled. The proof placeholders exist only to
+inspect parsing and elaboration; this file does not certify theorem truth.
+See `BindingHeaders48.stdout.txt`.
+
+`TypeChecks431.lean` is an intentionally failing Lean 4.31 fixture: the square
+root lambda has type `ℝ → ℝ`, while `Even (Module.finrank U)` has an unresolved
+partial application because the scalar field argument is missing. Its expected
+exit code is 1. The stored output is the diagnostic excerpt with the local path
+normalized. The existing environment had modified auxiliary packages, so it
+is not represented as a clean rebuild; the inspected Mathlib dimension source
+was unmodified. Toolchain revisions, source hashes and statuses are in
+`label-check-environments.json`.
+
+```text
+lake env lean <repo>/evidence/lean/LabelChecks48.lean
+lake env lean <repo>/evidence/lean/BindingHeaders48.lean
+# In the separate Lean 4.31 environment, expected exit 1:
+lake env lean <repo>/evidence/lean/TypeChecks431.lean
+```

@@ -75,7 +75,18 @@ adjudication of the dataset.
 
 - Independent mathematical adjudication of the selected cases.
 - Human spot-check of error-type classifications.
-- Qualified adjudication of the 74-item targeted queue, using a written rubric.
+- Independent human assessment of the completed AI-assisted 74-item technical review.
 - Full Lean evidence/environment packaging if a later release requires it.
 
 The external model reviews and local machine checks do not complete these tasks.
+
+## Technical label sensitivity
+
+`python label_sensitivity.py --check` validates the 74 saved review records,
+recomputes both label scenarios with the existing statistical functions and
+checks all original point estimates against the frozen results. It also
+exhaustively verifies the finite counterexample for cc_0790. Seed 20261110 and
+10,000 draws are used separately for each scenario/model; this draw order is
+new, so published-scenario intervals here need not exactly match frozen intervals.
+The label judgments themselves are written inputs, not produced or validated
+by the numerical script. No model calls are made.

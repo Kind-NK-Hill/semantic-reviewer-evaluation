@@ -1,0 +1,816 @@
+{
+  "scope": "post-hoc targeted AI-assisted technical review; not an independent gold set",
+  "seed": 20261110,
+  "draws": 10000,
+  "review_counts": {
+    "faithful": 37,
+    "unfaithful": 23,
+    "convention": 14
+  },
+  "changes": [
+    {
+      "id": "cc_0013",
+      "published_label": "false",
+      "review_label": "true"
+    },
+    {
+      "id": "cc_0022",
+      "published_label": "false",
+      "review_label": "true"
+    },
+    {
+      "id": "cc_0029",
+      "published_label": "false",
+      "review_label": "true"
+    },
+    {
+      "id": "cc_0031",
+      "published_label": "false",
+      "review_label": "true"
+    },
+    {
+      "id": "cc_0033",
+      "published_label": "false",
+      "review_label": "true"
+    },
+    {
+      "id": "cc_0037",
+      "published_label": "false",
+      "review_label": "true"
+    },
+    {
+      "id": "cc_0044",
+      "published_label": "true",
+      "review_label": "false"
+    },
+    {
+      "id": "cc_0049",
+      "published_label": "false",
+      "review_label": "true"
+    },
+    {
+      "id": "cc_0097",
+      "published_label": "false",
+      "review_label": "true"
+    },
+    {
+      "id": "cc_0117",
+      "published_label": "false",
+      "review_label": "true"
+    },
+    {
+      "id": "cc_0173",
+      "published_label": "true",
+      "review_label": "false"
+    },
+    {
+      "id": "cc_0178",
+      "published_label": "false",
+      "review_label": "true"
+    },
+    {
+      "id": "cc_0193",
+      "published_label": "false",
+      "review_label": "true"
+    },
+    {
+      "id": "cc_0197",
+      "published_label": "true",
+      "review_label": "false"
+    },
+    {
+      "id": "cc_0208",
+      "published_label": "false",
+      "review_label": "true"
+    },
+    {
+      "id": "cc_0223",
+      "published_label": "false",
+      "review_label": "true"
+    },
+    {
+      "id": "cc_0225",
+      "published_label": "false",
+      "review_label": "true"
+    },
+    {
+      "id": "cc_0228",
+      "published_label": "false",
+      "review_label": "true"
+    },
+    {
+      "id": "cc_0261",
+      "published_label": "false",
+      "review_label": "true"
+    },
+    {
+      "id": "cc_0285",
+      "published_label": "false",
+      "review_label": "true"
+    },
+    {
+      "id": "cc_0333",
+      "published_label": "false",
+      "review_label": "true"
+    },
+    {
+      "id": "cc_0352",
+      "published_label": "false",
+      "review_label": "true"
+    },
+    {
+      "id": "cc_0412",
+      "published_label": "false",
+      "review_label": "true"
+    },
+    {
+      "id": "cc_0422",
+      "published_label": "false",
+      "review_label": "true"
+    },
+    {
+      "id": "cc_0475",
+      "published_label": "false",
+      "review_label": "true"
+    },
+    {
+      "id": "cc_0476",
+      "published_label": "true",
+      "review_label": "false"
+    },
+    {
+      "id": "cc_0499",
+      "published_label": "false",
+      "review_label": "true"
+    },
+    {
+      "id": "cc_0529",
+      "published_label": "false",
+      "review_label": "true"
+    },
+    {
+      "id": "cc_0533",
+      "published_label": "true",
+      "review_label": "false"
+    },
+    {
+      "id": "cc_0551",
+      "published_label": "true",
+      "review_label": "false"
+    },
+    {
+      "id": "cc_0552",
+      "published_label": "false",
+      "review_label": "true"
+    },
+    {
+      "id": "cc_0589",
+      "published_label": "true",
+      "review_label": "false"
+    },
+    {
+      "id": "cc_0611",
+      "published_label": "false",
+      "review_label": "true"
+    },
+    {
+      "id": "cc_0633",
+      "published_label": "false",
+      "review_label": "true"
+    },
+    {
+      "id": "cc_0635",
+      "published_label": "false",
+      "review_label": "true"
+    },
+    {
+      "id": "cc_0642",
+      "published_label": "true",
+      "review_label": "false"
+    },
+    {
+      "id": "cc_0654",
+      "published_label": "false",
+      "review_label": "true"
+    },
+    {
+      "id": "cc_0662",
+      "published_label": "true",
+      "review_label": "false"
+    },
+    {
+      "id": "cc_0663",
+      "published_label": "true",
+      "review_label": "false"
+    },
+    {
+      "id": "cc_0666",
+      "published_label": "true",
+      "review_label": "false"
+    },
+    {
+      "id": "cc_0668",
+      "published_label": "true",
+      "review_label": "false"
+    },
+    {
+      "id": "cc_0713",
+      "published_label": "false",
+      "review_label": "true"
+    },
+    {
+      "id": "cc_0753",
+      "published_label": "false",
+      "review_label": "true"
+    },
+    {
+      "id": "cc_0768",
+      "published_label": "false",
+      "review_label": "true"
+    },
+    {
+      "id": "cc_0772",
+      "published_label": "true",
+      "review_label": "false"
+    },
+    {
+      "id": "cc_0790",
+      "published_label": "true",
+      "review_label": "false"
+    },
+    {
+      "id": "cc_0797",
+      "published_label": "false",
+      "review_label": "true"
+    },
+    {
+      "id": "cc_0822",
+      "published_label": "true",
+      "review_label": "false"
+    }
+  ],
+  "changes_by_direction": {
+    "false->true": 33,
+    "true->false": 15
+  },
+  "convention_policy": "Keep all 14 convention/context cases at their published labels.",
+  "cc0790_counterexample": {
+    "item": "cc_0790",
+    "X_open_masks": [
+      0,
+      4,
+      6,
+      7
+    ],
+    "Y_open_masks": [
+      0,
+      3
+    ],
+    "p": [
+      0,
+      1,
+      0
+    ],
+    "quotient": true,
+    "all_sections": [
+      {
+        "section": [
+          0,
+          1
+        ],
+        "open_sets_with_nonopen_preimage": [
+          6
+        ]
+      },
+      {
+        "section": [
+          2,
+          1
+        ],
+        "open_sets_with_nonopen_preimage": [
+          4
+        ]
+      }
+    ],
+    "continuous_sections": 0
+  },
+  "scenarios": {
+    "published": {
+      "faithful": 570,
+      "unfaithful": 288,
+      "models": {
+        "terra": {
+          "rates": {
+            "R0": {
+              "leak": {
+                "estimate": 0.23032407407407407,
+                "low": 0.18287037037037035,
+                "high": 0.2789351851851852,
+                "n": 288,
+                "noninferiority_high": 0.2858796296296296,
+                "noninferiority_coverage": 0.975
+              },
+              "reject": {
+                "estimate": 0.08362573099415206,
+                "low": 0.06257309941520467,
+                "high": 0.1064327485380117,
+                "n": 570,
+                "noninferiority_high": 0.10994152046783627,
+                "noninferiority_coverage": 0.975
+              }
+            },
+            "R1": {
+              "leak": {
+                "estimate": 0.23148148148148145,
+                "low": 0.1851851851851852,
+                "high": 0.28009259259259256,
+                "n": 288,
+                "noninferiority_high": 0.2858796296296296,
+                "noninferiority_coverage": 0.975
+              },
+              "reject": {
+                "estimate": 0.09824561403508772,
+                "low": 0.07543859649122807,
+                "high": 0.12222222222222223,
+                "n": 570,
+                "noninferiority_high": 0.12690058479532162,
+                "noninferiority_coverage": 0.975
+              }
+            },
+            "R1g": {
+              "leak": {
+                "estimate": 0.17129629629629628,
+                "low": 0.13078703703703706,
+                "high": 0.21412037037037038,
+                "n": 288,
+                "noninferiority_high": 0.2210648148148148,
+                "noninferiority_coverage": 0.975
+              },
+              "reject": {
+                "estimate": 0.10701754385964912,
+                "low": 0.08304093567251462,
+                "high": 0.13216374269005848,
+                "n": 570,
+                "noninferiority_high": 0.13567251461988303,
+                "noninferiority_coverage": 0.975
+              }
+            }
+          },
+          "comparisons": {
+            "R0": {
+              "leak_diff": {
+                "estimate": -0.0011574074074074058,
+                "low": -0.019675925925925927,
+                "high": 0.018518518518518517,
+                "n": 288,
+                "noninferiority_high": 0.020833333333333332,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "reject_diff": {
+                "estimate": -0.01461988304093567,
+                "low": -0.025730994152046778,
+                "high": -0.004093567251461989,
+                "n": 570,
+                "noninferiority_high": -0.0029239766081871348,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "confirmed_diff": {
+                "estimate": 0.00462962962962963,
+                "low": -0.016203703703703703,
+                "high": 0.025462962962962965,
+                "n": 288,
+                "noninferiority_high": 0.02893518518518519,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "decision": "x_noninferior"
+            },
+            "R1g": {
+              "leak_diff": {
+                "estimate": -0.060185185185185196,
+                "low": -0.08680555555555555,
+                "high": -0.03587962962962962,
+                "n": 288,
+                "noninferiority_high": -0.032407407407407406,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "reject_diff": {
+                "estimate": 0.008771929824561403,
+                "low": -0.0011695906432748538,
+                "high": 0.01929824561403509,
+                "n": 570,
+                "noninferiority_high": 0.021052631578947368,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "confirmed_diff": {
+                "estimate": -0.060185185185185196,
+                "low": -0.08683449074074073,
+                "high": -0.034722222222222224,
+                "n": 288,
+                "noninferiority_high": -0.03125,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "decision": "x_noninferior"
+            }
+          },
+          "rule_replay": {
+            "action": "replace_with_r0",
+            "rationale": "r0_noninferior",
+            "claims_superiority": false
+          }
+        },
+        "flash": {
+          "rates": {
+            "R0": {
+              "leak": {
+                "estimate": 0.30787037037037035,
+                "low": 0.2604166666666667,
+                "high": 0.3564814814814815,
+                "n": 288,
+                "noninferiority_high": 0.36342592592592593,
+                "noninferiority_coverage": 0.975
+              },
+              "reject": {
+                "estimate": 0.03684210526315789,
+                "low": 0.02280701754385965,
+                "high": 0.05146198830409357,
+                "n": 570,
+                "noninferiority_high": 0.054385964912280704,
+                "noninferiority_coverage": 0.975
+              }
+            },
+            "R1": {
+              "leak": {
+                "estimate": 0.24537037037037035,
+                "low": 0.19907407407407407,
+                "high": 0.2916666666666667,
+                "n": 288,
+                "noninferiority_high": 0.2986111111111111,
+                "noninferiority_coverage": 0.975
+              },
+              "reject": {
+                "estimate": 0.05380116959064327,
+                "low": 0.038011695906432746,
+                "high": 0.07134502923976609,
+                "n": 570,
+                "noninferiority_high": 0.07485380116959064,
+                "noninferiority_coverage": 0.975
+              }
+            },
+            "R1g": {
+              "leak": {
+                "estimate": 0.18518518518518517,
+                "low": 0.14583333333333334,
+                "high": 0.22685185185185183,
+                "n": 288,
+                "noninferiority_high": 0.2326388888888889,
+                "noninferiority_coverage": 0.975
+              },
+              "reject": {
+                "estimate": 0.05614035087719297,
+                "low": 0.0397514619883041,
+                "high": 0.0742690058479532,
+                "n": 570,
+                "noninferiority_high": 0.07661549707602383,
+                "noninferiority_coverage": 0.975
+              }
+            }
+          },
+          "comparisons": {
+            "R0": {
+              "leak_diff": {
+                "estimate": 0.0625,
+                "low": 0.03356481481481481,
+                "high": 0.09259259259259259,
+                "n": 288,
+                "noninferiority_high": 0.09722222222222222,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "reject_diff": {
+                "estimate": -0.01695906432748538,
+                "low": -0.02982456140350877,
+                "high": -0.005263157894736841,
+                "n": 570,
+                "noninferiority_high": -0.004093567251461988,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "confirmed_diff": {
+                "estimate": 0.0636574074074074,
+                "low": 0.03356481481481482,
+                "high": 0.09375000000000001,
+                "n": 288,
+                "noninferiority_high": 0.09837962962962964,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "decision": "r1_superior"
+            },
+            "R1g": {
+              "leak_diff": {
+                "estimate": -0.060185185185185196,
+                "low": -0.08912037037037036,
+                "high": -0.03240740740740741,
+                "n": 288,
+                "noninferiority_high": -0.02893518518518519,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "reject_diff": {
+                "estimate": 0.002339181286549707,
+                "low": -0.007602339181286548,
+                "high": 0.012280701754385965,
+                "n": 570,
+                "noninferiority_high": 0.014035087719298246,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "confirmed_diff": {
+                "estimate": -0.05671296296296296,
+                "low": -0.08564814814814815,
+                "high": -0.02893518518518519,
+                "n": 288,
+                "noninferiority_high": -0.02546296296296296,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "decision": "x_noninferior"
+            }
+          },
+          "rule_replay": {
+            "action": "replace_with_r1g",
+            "rationale": "r1_superior_to_r0_and_r1g_noninferior",
+            "claims_superiority": true
+          }
+        }
+      }
+    },
+    "technical_review": {
+      "faithful": 588,
+      "unfaithful": 270,
+      "models": {
+        "terra": {
+          "rates": {
+            "R0": {
+              "leak": {
+                "estimate": 0.12345679012345677,
+                "low": 0.08765432098765433,
+                "high": 0.16172839506172842,
+                "n": 270,
+                "noninferiority_high": 0.1679012345679012,
+                "noninferiority_coverage": 0.975
+              },
+              "reject": {
+                "estimate": 0.05555555555555555,
+                "low": 0.03854875283446712,
+                "high": 0.07426303854875282,
+                "n": 588,
+                "noninferiority_high": 0.07709750566893424,
+                "noninferiority_coverage": 0.975
+              }
+            },
+            "R1": {
+              "leak": {
+                "estimate": 0.12839506172839504,
+                "low": 0.09256172839506176,
+                "high": 0.16666666666666666,
+                "n": 270,
+                "noninferiority_high": 0.1728395061728395,
+                "noninferiority_coverage": 0.975
+              },
+              "reject": {
+                "estimate": 0.07142857142857142,
+                "low": 0.05272108843537415,
+                "high": 0.09240362811791382,
+                "n": 588,
+                "noninferiority_high": 0.09580498866213152,
+                "noninferiority_coverage": 0.975
+              }
+            },
+            "R1g": {
+              "leak": {
+                "estimate": 0.06790123456790123,
+                "low": 0.040740740740740744,
+                "high": 0.09753086419753086,
+                "n": 270,
+                "noninferiority_high": 0.10246913580246912,
+                "noninferiority_coverage": 0.975
+              },
+              "reject": {
+                "estimate": 0.08163265306122448,
+                "low": 0.061224489795918366,
+                "high": 0.10317460317460317,
+                "n": 588,
+                "noninferiority_high": 0.10600907029478457,
+                "noninferiority_coverage": 0.975
+              }
+            }
+          },
+          "comparisons": {
+            "R0": {
+              "leak_diff": {
+                "estimate": -0.004938271604938273,
+                "low": -0.02469135802469136,
+                "high": 0.014814814814814814,
+                "n": 270,
+                "noninferiority_high": 0.01728395061728395,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "reject_diff": {
+                "estimate": -0.015873015873015872,
+                "low": -0.02664399092970522,
+                "high": -0.005668934240362812,
+                "n": 588,
+                "noninferiority_high": -0.0045351473922902496,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "confirmed_diff": {
+                "estimate": 0.0012345679012345677,
+                "low": -0.01975308641975309,
+                "high": 0.023456790123456788,
+                "n": 270,
+                "noninferiority_high": 0.025925925925925925,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "decision": "x_noninferior"
+            },
+            "R1g": {
+              "leak_diff": {
+                "estimate": -0.06049382716049382,
+                "low": -0.08765432098765431,
+                "high": -0.03580246913580247,
+                "n": 270,
+                "noninferiority_high": -0.033317901234566995,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "reject_diff": {
+                "estimate": 0.01020408163265306,
+                "low": -0.0005668934240362807,
+                "high": 0.0209750566893424,
+                "n": 588,
+                "noninferiority_high": 0.023242630385487524,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "confirmed_diff": {
+                "estimate": -0.060493827160493834,
+                "low": -0.08765432098765433,
+                "high": -0.03580246913580247,
+                "n": 270,
+                "noninferiority_high": -0.03209876543209877,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "decision": "x_noninferior"
+            }
+          },
+          "rule_replay": {
+            "action": "replace_with_r0",
+            "rationale": "r0_noninferior",
+            "claims_superiority": false
+          }
+        },
+        "flash": {
+          "rates": {
+            "R0": {
+              "leak": {
+                "estimate": 0.22469135802469134,
+                "low": 0.18024691358024691,
+                "high": 0.26913580246913577,
+                "n": 270,
+                "noninferiority_high": 0.2753086419753087,
+                "noninferiority_coverage": 0.975
+              },
+              "reject": {
+                "estimate": 0.01870748299319728,
+                "low": 0.01020408163265306,
+                "high": 0.028344671201814053,
+                "n": 588,
+                "noninferiority_high": 0.0300453514739229,
+                "noninferiority_coverage": 0.975
+              }
+            },
+            "R1": {
+              "leak": {
+                "estimate": 0.1530864197530864,
+                "low": 0.11604938271604937,
+                "high": 0.19135802469135804,
+                "n": 270,
+                "noninferiority_high": 0.19753086419753085,
+                "noninferiority_coverage": 0.975
+              },
+              "reject": {
+                "estimate": 0.032879818594104306,
+                "low": 0.021541950113378682,
+                "high": 0.04535147392290249,
+                "n": 588,
+                "noninferiority_high": 0.047619047619047616,
+                "noninferiority_coverage": 0.975
+              }
+            },
+            "R1g": {
+              "leak": {
+                "estimate": 0.10370370370370369,
+                "low": 0.07407407407407407,
+                "high": 0.13456790123456788,
+                "n": 270,
+                "noninferiority_high": 0.13950617283950617,
+                "noninferiority_coverage": 0.975
+              },
+              "reject": {
+                "estimate": 0.0419501133786848,
+                "low": 0.02891156462585034,
+                "high": 0.0572562358276644,
+                "n": 588,
+                "noninferiority_high": 0.05952380952380952,
+                "noninferiority_coverage": 0.975
+              }
+            }
+          },
+          "comparisons": {
+            "R0": {
+              "leak_diff": {
+                "estimate": 0.07160493827160493,
+                "low": 0.03950617283950617,
+                "high": 0.10493827160493827,
+                "n": 270,
+                "noninferiority_high": 0.10987654320987654,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "reject_diff": {
+                "estimate": -0.01417233560090703,
+                "low": -0.025510204081632654,
+                "high": -0.003968253968253968,
+                "n": 588,
+                "noninferiority_high": -0.002834467120181405,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "confirmed_diff": {
+                "estimate": 0.07283950617283949,
+                "low": 0.04070987654320991,
+                "high": 0.10617283950617284,
+                "n": 270,
+                "noninferiority_high": 0.1111111111111111,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "decision": "r1_superior"
+            },
+            "R1g": {
+              "leak_diff": {
+                "estimate": -0.04938271604938272,
+                "low": -0.07777777777777778,
+                "high": -0.023456790123456788,
+                "n": 270,
+                "noninferiority_high": -0.019753086419753086,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "reject_diff": {
+                "estimate": 0.009070294784580499,
+                "low": -0.0017006802721088428,
+                "high": 0.02040816326530612,
+                "n": 588,
+                "noninferiority_high": 0.022675736961451243,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "confirmed_diff": {
+                "estimate": -0.04567901234567901,
+                "low": -0.07407407407407407,
+                "high": -0.01851851851851851,
+                "n": 270,
+                "noninferiority_high": -0.013580246913580252,
+                "noninferiority_coverage": 0.975,
+                "excluded": 0
+              },
+              "decision": "x_noninferior"
+            }
+          },
+          "rule_replay": {
+            "action": "replace_with_r1g",
+            "rationale": "r1_superior_to_r0_and_r1g_noninferior",
+            "claims_superiority": true
+          }
+        }
+      }
+    }
+  },
+  "unanimous_26_review": {
+    "faithful": 18,
+    "convention": 3,
+    "unfaithful": 5
+  }
+}

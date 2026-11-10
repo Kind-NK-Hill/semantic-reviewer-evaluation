@@ -1,4 +1,4 @@
-# Evaluation summary — v0.2
+# Evaluation summary — v0.3
 
 This study calibrates a semantic reviewer against 858 unique externally labeled
 natural-language/Lean-statement pairs. The published reference contains 570
@@ -126,9 +126,30 @@ all unfaithful items and established only that the route could answer.
 The findings support bounded reviewer configuration decisions and expose
 persistent/shared error. They do not certify the published labels, establish
 general optimal rules, explain historical model failures, or demonstrate
-improved end-to-end formalization. Fifteen selected cases remain unadjudicated;
-three concrete label questions, including the zero-filter issue in cc_0097,
-have review records, with the scope portion of cc_0335 now checked. External model
-reviews informed the revision but do not constitute independent mathematical
-certification. Full Chinese draft, frozen outputs and offline reproduction
-accompany this summary.
+improved end-to-end formalization. The original case records are retained;
+the three specific label questions are now resolved in the technical review
+below, with item-level reasoning and machine evidence.
+
+## Label review completed after the initial analysis
+
+The 74-item targeted queue now has a written rubric, item-level explanations,
+repair suggestions and a label-sensitivity replay over all 858 items. There
+are 37 acceptable statements, 23 unfaithful statements and 14 convention or
+context cases. Compared with the source, 33 false labels become true and 15
+true labels become false; 12 reviewed labels agree and the 14 convention cases
+retain their source labels. The resulting scenario has 588 faithful and 270
+unfaithful items. Of the 26 unanimously accepted false-labeled items, 18 are
+acceptable, five retain substantive binding errors and three are convention cases.
+
+R0/R1/R1g false acceptance becomes 12.35/12.84/6.79% for Terra and
+22.47/15.31/10.37% for DeepSeek. False rejection becomes 5.56/7.14/8.16%
+and 1.87/3.29/4.20%, respectively. The frozen rule, replayed post hoc, still
+selects Terra R0 and DeepSeek R1g. The original results remain separately available.
+
+Evidence includes 29 checked local Lean lemmas without placeholders, six
+original elaborated headers, a version-specific type-error probe and an
+exhaustively checked finite counterexample. Review was AI-assisted and conducted
+with labels and model disagreements visible. It is not independent human
+adjudication and cannot estimate population label-error prevalence. Bootstrap
+intervals condition on the chosen labels. Detailed reasoning and all intervals
+are linked in the [review appendix](technical-label-review.zh-CN.md).

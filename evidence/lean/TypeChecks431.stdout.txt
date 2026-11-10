@@ -1,0 +1,7 @@
+fun n => √(n + 1) - √n : ℝ → ℝ
+Module.finrank.{u_1, u_2} (R : Type u_1) (M : Type u_2) [Semiring R] [AddCommMonoid M] [Module R M] : ℕ
+TypeChecks431.lean:6:0: error: declaration `_example` contains universe level metavariables at the expression
+  Even.{max u_1 (?u.15 + 1)} (finrank.{u_1, ?u.15} ↥U)
+in the declaration body
+  fun {V} [AddCommGroup V] [Module ℝ V] [FiniteDimensional ℝ V] U =>
+    Even.{max u_1 (?u.15 + 1)} (finrank.{u_1, ?u.15} ↥U)

@@ -1,0 +1,23 @@
+..\publication\semantic-reviewer-evaluation\evidence\lean\BindingHeaders48.lean:6:8: warning: declaration uses 'sorry'
+induction_pord1p1on2powklt5on2 {k : Nat} (n : Nat) (h₀ : LT.lt 0 n) :
+  LT.lt (HAdd.hAdd ((Finset.Icc 1 n).prod fun k => 1) (HDiv.hDiv 1 (HPow.hPow 2 k))) (5 / 2)
+..\publication\semantic-reviewer-evaluation\evidence\lean\BindingHeaders48.lean:12:8: warning: declaration uses 'sorry'
+induction_prod1p1onk3le3m1onn {k : Real} (n : Nat) (h₀ : LT.lt 0 n) :
+  LE.le (HAdd.hAdd ((Finset.Icc 1 n).prod fun k => 1) (HDiv.hDiv 1 (HPow.hPow k 3))) (HSub.hSub 3 (HDiv.hDiv 1 ↑n))
+..\publication\semantic-reviewer-evaluation\evidence\lean\BindingHeaders48.lean:18:8: warning: declaration uses 'sorry'
+mathd_numbertheory_343 : Eq (HMod.hMod (HAdd.hAdd ((Finset.range 6).prod fun k => HMul.hMul 2 k) 1) 10) 5
+..\publication\semantic-reviewer-evaluation\evidence\lean\BindingHeaders48.lean:23:8: warning: declaration uses 'sorry'
+amc12a_2021_p9 {k : Nat} :
+  Eq (HAdd.hAdd ((Finset.range 7).prod fun k => HPow.hPow 2 (HPow.hPow 2 k)) (HPow.hPow 3 (HPow.hPow 2 k)))
+    (HSub.hSub (HPow.hPow 3 128) (HPow.hPow 2 128))
+..\publication\semantic-reviewer-evaluation\evidence\lean\BindingHeaders48.lean:28:8: warning: declaration uses 'sorry'
+mathd_algebra_342 {k : Real} (a d : Real) (h₀ : Eq (HAdd.hAdd ((Finset.range 5).sum fun k => a) (HMul.hMul k d)) 70)
+  (h₁ : Eq (HAdd.hAdd ((Finset.range 10).sum fun k => a) (HMul.hMul k d)) 210) : Eq a (42 / 5)
+..\publication\semantic-reviewer-evaluation\evidence\lean\BindingHeaders48.lean:34:8: warning: declaration uses 'sorry'
+mathd_algebra_158 {k : Nat} (a : Nat) (h₀ : Even a)
+  (h₁ :
+    Eq
+      (HSub.hSub ↑(HAdd.hAdd ((Finset.range 8).sum fun k => HMul.hMul 2 k) 1)
+        ↑(HAdd.hAdd ((Finset.range 5).sum fun k => a) (HMul.hMul 2 k)))
+      4) :
+  Eq a 8

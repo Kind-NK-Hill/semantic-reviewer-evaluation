@@ -2,7 +2,7 @@
 
 **Rules, repeated judgments, and second opinions in mathematical formalization**
 
-Shuo Deng · Evaluation report v0.2 · 10 November 2026
+Shuo Deng · Evaluation report v0.3 · 10 November 2026
 
 [中文评估报告](reports/evaluation-draft.zh-CN.md) · [English summary](reports/summary.en.md) · [中文项目说明](README.zh-CN.md) · [Results](results/main_table.csv)
 
@@ -56,8 +56,8 @@ expression while proving its parenthesized counterpart. See the
 | Inspect frozen estimates, intervals and decisions | [Results JSON](results/main_results.json) |
 | Inspect exploratory reliability and second opinions | [Supplement JSON](results/supplement.json) |
 | Read the actual prompts | [Prompt templates](prompts/) |
-| Inspect 15 selected cases, still unadjudicated | [Case record](reports/key_cases.md) |
-| Review three concrete label questions without relabeling | [Pending questions](reports/label-review-questions.md) |
+| Inspect the original 15 case records | [Case record](reports/key_cases.md) |
+| Read 74 technical reviews and label sensitivity | [Technical review](reports/technical-label-review.zh-CN.md) |
 | Inspect the new subgroup results and 74-item review queue | [Post-review results](results/post_review.json) |
 | Check simulation failures and confirmation | [Simulation rates](protocol/simulation-rates.md) |
 | Understand sources, exclusions and release scope | [Reproducibility](REPRODUCIBILITY.md), [provenance](protocol/provenance.json), [third-party notice](THIRD_PARTY_NOTICES.md) |
@@ -70,6 +70,7 @@ python verify_release.py
 python reproduce.py
 python supplement.py
 python post_review.py --check
+python label_sensitivity.py --check
 ```
 
 `reproduce.py` reruns the unchanged frozen statistical function bodies with
@@ -98,3 +99,15 @@ drafting. The draft makes no claim of independent mathematical certification.
 The repository is a clean publication snapshot. Credentials, private chats,
 internal reasoning streams, account configuration, and the working repository's
 history are excluded. See [release notes](CHANGELOG.md).
+
+## Completed targeted technical review
+
+The 74-item queue now has item-level reasoning and repair suggestions: 37
+acceptable, 23 unfaithful, and 14 convention/context cases. The sensitivity
+scenario changes 33 false labels to true and 15 true labels to false across
+all 858 items; it keeps convention cases and all unreviewed labels unchanged.
+Absolute error rates change substantially, while the rule still selects R0
+for Terra and R1g for DeepSeek. This is a post-hoc AI-assisted technical review
+with mathematical and machine evidence, not an independent human gold set.
+See [findings and evidence](reports/technical-label-review.zh-CN.md) and
+[recomputed results](results/label_sensitivity.json).
