@@ -28,7 +28,7 @@
 {"id": "cc_0333", "decision": "faithful", "mechanism": "冗余前提", "rationale": "平方和假设排除 n≤2；因此三连偶数中的最小数 n−2 为正。", "repair": "无需补正数约束。", "evidence": ["cc0333_positive"]}
 {"id": "cc_0335", "decision": "unfaithful", "mechanism": "大算子绑定", "rationale": "原写法展开为对常数 1 求积后再加 1/k³，且出现额外隐含实参数 k；与逐项相乘的原题不同。", "repair": "把 (1+1/k³) 整体括起。", "evidence": ["scope48"]}
 {"id": "cc_0336", "decision": "unfaithful", "mechanism": "大算子绑定", "rationale": "原表达式可证明不等于题目答案；括起 2*k+1 后的表达式可证明个位数为 5。", "repair": "给乘积主体 (2*k+1) 加括号。", "evidence": ["scope48"]}
-{"id": "cc_0352", "decision": "faithful", "mechanism": "离散解集等价", "rationale": "整数运算把 5+6/10 化为 5，但整数 ", "repair": "n−2", "evidence": ["≤5 与实数 "]}
+{"id": "cc_0352", "decision": "faithful", "mechanism": "离散解集等价", "rationale": "整数运算把 5+6/10 化为 5，但对整数 n，绝对值 |n−2|≤5 与实数解释的 |n−2|≤5.6 有相同解集，均为 −3…7。", "repair": "可改为实数除法以贴近字面，但现有计数问题未改变。", "evidence": ["cc0352_same_predicate"]}
 {"id": "cc_0379", "decision": "unfaithful", "mechanism": "大算子绑定", "rationale": "加号右边的 3^(2^k) 不在乘积主体内，破坏了原题各因子的结构。", "repair": "括起每个因子 (2^(2^k)+3^(2^k))。", "evidence": []}
 {"id": "cc_0385", "decision": "convention", "mechanism": "输出粒度", "rationale": "给出 n=42 可判断选项 E 为假并核对其余选项，但严格目标应陈述 ¬n>84。", "repair": "按原问法写结论；把 n=42 留作证明中的中间结果。", "evidence": []}
 {"id": "cc_0407", "decision": "faithful", "mechanism": "零边界等价", "rationale": "省略的 n=0 情形为 1≤1。", "repair": "无需实质修正。", "evidence": ["cc0407_zero", "boundary_extension"]}
